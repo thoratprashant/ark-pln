@@ -2,10 +2,10 @@
     <div class="topnav">
       <!-- App Logo -->
       <div class="topbar-branding">
-        <img src="assets/images/marco.png" alt="" class="app-logo">
+        <img src="assets/images/arkenea/logo.webp" alt="" class="app-logo">
       </div>
       <ul fxLayout="row"  fxLayout.xs="row" fxLayoutAlign="space-between center" class="menu" *ngIf="!layoutConf.isMobile">
-       <a mat-button [routerLink]="['/dashboard/default']" routerLinkActive="renata" class="mat-button" routerLinkActiveOptions="{exact:true}">Dashboard</a>
+       <a mat-button [routerLink]="['/dashboard/default']" routerLinkActive="renata" class="mat-button" routerLinkActiveOptions="{exact:true}">Dashboard 01</a>
         <a [matMenuTriggerFor]="menu" routerLinkActive="renata" routerLinkActiveOptions="{exact:true}" mat-button class="mat-button">Apps<mat-icon class="caret">keyboard_arrow_down</mat-icon></a>
         <mat-menu #menu="matMenu" class="app-dropdown">
           <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"  [routerLink]="['/chat']" >Chat</a>
