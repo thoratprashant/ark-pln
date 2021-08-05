@@ -34,8 +34,9 @@ import { marcoSidebarComponent, marcoSidebarTogglerDirective } from './marco-sid
 import { BottomSheetShareComponent } from './bottom-sheet-share/bottom-sheet-share.component';
 import { marcoExampleViewerComponent } from './example-viewer/example-viewer.component';
 import { marcoExampleViewerTemplateComponent } from './example-viewer-template/example-viewer-template.component';
-import { PreLoginLayoutComponent } from './layouts/pre-login/pre-login-layout.component';
 
+import { PreLoginLayoutComponent } from './layouts/pre-login/pre-login-layout.component'; 
+import { PreLoginHeaderTopComponent } from './pre-login-header-top/pre-login-header-top.component';
 
 
 const components = [
@@ -59,7 +60,8 @@ const components = [
   marcoExampleViewerComponent,
   marcoExampleViewerTemplateComponent,
 
-  PreLoginLayoutComponent
+  PreLoginLayoutComponent,
+  PreLoginHeaderTopComponent
 ]
 
 @NgModule({
