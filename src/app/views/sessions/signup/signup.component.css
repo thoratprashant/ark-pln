@@ -1,0 +1,51 @@
+.signup-btn{
+	background-color: black;
+	color: white;
+}
+.icons-div{
+  border-radius: 100%;
+  border-width: 1px;
+  font-size: 15px;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+}
+
+.material-icons {
+    margin-left: 8px !important;
+    margin-top: 8px !important;
+    cursor: pointer !important;
+}
+
+.mr-20{
+	margin-right: 20px;
+}
+
+.social-media-section{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.options-div{
+	display: flex;
+	justify-content: center;
+
+  div{
+    position: relative;
+  }
+}
+.option-span{
+	font-weight: bold;
+	margin-left: 13px !important;
+  margin-top: 8px !important;
+  cursor: pointer !important;
+  position: absolute;
+}
+
+.marco-blue .mat-progress-bar-buffer {
+    background-color: #6589a9 !important;
+ }
+
+.marco-blue .mat-progress-bar-background {
+    fill: #6589a9 !important;
+}

@@ -7,7 +7,6 @@ import { Validators, FormGroup, NgForm, FormGroupDirective, FormControl, Abstrac
 import { FormBuilder } from "@angular/forms";
 
 
-
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -16,6 +15,9 @@ import { FormBuilder } from "@angular/forms";
 export class SignupComponent implements OnInit {
   @ViewChild(MatProgressBar) progressBar: MatProgressBar;
   @ViewChild(MatButton) submitButton: MatButton;
+  firstFormGroup: FormGroup;
+  secondFormGroup: FormGroup;
+  isEditable = false;
 
   signupForm: FormGroup;
 
@@ -29,12 +31,19 @@ export class SignupComponent implements OnInit {
     this.signupForm = this.fb.group(
       {
         firstName: ["",Validators.required],
+        lastName: ["",Validators.required],
         email: ["",[Validators.required,Validators.email]],
         password: password,
         confirmPassword: confirmPassword,
         agreed: [false,Validators.required]
       }
     );
+    this.firstFormGroup = this.fb.group({
+      firstCtrl: ['', Validators.required]
+    });
+    this.secondFormGroup = this.fb.group({
+      secondCtrl: ['', Validators.required]
+    });
   }
 
   onSubmit() {
