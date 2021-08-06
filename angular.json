@@ -22,7 +22,7 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/assets/styles/app.scss"
+              "src/assets/styles/app.scss" 
             ],
             "scripts": [
               "node_modules/apexcharts/dist/apexcharts.min.js"
