@@ -1,0 +1,18 @@
+.landing--header--wrapper{
+    &.header-topnav{
+        background: transparent !important;
+        border: none;
+        .topbar-branding{
+            img{
+                border-radius: unset;
+            }            
+        }
+        ul{
+            a{
+                color: red;
+                font-family: 'Lato', sans-serif !important;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

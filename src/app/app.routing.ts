@@ -14,7 +14,7 @@ export const rootRouterConfig: Routes = [
     component: PreLoginLayoutComponent,
     children: [
       { 
-        path: 'home', 
+        path: '', 
         loadChildren: () => import('./views/pre-login/pre-login.module').then(m => m.PreLoginModule),
         data: { title: 'Prelogin'} 
       }

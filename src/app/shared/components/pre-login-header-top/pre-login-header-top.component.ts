@@ -21,7 +21,6 @@ export class PreLoginHeaderTopComponent implements OnInit, OnDestroy {
     private layout: LayoutService,
     private navService: NavigationService,
     public themeService: ThemeService,
-    private renderer: Renderer2,
     public jwtAuth: JwtAuthService
   ) { }
 
