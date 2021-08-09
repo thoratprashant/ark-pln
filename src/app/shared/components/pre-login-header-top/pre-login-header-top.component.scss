@@ -2,16 +2,45 @@
     &.header-topnav{
         background: transparent !important;
         border: none;
+        position: fixed;
         .topbar-branding{
+            float: left;
+            height: 80px;
+            padding: 8px 8px 0 8px;
+            margin: 0 8px;
             img{
                 border-radius: unset;
             }            
         }
         ul{
             a{
-                color: red;
+                color: #fff;
                 font-family: 'Lato', sans-serif !important;
                 text-transform: uppercase;
+                font-size: 14px;
+                height: 42px;
+                padding-left: 15px;
+                padding-right: 15px; 
+                &.lender-login-btn{
+                    border-radius: 5px;
+                    border: solid 2px #fff;                     
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                    margin-left: 17px;
+                    
+                }
+                &.sign-up-btn{
+                    border-radius: 5px;
+                    background-color: #fff;
+                    color: #000;
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    margin-left: 10px;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                }
             }
         }
     }

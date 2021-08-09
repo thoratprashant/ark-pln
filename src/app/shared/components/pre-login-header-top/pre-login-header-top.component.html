@@ -5,90 +5,16 @@
       <img src="assets/images/arkenea/logo.webp" alt="" class="app-logo">
     </div>
     <span fxFlex></span>
+    
     <ul fxLayout="row" fxLayout.xs="row" fxLayoutAlign="space-between center" class="menu" *ngIf="!layoutConf.isMobile">
-      <a mat-button [routerLink]="['/dashboard/default']" routerLinkActive="renata" class="mat-button"
-        routerLinkActiveOptions="{exact:true}">Dashboard 01</a>
-      <a [matMenuTriggerFor]="menu" routerLinkActive="renata" routerLinkActiveOptions="{exact:true}" mat-button
-        class="mat-button">Apps<mat-icon class="caret">keyboard_arrow_down</mat-icon></a>
-      <mat-menu #menu="matMenu" class="app-dropdown">
-        <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-          [routerLink]="['/chat']">Chat</a>
-        <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-          [routerLink]="['/calendar']">Calendar</a>
-        <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-          [routerLink]="['/todo/list']">Todo</a>
-        <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-          [matMenuTriggerFor]="vertebrates">Ecommerce</a>
-        <mat-menu #vertebrates="matMenu" class="app-dropdown">
-          <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-            [routerLink]="['/shop']">Products</a>
-          <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}">Product Details</a>
-          <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-            [routerLink]="['/shop/cart']">Cart</a>
-          <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-            [routerLink]="['/shop/checkout']">Checkout</a>
-        </mat-menu>
-        <a mat-menu-item [matMenuTriggerFor]="users" routerLinkActive="renata"
-          routerLinkActiveOptions="{exact:true}">Users</a>
-        <mat-menu #users="matMenu" class="app-dropdown">
-          <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-            [routerLink]="['/users/list']">User List</a>
-          <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-            [routerLink]="['/users/list']">User Grid</a>
-        </mat-menu>
-        <a mat-menu-item routerLinkActive="renata" routerLinkActiveOptions="{exact:true}"
-          [routerLink]="['/inbox']">Inbox</a>
-      </mat-menu>
-
-
-
-    </ul>
-
-    <!-- <ul class="menu" *ngIf="!layoutConf.isMobile">
-        <li *ngFor="let item of menuItems; let i = index;">
-          <div *ngIf="item.type !== 'separator'" routerLinkActive="open">
-            <a matRipple routerLink="/{{item.state}}" *ngIf="item.type === 'link'">
-              <mat-icon>{{item.icon}}</mat-icon> 
-              {{item.name | translate}}
-            </a>
-            <div *ngIf="item.type === 'dropDown'">
-              <label matRipple for="drop-{{i}}" class="toggle"><mat-icon>{{item.icon}}</mat-icon> {{item.name | translate}}</label>
-              <a matRipple><mat-icon>{{item.icon}}</mat-icon> {{item.name | translate}}</a>
-              <input type="checkbox" id="drop-{{i}}" />
-              <ul>
-                <li *ngFor="let itemLvL2 of item.sub; let j = index;" routerLinkActive="open">
-                  <a matRipple routerLink="{{item.state ? '/'+item.state : ''}}/{{itemLvL2.state}}" 
-                  *ngIf="itemLvL2.type !== 'dropDown'">
-                    <mat-icon *ngIf="itemLvL2.icon">{{itemLvL2.icon}}</mat-icon>  
-                    {{itemLvL2.name | translate}}
-                  </a>
-                  
-                  <div *ngIf="itemLvL2.type === 'dropDown'">
-                    <label matRipple for="drop-{{i}}{{j}}" class="toggle">{{itemLvL2.name | translate}}</label>
-                    <a matRipple><mat-icon *ngIf="itemLvL2.icon">{{itemLvL2.icon}}</mat-icon>  {{itemLvL2.name | translate}}</a>
-                    <input type="checkbox" id="drop-{{i}}{{j}}" />
-                    
-                    <ul>
-                      <li *ngFor="let itemLvL3 of itemLvL2.sub" routerLinkActive="open">
-                        <a matRipple routerLink="{{item.state ? '/'+item.state : ''}}{{itemLvL2.state ? '/'+itemLvL2.state : ''}}/{{itemLvL3.state}}">
-                          <mat-icon *ngIf="itemLvL3.icon">{{itemLvL3.icon}}</mat-icon>
-                          {{itemLvL3.name | translate}}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul> -->
- 
-    <!-- End Navigation -->
-  
-   
-
-
+      <li> <a mat-button class="mat-button" >What We Do </a>  </li>
+      <li> <a mat-button class="mat-button" >How We Help </a>  </li>
+      <li> <a mat-button class="mat-button" >Who We Work With</a>  </li>
+      <li> 
+        <a mat-button class="mat-button lender-login-btn" > Lender Login </a>  
+      </li>
+      <li> <a mat-button class="mat-button sign-up-btn" > Sign Up </a>  </li>
+    </ul>   
 
     <!-- Mobile screen menu toggle -->
     <button mat-icon-button class="mr-1" (click)="toggleSidenav()" *ngIf="layoutConf.isMobile">

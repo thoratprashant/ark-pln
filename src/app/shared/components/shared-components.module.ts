@@ -37,6 +37,7 @@ import { marcoExampleViewerTemplateComponent } from './example-viewer-template/e
 
 import { PreLoginLayoutComponent } from './layouts/pre-login/pre-login-layout.component'; 
 import { PreLoginHeaderTopComponent } from './pre-login-header-top/pre-login-header-top.component';
+import { PreLoginFooterComponent } from './pre-login-footer/pre-login-footer.component';
 
 
 const components = [
@@ -61,7 +62,8 @@ const components = [
   marcoExampleViewerTemplateComponent,
 
   PreLoginLayoutComponent,
-  PreLoginHeaderTopComponent
+  PreLoginHeaderTopComponent,
+  PreLoginFooterComponent
 ]
 
 @NgModule({
