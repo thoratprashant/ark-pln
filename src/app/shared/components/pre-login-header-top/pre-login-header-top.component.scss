@@ -3,6 +3,9 @@
         background: transparent !important;
         border: none;
         position: fixed;
+        &.scrolled{
+            background-color: #333 !important;
+        }
         .topbar-branding{
             float: left;
             height: 80px;
@@ -40,6 +43,37 @@
                     margin-left: 10px;
                     padding-left: 17px;
                     padding-right: 17px;
+                }
+                &::after{
+                    content: unset;
+                }
+            }
+
+            li{
+                position: relative;
+                .options{
+                    box-shadow: 0px 7px 18px 0 rgba(255, 255, 255, 0.07);
+                    background-color: #222;
+                    padding: 15px;
+                    position: absolute;                    
+                    left: 15px;
+                    top: 37px;
+                    display: none;
+                    a{                        
+                        margin: 0 0 6px 0;
+                        padding: 0;
+                        height: auto; 
+                        white-space: nowrap;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                       
+                    }
+                }
+                &:hover{
+                    .options{
+                        display: block;
+                    } 
                 }
             }
         }

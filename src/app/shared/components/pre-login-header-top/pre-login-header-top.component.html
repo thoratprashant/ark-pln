@@ -5,16 +5,40 @@
       <img src="assets/images/arkenea/logo.webp" alt="" class="app-logo">
     </div>
     <span fxFlex></span>
-    
+
     <ul fxLayout="row" fxLayout.xs="row" fxLayoutAlign="space-between center" class="menu" *ngIf="!layoutConf.isMobile">
-      <li> <a mat-button class="mat-button" >What We Do </a>  </li>
-      <li> <a mat-button class="mat-button" >How We Help </a>  </li>
-      <li> <a mat-button class="mat-button" >Who We Work With</a>  </li>
-      <li> 
-        <a mat-button class="mat-button lender-login-btn" > Lender Login </a>  
+
+      <li>
+        <a mat-button class="mat-button"> What We Do </a>
+        <div class="options">
+          <a>New Construction Loans</a>
+          <a> Fix & Flip Loans</a>
+          <a>Community Development Loans</a>
+          <a>Rental Loans</a>
+        </div>
       </li>
-      <li> <a mat-button class="mat-button sign-up-btn" > Sign Up </a>  </li>
-    </ul>   
+
+      <li> <a mat-button class="mat-button">How We Help </a>
+        <div class="options">
+          <a>High Leverage Loans</a>
+          <a> Plan. Build. Grow.</a>
+          <a>Finance Expertise</a>
+        </div>
+      </li>
+      <li> <a mat-button class="mat-button">Who We Work With</a>
+        <div class="options">
+          <a>Builders</a>
+          <a> Flippers</a>
+          <a>Developers</a>
+          <a>Investors</a>
+          <a>Brokers</a>
+        </div>
+      </li>
+      <li>
+        <a mat-button class="mat-button lender-login-btn"> Lender Login </a>
+      </li>
+      <li> <a mat-button class="mat-button sign-up-btn"> Sign Up </a> </li>
+    </ul>
 
     <!-- Mobile screen menu toggle -->
     <button mat-icon-button class="mr-1" (click)="toggleSidenav()" *ngIf="layoutConf.isMobile">
