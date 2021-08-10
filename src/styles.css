@@ -26,7 +26,18 @@
 .relative{position:relative !important;}
 .w-100 {width: 100% !important;}
 
+
+
 /* .ff-playfair{font-family: 'Playfair Display', serif !important;} */
 /* font-family: 'Lato', sans-serif !important; */
 
-
+.cust--side--nav{
+    background-color: red;
+}
+.cust--side--nav .app-logo-sidenav{    
+    width: 165px;
+    margin-top: 10px;
+}
+.cust--side--nav .navigation-wrapper{
+    margin-top: 0 !important;
+}
