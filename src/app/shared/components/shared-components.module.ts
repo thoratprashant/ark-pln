@@ -16,9 +16,7 @@ import { SidebarSideComponent } from './sidebar-side/sidebar-side.component';
 // ONLY REQUIRED FOR **TOP** NAVIGATION LAYOUT
 import { HeaderTopComponent } from './header-top/header-top.component';
 import { SidebarTopComponent } from './sidebar-top/sidebar-top.component';
-
-// ONLY FOR DEMO
-import { CustomizerComponent } from './customizer/customizer.component';
+ 
 
 // ALWAYS REQUIRED 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
@@ -30,10 +28,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { AppComfirmComponent } from '../services/app-confirm/app-confirm.component';
 import { AppLoaderComponent } from '../services/app-loader/app-loader.component';
 import { ButtonLoadingComponent } from './button-loading/button-loading.component';
-import { marcoSidebarComponent, marcoSidebarTogglerDirective } from './marco-sidebar/marco-sidebar.component';
-import { BottomSheetShareComponent } from './bottom-sheet-share/bottom-sheet-share.component';
-import { marcoExampleViewerComponent } from './example-viewer/example-viewer.component';
-import { marcoExampleViewerTemplateComponent } from './example-viewer-template/example-viewer-template.component';
+import { marcoSidebarComponent, marcoSidebarTogglerDirective } from './marco-sidebar/marco-sidebar.component'; 
 
 import { PreLoginLayoutComponent } from './layouts/pre-login/pre-login-layout.component'; 
 import { PreLoginHeaderTopComponent } from './pre-login-header-top/pre-login-header-top.component';
@@ -51,15 +46,11 @@ const components = [
   AuthLayoutComponent,
   BreadcrumbComponent,
   AppComfirmComponent,
-  AppLoaderComponent,
-  CustomizerComponent,
+  AppLoaderComponent, 
   ButtonLoadingComponent,
   marcoSidebarComponent,
   FooterComponent,
-  marcoSidebarTogglerDirective,
-  BottomSheetShareComponent,
-  marcoExampleViewerComponent,
-  marcoExampleViewerTemplateComponent,
+  marcoSidebarTogglerDirective, 
 
   PreLoginLayoutComponent,
   PreLoginHeaderTopComponent,
@@ -79,7 +70,7 @@ const components = [
     SharedMaterialModule
   ],
   declarations: components,
-  entryComponents: [AppComfirmComponent, AppLoaderComponent, BottomSheetShareComponent],
+  entryComponents: [AppComfirmComponent, AppLoaderComponent,],
   exports: components
 })
 export class SharedComponentsModule {}

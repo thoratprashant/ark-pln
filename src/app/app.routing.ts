@@ -41,17 +41,7 @@ export const rootRouterConfig: Routes = [
         path: 'profile', 
         loadChildren: () => import('./views/profile/profile.module').then(m => m.ProfileModule), 
         data: { title: 'Profile', breadcrumb: 'Profile'}
-      },
-      {
-        path: 'others', 
-        loadChildren: () => import('./views/others/others.module').then(m => m.OthersModule), 
-        data: { title: 'Others', breadcrumb: 'Others'}
       }, 
-      {
-        path: 'orders',
-        loadChildren: () => import('./views/order/order.module').then(m => m.OrderModule),
-        data: { title: 'Orders', breadcrumb: 'Orders'}
-      },
       {
         path: 'page-layouts',
         loadChildren: () => import('./views/page-layouts/page-layouts.module').then(m => m.PageLayoutsModule)
