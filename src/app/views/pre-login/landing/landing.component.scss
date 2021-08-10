@@ -183,14 +183,18 @@
 
 @media only screen and (max-width: 599px) {
     .section-one p { 
-        width: 70%;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .section-one h1 {
+        margin-bottom: 20px; 
     }
     .section-two h1 {
         font-size: 22px;
         margin: 10px 0;
     }
     .section-two p {
-        font-size: 13px;
+        font-size: 13px !important;
     }
     .section-four  {
         height: 533px;
@@ -199,10 +203,10 @@
         margin: 10px 0;
     }
     .main-heading {
-        font-size: 25px;
+        font-size: 22px;
     }
     .main-desc {
-        font-size: 13px;
+        font-size: 13px !important;
     }
     .section-one  {
         height: calc(100vh - 330px);
@@ -229,6 +233,7 @@
     }
     .section-three .details-box h1 {
         margin: 0 0 15px 0;
+        text-align: center;
     }
     .section-five{
         text-align: center;
@@ -246,6 +251,12 @@
         font-size: 13px;
         line-height: 13px;
         padding: 12px 14px; 
+    }
+    .section-five .client--feedback--wrapper .feedback--box p {
+        font-size: 14px;
+    }
+    .section-five .client--feedback--wrapper .client--details h5 {
+        font-size: 14px;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 979px){
