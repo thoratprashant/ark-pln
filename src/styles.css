@@ -32,12 +32,20 @@
 /* font-family: 'Lato', sans-serif !important; */
 
 .cust--side--nav{
-    background-color: red;
+    background: #333 !important;
+    text-align: center;
 }
 .cust--side--nav .app-logo-sidenav{    
     width: 165px;
     margin-top: 10px;
+
 }
-.cust--side--nav .navigation-wrapper{
+.sidebar-slate .cust--side--nav .navigation-wrapper{
     margin-top: 0 !important;
+    background: #333 !important;
+    border-top: 1px solid #484747;
+}
+.sidebar-slate .cust--side--nav .sidenav-hold a{
+    border-bottom: 1px solid #484747;
+    text-align: left;
 }
