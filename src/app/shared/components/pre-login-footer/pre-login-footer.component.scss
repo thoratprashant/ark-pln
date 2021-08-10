@@ -54,3 +54,14 @@
         color: #333;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .prelogin-subfooter[_ngcontent-tkt-c156] {
+        padding: 15px 5px;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .prelogin-footer ul li {
+        display: block;
+    }
+}
