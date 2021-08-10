@@ -55,6 +55,23 @@
     }
 }
 
+@media only screen and (max-width: 599px) {
+    .prelogin-footer { 
+        padding: 15px;
+    }
+    .prelogin-footer ul li {
+        display: block;  
+        margin-bottom: 3px;
+    }
+    .prelogin-subfooter p { 
+        font-size: 13px;
+        margin-bottom: 16px !important;
+    }
+    .prelogin-footer ul li a{
+        margin-right: 0;
+    }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .prelogin-subfooter[_ngcontent-tkt-c156] {
         padding: 15px 5px;

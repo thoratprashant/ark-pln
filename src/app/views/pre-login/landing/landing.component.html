@@ -9,7 +9,7 @@
 
 <section class="section-two mb-130" fxLayout="row">
     <div class="container">
-        <div fxLayout="row" fxLayoutAlign="start start" fxFlex="100" fxLayoutGap="30px">
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start start" fxFlex="100" fxLayoutGap="30px">
             <div *ngFor="let tdata of tdatas" fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="33.33" fxFlex.xl="33.33">
                 <div class="thumbnail-round" fxLayout="row" fxLayoutAlign="center center">                      
                     <i class="fa {{tdata.iconName}}" aria-hidden="true"></i>
@@ -75,7 +75,7 @@
         <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100">
             <h1 class="main-heading m-0">What Our Clients Are Saying...</h1> 
         </div>
-        <div fxLayout="row" fxLayoutAlign="start start" fxFlex="100" fxLayoutGap="30px">
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start" fxFlex="100" fxLayoutGap="30px">
             <div *ngFor="let cfData of cfDatas" fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="33.33" fxFlex.xl="33.33">
                 <div class="client--feedback--wrapper" fxLayout="column" >
                     <div class="feedback--box relative">
