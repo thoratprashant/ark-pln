@@ -5600,7 +5600,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-pre-login-footer"]],
       decls: 44,
       vars: 0,
-      consts: [["fxLayout", "row", 1, "prelogin-footer"], [1, "container"], ["fxLayout", "row", "fxLayoutAlign", "start start", "fxLayoutGap", "100px", "fxLayoutGap.sm", "20px", "fxLayoutGap.xs", "0", "fxLayout.xs", "column"], ["fxLayout", "row", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "20", "fxFlex.xl", "20"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "footer-logo"], ["fxLayout", "column", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "25", "fxFlex.xl", "25"], ["fxLayout", "row", "fxLayoutAlign", "start start"], [1, "icon-location"], ["fxLayout", "row", "fxLayoutGap", "20px", "fxLayout.xs", "column", "fxLayoutGap.xs", "0", 1, "w-100"], ["fxLayout", "column", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "55", "fxFlex.xl", "55", 1, "w-100"], [1, "m-0", "p-0"], [1, "m-0"], ["fxLayout", "row", 1, "prelogin-subfooter"], ["fxLayout", "row", "fxLayout.xs", "column", "fxLayoutAlign", "space-between center", 1, "container"], ["fxLayout", "row", "fxLayoutAlign", "start center"], ["mat-mini-fab", "", 1, "mr-10"], ["aria-hidden", "true", 1, "fa", "fa-twitter"], ["aria-hidden", "true", 1, "fa", "fa-facebook"], ["mat-mini-fab", ""], ["aria-hidden", "true", 1, "fa", "fa-linkedin"]],
+      consts: [["fxLayout", "row", 1, "prelogin-footer"], [1, "container"], ["fxLayout", "row", "fxLayoutAlign", "start start", "fxLayoutGap", "100px", "fxLayoutGap.sm", "20px", "fxLayoutGap.xs", "0", "fxLayout.xs", "column"], ["fxLayout", "row", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "20", "fxFlex.xl", "20", 1, "w-100"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "footer-logo"], ["fxLayout", "column", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "25", "fxFlex.xl", "25", 1, "w-100"], ["fxLayout", "row", "fxLayoutAlign.xs", "center center", "fxLayoutAlign", "start start"], [1, "icon-location"], ["fxLayout", "row", "fxLayoutGap", "20px", "fxLayout.xs", "column", "fxLayoutGap.xs", "0", 1, "w-100"], ["fxLayout", "column", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "55", "fxFlex.xl", "55", 1, "w-100"], [1, "m-0", "p-0"], [1, "m-0"], ["fxLayout", "row", 1, "prelogin-subfooter"], ["fxLayout", "row", "fxLayout.xs", "column", "fxLayoutAlign", "space-between center", 1, "container"], ["fxLayout", "row", "fxLayoutAlign", "start center"], ["mat-mini-fab", "", 1, "mr-10"], ["aria-hidden", "true", 1, "fa", "fa-twitter"], ["aria-hidden", "true", 1, "fa", "fa-facebook"], ["mat-mini-fab", ""], ["aria-hidden", "true", 1, "fa", "fa-linkedin"]],
       template: function PreLoginFooterComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "footer", 0);
@@ -5749,7 +5749,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutGapDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_2__["MatIcon"], _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButton"]],
-      styles: [".prelogin-footer[_ngcontent-%COMP%] {\n  background-color: #000;\n  padding: 25px 0 15px 0;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  font-family: 'Lato', sans-serif !important;\n  color: #fff;\n  font-size: 16px;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   .mat-icon[_ngcontent-%COMP%] {\n  margin-right: 15px;\n  font-size: 19px;\n  height: 19px;\n  width: 19px;\n  margin-top: 3px;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   .mat-icon.icon-location[_ngcontent-%COMP%] {\n  margin-right: 15px;\n  font-size: 22px;\n  height: 22px;\n  width: 22px;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  display: inline-block;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-family: 'Lato', sans-serif !important;\n  color: #fff;\n  text-transform: uppercase;\n  margin-right: 30px;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%] {\n  padding: 17px 0 20px 0;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #888;\n  font-size: 16px;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #222;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   .mat-mini-fab[_ngcontent-%COMP%] {\n  background-color: #eee;\n  box-shadow: none;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   .fa[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #333;\n}\n\n@media only screen and (max-width: 599px) {\n  .prelogin-footer[_ngcontent-%COMP%] {\n    padding: 15px;\n  }\n  .prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n    display: block;\n    margin-bottom: 3px;\n  }\n  .prelogin-subfooter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 13px;\n    margin-bottom: 16px !important;\n  }\n  .prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    margin-right: 0;\n  }\n}\n\n@media only screen and (min-width: 600px) and (max-width: 979px) {\n  .prelogin-subfooter[_ngcontent-tkt-c156][_ngcontent-%COMP%] {\n    padding: 15px 5px;\n  }\n}\n\n@media only screen and (min-width: 980px) and (max-width: 1279px) {\n  .prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvcHJlLWxvZ2luLWZvb3Rlci9DOlxcUHJhc2hhbnQtd29ya3NwYWNlXFxhcmstcGxuL3NyY1xcYXBwXFxzaGFyZWRcXGNvbXBvbmVudHNcXHByZS1sb2dpbi1mb290ZXJcXHByZS1sb2dpbi1mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL3ByZS1sb2dpbi1mb290ZXIvcHJlLWxvZ2luLWZvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNCQUFzQjtFQUN0QixzQkFBc0I7QUNDMUI7O0FESEE7RUFPUSwwQ0FBMEM7RUFDMUMsV0FBVztFQUNYLGVBQWU7QUNBdkI7O0FEVEE7RUFpQlksa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixZQUFZO0VBQ1osV0FBVztFQUNYLGVBQWU7QUNKM0I7O0FEakJBO0VBWWdCLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsWUFBWTtFQUNaLFdBQVc7QUNTM0I7O0FEeEJBO0VBMEJZLHFCQUFxQjtBQ0VqQzs7QUQ1QkE7RUE0QmdCLGVBQWU7RUFDZiwwQ0FBMEM7RUFDMUMsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixrQkFBa0I7QUNJbEM7O0FERUE7RUFDSSxzQkFBc0I7QUNDMUI7O0FERkE7RUFHUSxXQUFXO0VBQ1gsZUFBZTtBQ0d2Qjs7QURQQTtFQU1ZLFdBQVc7QUNLdkI7O0FEWEE7RUFVUSxzQkFBc0I7RUFDdEIsZ0JBQWdCO0FDS3hCOztBRGhCQTtFQWNRLGVBQWU7RUFDZixXQUFXO0FDTW5COztBREZBO0VBQ0k7SUFDSSxhQUFhO0VDS25CO0VESEU7SUFDSSxjQUFjO0lBQ2Qsa0JBQWtCO0VDS3hCO0VESEU7SUFDSSxlQUFlO0lBQ2YsOEJBQThCO0VDS3BDO0VESEU7SUFDSSxlQUFlO0VDS3JCO0FBQ0Y7O0FERkE7RUFDSTtJQUNJLGlCQUFpQjtFQ0t2QjtBQUNGOztBREhBO0VBQ0k7SUFDSSxjQUFjO0VDTXBCO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvY29tcG9uZW50cy9wcmUtbG9naW4tZm9vdGVyL3ByZS1sb2dpbi1mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJlbG9naW4tZm9vdGVye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcclxuICAgIHBhZGRpbmc6IDI1cHggMCAxNXB4IDA7XHJcbiAgICAuZm9vdGVyLWxvZ297XHJcbiAgICAgICAgLy8gd2lkdGg6IDc3JTtcclxuICAgIH1cclxuICAgIHB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xyXG4gICAgICAgIGNvbG9yOiAjZmZmOyAgICAgICAgXHJcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgICAgIC5tYXQtaWNvbntcclxuICAgICAgICAgICAgJi5pY29uLWxvY2F0aW9ue1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMnB4O1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiAyMnB4O1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IDIycHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDE5cHg7XHJcbiAgICAgICAgICAgIGhlaWdodDogMTlweDtcclxuICAgICAgICAgICAgd2lkdGg6IDE5cHg7XHJcbiAgICAgICAgICAgIG1hcmdpbi10b3A6IDNweDtcclxuICAgICAgICB9XHJcbiAgICB9XHJcbiAgICB1bHtcclxuICAgICAgICBsaXtcclxuICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgICBhe1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4ucHJlbG9naW4tc3ViZm9vdGVye1xyXG4gICAgcGFkZGluZzogMTdweCAwIDIwcHggMDtcclxuICAgIHB7XHJcbiAgICAgICAgY29sb3I6ICM4ODg7XHJcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgICAgIGF7XHJcbiAgICAgICAgICAgIGNvbG9yOiAjMjIyO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuICAgIC5tYXQtbWluaS1mYWJ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2VlZTtcclxuICAgICAgICBib3gtc2hhZG93OiBub25lO1xyXG4gICAgfVxyXG4gICAgLmZhIHtcclxuICAgICAgICBmb250LXNpemU6IDE3cHg7XHJcbiAgICAgICAgY29sb3I6ICMzMzM7XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTk5cHgpIHtcclxuICAgIC5wcmVsb2dpbi1mb290ZXIgeyBcclxuICAgICAgICBwYWRkaW5nOiAxNXB4O1xyXG4gICAgfVxyXG4gICAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7ICBcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiAzcHg7XHJcbiAgICB9XHJcbiAgICAucHJlbG9naW4tc3ViZm9vdGVyIHAgeyBcclxuICAgICAgICBmb250LXNpemU6IDEzcHg7XHJcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMTZweCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG4gICAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSBhe1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogMDtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA2MDBweCkgYW5kIChtYXgtd2lkdGg6IDk3OXB4KXtcclxuICAgIC5wcmVsb2dpbi1zdWJmb290ZXJbX25nY29udGVudC10a3QtYzE1Nl0ge1xyXG4gICAgICAgIHBhZGRpbmc6IDE1cHggNXB4O1xyXG4gICAgfVxyXG59XHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogOTgwcHgpIGFuZCAobWF4LXdpZHRoOiAxMjc5cHgpe1xyXG4gICAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB9XHJcbn0iLCIucHJlbG9naW4tZm9vdGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgcGFkZGluZzogMjVweCAwIDE1cHggMDtcbn1cblxuLnByZWxvZ2luLWZvb3RlciBwIHtcbiAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xuICBjb2xvcjogI2ZmZjtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4ucHJlbG9naW4tZm9vdGVyIHAgLm1hdC1pY29uIHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICBmb250LXNpemU6IDE5cHg7XG4gIGhlaWdodDogMTlweDtcbiAgd2lkdGg6IDE5cHg7XG4gIG1hcmdpbi10b3A6IDNweDtcbn1cblxuLnByZWxvZ2luLWZvb3RlciBwIC5tYXQtaWNvbi5pY29uLWxvY2F0aW9uIHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICBmb250LXNpemU6IDIycHg7XG4gIGhlaWdodDogMjJweDtcbiAgd2lkdGg6IDIycHg7XG59XG5cbi5wcmVsb2dpbi1mb290ZXIgdWwgbGkge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbi5wcmVsb2dpbi1mb290ZXIgdWwgbGkgYSB7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xuICBjb2xvcjogI2ZmZjtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xufVxuXG4ucHJlbG9naW4tc3ViZm9vdGVyIHtcbiAgcGFkZGluZzogMTdweCAwIDIwcHggMDtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciBwIHtcbiAgY29sb3I6ICM4ODg7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciBwIGEge1xuICBjb2xvcjogIzIyMjtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciAubWF0LW1pbmktZmFiIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2VlZTtcbiAgYm94LXNoYWRvdzogbm9uZTtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciAuZmEge1xuICBmb250LXNpemU6IDE3cHg7XG4gIGNvbG9yOiAjMzMzO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU5OXB4KSB7XG4gIC5wcmVsb2dpbi1mb290ZXIge1xuICAgIHBhZGRpbmc6IDE1cHg7XG4gIH1cbiAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgbWFyZ2luLWJvdHRvbTogM3B4O1xuICB9XG4gIC5wcmVsb2dpbi1zdWJmb290ZXIgcCB7XG4gICAgZm9udC1zaXplOiAxM3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDE2cHggIWltcG9ydGFudDtcbiAgfVxuICAucHJlbG9naW4tZm9vdGVyIHVsIGxpIGEge1xuICAgIG1hcmdpbi1yaWdodDogMDtcbiAgfVxufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDYwMHB4KSBhbmQgKG1heC13aWR0aDogOTc5cHgpIHtcbiAgLnByZWxvZ2luLXN1YmZvb3Rlcltfbmdjb250ZW50LXRrdC1jMTU2XSB7XG4gICAgcGFkZGluZzogMTVweCA1cHg7XG4gIH1cbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA5ODBweCkgYW5kIChtYXgtd2lkdGg6IDEyNzlweCkge1xuICAucHJlbG9naW4tZm9vdGVyIHVsIGxpIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgfVxufVxuIl19 */"]
+      styles: [".prelogin-footer[_ngcontent-%COMP%] {\n  background-color: #000;\n  padding: 25px 0 15px 0;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  font-family: 'Lato', sans-serif !important;\n  color: #fff;\n  font-size: 16px;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   .mat-icon[_ngcontent-%COMP%] {\n  margin-right: 15px;\n  font-size: 19px;\n  height: 19px;\n  width: 19px;\n  margin-top: 3px;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   .mat-icon.icon-location[_ngcontent-%COMP%] {\n  margin-right: 15px;\n  font-size: 22px;\n  height: 22px;\n  width: 22px;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  display: inline-block;\n}\n\n.prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-family: 'Lato', sans-serif !important;\n  color: #fff;\n  text-transform: uppercase;\n  margin-right: 30px;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%] {\n  padding: 17px 0 20px 0;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #888;\n  font-size: 16px;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #222;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   .mat-mini-fab[_ngcontent-%COMP%] {\n  background-color: #eee;\n  box-shadow: none;\n}\n\n.prelogin-subfooter[_ngcontent-%COMP%]   .fa[_ngcontent-%COMP%] {\n  font-size: 17px;\n  color: #333;\n}\n\n@media only screen and (max-width: 599px) {\n  .prelogin-footer[_ngcontent-%COMP%] {\n    padding: 15px;\n  }\n  .prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n    display: block;\n    margin-top: 8px;\n    text-align: center;\n  }\n  .prelogin-subfooter[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 13px;\n    margin-bottom: 16px !important;\n  }\n  .prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    margin-right: 0;\n    font-size: 13px;\n  }\n  .prelogin-footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%] {\n    margin: 0 auto;\n    width: 45%;\n    margin-bottom: 10px;\n  }\n  .prelogin-footer[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n}\n\n@media only screen and (min-width: 600px) and (max-width: 979px) {\n  .prelogin-subfooter[_ngcontent-tkt-c156][_ngcontent-%COMP%] {\n    padding: 15px 5px;\n  }\n}\n\n@media only screen and (min-width: 980px) and (max-width: 1279px) {\n  .prelogin-footer[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvcHJlLWxvZ2luLWZvb3Rlci9DOlxcUHJhc2hhbnQtd29ya3NwYWNlXFxhcmstcGxuL3NyY1xcYXBwXFxzaGFyZWRcXGNvbXBvbmVudHNcXHByZS1sb2dpbi1mb290ZXJcXHByZS1sb2dpbi1mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL3ByZS1sb2dpbi1mb290ZXIvcHJlLWxvZ2luLWZvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNCQUFzQjtFQUN0QixzQkFBc0I7QUNDMUI7O0FESEE7RUFPUSwwQ0FBMEM7RUFDMUMsV0FBVztFQUNYLGVBQWU7QUNBdkI7O0FEVEE7RUFpQlksa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixZQUFZO0VBQ1osV0FBVztFQUNYLGVBQWU7QUNKM0I7O0FEakJBO0VBWWdCLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsWUFBWTtFQUNaLFdBQVc7QUNTM0I7O0FEeEJBO0VBMEJZLHFCQUFxQjtBQ0VqQzs7QUQ1QkE7RUE0QmdCLGVBQWU7RUFDZiwwQ0FBMEM7RUFDMUMsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixrQkFBa0I7QUNJbEM7O0FERUE7RUFDSSxzQkFBc0I7QUNDMUI7O0FERkE7RUFHUSxXQUFXO0VBQ1gsZUFBZTtBQ0d2Qjs7QURQQTtFQU1ZLFdBQVc7QUNLdkI7O0FEWEE7RUFVUSxzQkFBc0I7RUFDdEIsZ0JBQWdCO0FDS3hCOztBRGhCQTtFQWNRLGVBQWU7RUFDZixXQUFXO0FDTW5COztBREZBO0VBQ0k7SUFDSSxhQUFhO0VDS25CO0VESEU7SUFDSSxjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjtFQ0t4QjtFREhFO0lBQ0ksZUFBZTtJQUNmLDhCQUE4QjtFQ0twQztFREhFO0lBQ0ksZUFBZTtJQUNmLGVBQWU7RUNLckI7RURIRTtJQUNJLGNBQWM7SUFDZCxVQUFVO0lBQ1YsbUJBQW1CO0VDS3pCO0VESEU7SUFDSSxlQUFlO0VDS3JCO0FBQ0Y7O0FERkE7RUFDSTtJQUNJLGlCQUFpQjtFQ0t2QjtBQUNGOztBREhBO0VBQ0k7SUFDSSxjQUFjO0VDTXBCO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvY29tcG9uZW50cy9wcmUtbG9naW4tZm9vdGVyL3ByZS1sb2dpbi1mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJlbG9naW4tZm9vdGVye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcclxuICAgIHBhZGRpbmc6IDI1cHggMCAxNXB4IDA7XHJcbiAgICAuZm9vdGVyLWxvZ297XHJcbiAgICAgICAgLy8gd2lkdGg6IDc3JTtcclxuICAgIH1cclxuICAgIHB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xyXG4gICAgICAgIGNvbG9yOiAjZmZmOyAgICAgICAgXHJcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgICAgIC5tYXQtaWNvbntcclxuICAgICAgICAgICAgJi5pY29uLWxvY2F0aW9ue1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMnB4O1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiAyMnB4O1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IDIycHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDE5cHg7XHJcbiAgICAgICAgICAgIGhlaWdodDogMTlweDtcclxuICAgICAgICAgICAgd2lkdGg6IDE5cHg7XHJcbiAgICAgICAgICAgIG1hcmdpbi10b3A6IDNweDtcclxuICAgICAgICB9XHJcbiAgICB9XHJcbiAgICB1bHtcclxuICAgICAgICBsaXtcclxuICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgICBhe1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4ucHJlbG9naW4tc3ViZm9vdGVye1xyXG4gICAgcGFkZGluZzogMTdweCAwIDIwcHggMDtcclxuICAgIHB7XHJcbiAgICAgICAgY29sb3I6ICM4ODg7XHJcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgICAgIGF7XHJcbiAgICAgICAgICAgIGNvbG9yOiAjMjIyO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuICAgIC5tYXQtbWluaS1mYWJ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2VlZTtcclxuICAgICAgICBib3gtc2hhZG93OiBub25lO1xyXG4gICAgfVxyXG4gICAgLmZhIHtcclxuICAgICAgICBmb250LXNpemU6IDE3cHg7XHJcbiAgICAgICAgY29sb3I6ICMzMzM7XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTk5cHgpIHtcclxuICAgIC5wcmVsb2dpbi1mb290ZXIgeyBcclxuICAgICAgICBwYWRkaW5nOiAxNXB4O1xyXG4gICAgfVxyXG4gICAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7ICBcclxuICAgICAgICBtYXJnaW4tdG9wOiA4cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgLnByZWxvZ2luLXN1YmZvb3RlciBwIHsgXHJcbiAgICAgICAgZm9udC1zaXplOiAxM3B4O1xyXG4gICAgICAgIG1hcmdpbi1ib3R0b206IDE2cHggIWltcG9ydGFudDtcclxuICAgIH1cclxuICAgIC5wcmVsb2dpbi1mb290ZXIgdWwgbGkgYXtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDA7XHJcbiAgICAgICAgZm9udC1zaXplOiAxM3B4O1xyXG4gICAgfVxyXG4gICAgLnByZWxvZ2luLWZvb3RlciAuZm9vdGVyLWxvZ297XHJcbiAgICAgICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICAgICAgd2lkdGg6IDQ1JTtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gICAgfVxyXG4gICAgLnByZWxvZ2luLWZvb3RlciBwe1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA2MDBweCkgYW5kIChtYXgtd2lkdGg6IDk3OXB4KXtcclxuICAgIC5wcmVsb2dpbi1zdWJmb290ZXJbX25nY29udGVudC10a3QtYzE1Nl0ge1xyXG4gICAgICAgIHBhZGRpbmc6IDE1cHggNXB4O1xyXG4gICAgfVxyXG59XHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogOTgwcHgpIGFuZCAobWF4LXdpZHRoOiAxMjc5cHgpe1xyXG4gICAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB9XHJcbn0iLCIucHJlbG9naW4tZm9vdGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgcGFkZGluZzogMjVweCAwIDE1cHggMDtcbn1cblxuLnByZWxvZ2luLWZvb3RlciBwIHtcbiAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xuICBjb2xvcjogI2ZmZjtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4ucHJlbG9naW4tZm9vdGVyIHAgLm1hdC1pY29uIHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICBmb250LXNpemU6IDE5cHg7XG4gIGhlaWdodDogMTlweDtcbiAgd2lkdGg6IDE5cHg7XG4gIG1hcmdpbi10b3A6IDNweDtcbn1cblxuLnByZWxvZ2luLWZvb3RlciBwIC5tYXQtaWNvbi5pY29uLWxvY2F0aW9uIHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICBmb250LXNpemU6IDIycHg7XG4gIGhlaWdodDogMjJweDtcbiAgd2lkdGg6IDIycHg7XG59XG5cbi5wcmVsb2dpbi1mb290ZXIgdWwgbGkge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbi5wcmVsb2dpbi1mb290ZXIgdWwgbGkgYSB7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZiAhaW1wb3J0YW50O1xuICBjb2xvcjogI2ZmZjtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xufVxuXG4ucHJlbG9naW4tc3ViZm9vdGVyIHtcbiAgcGFkZGluZzogMTdweCAwIDIwcHggMDtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciBwIHtcbiAgY29sb3I6ICM4ODg7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciBwIGEge1xuICBjb2xvcjogIzIyMjtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciAubWF0LW1pbmktZmFiIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2VlZTtcbiAgYm94LXNoYWRvdzogbm9uZTtcbn1cblxuLnByZWxvZ2luLXN1YmZvb3RlciAuZmEge1xuICBmb250LXNpemU6IDE3cHg7XG4gIGNvbG9yOiAjMzMzO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU5OXB4KSB7XG4gIC5wcmVsb2dpbi1mb290ZXIge1xuICAgIHBhZGRpbmc6IDE1cHg7XG4gIH1cbiAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgbWFyZ2luLXRvcDogOHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuICAucHJlbG9naW4tc3ViZm9vdGVyIHAge1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxNnB4ICFpbXBvcnRhbnQ7XG4gIH1cbiAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSBhIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDA7XG4gICAgZm9udC1zaXplOiAxM3B4O1xuICB9XG4gIC5wcmVsb2dpbi1mb290ZXIgLmZvb3Rlci1sb2dvIHtcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgICB3aWR0aDogNDUlO1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gIH1cbiAgLnByZWxvZ2luLWZvb3RlciBwIHtcbiAgICBmb250LXNpemU6IDE0cHg7XG4gIH1cbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA2MDBweCkgYW5kIChtYXgtd2lkdGg6IDk3OXB4KSB7XG4gIC5wcmVsb2dpbi1zdWJmb290ZXJbX25nY29udGVudC10a3QtYzE1Nl0ge1xuICAgIHBhZGRpbmc6IDE1cHggNXB4O1xuICB9XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogOTgwcHgpIGFuZCAobWF4LXdpZHRoOiAxMjc5cHgpIHtcbiAgLnByZWxvZ2luLWZvb3RlciB1bCBsaSB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gIH1cbn1cbiJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -6781,16 +6781,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     SidebarTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SidebarTopComponent,
       selectors: [["app-sidebar-top"]],
-      decls: 3,
+      decls: 4,
       vars: 1,
-      consts: [[1, "sidebar-panel"], ["id", "sidebar-top-scroll-area", "fxLayout", "column", 1, "navigation-wrapper", 3, "perfectScrollbar"], [3, "items"]],
+      consts: [[1, "sidebar-panel", "cust--side--nav"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo-sidenav"], ["id", "sidebar-top-scroll-area", "fxLayout", "column", 1, "navigation-wrapper", 3, "perfectScrollbar"], [3, "items"]],
       template: function SidebarTopComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-sidenav", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "app-sidenav", 3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -6798,7 +6800,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("items", ctx.menuItems);
         }
@@ -7387,7 +7389,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       decls: 3,
       vars: 1,
-      consts: [[1, "sidenav-hold"], ["appDropdown", "", 1, "sidenav"], ["appDropdownLink", "", "routerLinkActive", "open", 4, "ngFor", "ngForOf"], ["appDropdownLink", "", "routerLinkActive", "open"], ["class", "nav-item-sep", 4, "ngIf"], ["class", "lvl1", 4, "ngIf"], [1, "nav-item-sep"], [1, "text-muted"], [1, "lvl1"], ["appDropdownToggle", "", "matRipple", "", 3, "routerLink", 4, "ngIf"], ["appDropdownToggle", "", "matRipple", "", "target", "_blank", 3, "href", 4, "ngIf"], ["appDropdownToggle", "", "matRipple", "", 4, "ngIf"], ["class", "submenu lvl2", "appDropdown", "", 4, "ngIf"], ["appDropdownToggle", "", "matRipple", "", 3, "routerLink"], [1, "icon-name"], [1, "btn-icon", 3, "svgIcon"], [1, "item-name", "lvl1"], ["fxFlex", ""], [3, "class", "ngStyle", 4, "ngFor", "ngForOf"], [3, "ngStyle"], ["appDropdownToggle", "", "matRipple", "", "target", "_blank", 3, "href"], ["appDropdownToggle", "", "matRipple", ""], [1, "menu-caret"], ["appDropdown", "", 1, "submenu", "lvl2"], ["class", "submenu lvl3", "appDropdown", "", 4, "ngIf"], [1, "item-name", "lvl2"], ["appDropdown", "", 1, "submenu", "lvl3"], [1, "item-name", "lvl3"]],
+      consts: [[1, "sidenav-hold", "01"], ["appDropdown", "", 1, "sidenav"], ["appDropdownLink", "", "routerLinkActive", "open", 4, "ngFor", "ngForOf"], ["appDropdownLink", "", "routerLinkActive", "open"], ["class", "nav-item-sep", 4, "ngIf"], ["class", "lvl1", 4, "ngIf"], [1, "nav-item-sep"], [1, "text-muted"], [1, "lvl1"], ["appDropdownToggle", "", "matRipple", "", 3, "routerLink", 4, "ngIf"], ["appDropdownToggle", "", "matRipple", "", "target", "_blank", 3, "href", 4, "ngIf"], ["appDropdownToggle", "", "matRipple", "", 4, "ngIf"], ["class", "submenu lvl2", "appDropdown", "", 4, "ngIf"], ["appDropdownToggle", "", "matRipple", "", 3, "routerLink"], [1, "icon-name"], [1, "btn-icon", 3, "svgIcon"], [1, "item-name", "lvl1"], ["fxFlex", ""], [3, "class", "ngStyle", 4, "ngFor", "ngForOf"], [3, "ngStyle"], ["appDropdownToggle", "", "matRipple", "", "target", "_blank", 3, "href"], ["appDropdownToggle", "", "matRipple", ""], [1, "menu-caret"], ["appDropdown", "", 1, "submenu", "lvl2"], ["class", "submenu lvl3", "appDropdown", "", 4, "ngIf"], [1, "item-name", "lvl2"], ["appDropdown", "", 1, "submenu", "lvl3"], [1, "item-name", "lvl3"]],
       template: function SidenavComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -11186,846 +11188,69 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _classCallCheck(this, NavigationService);
 
       this.iconMenu = [{
-        name: "Home",
-        type: "icon",
-        tooltip: "Home",
-        icon: "home",
-        state: "home"
-      }, {
-        name: "Profile",
-        type: "icon",
-        tooltip: "Profile",
-        icon: "person",
-        state: "profile/overview"
-      }, {
-        name: "Tour",
-        type: "icon",
-        tooltip: "Tour",
-        icon: "flight_takeoff",
-        state: "tour"
-      }, {
-        name: "Dashboard",
+        name: " What We Do ",
         type: "dropDown",
-        tooltip: "Dashboard",
-        icon: "dashboard",
+        icon: "whatshot",
         state: "dashboard",
         sub: [{
-          name: "Default",
+          name: "New Construction Loans",
+          state: "default"
+        }, {
+          name: " Fix & Flip Loans",
+          state: "default"
+        }, {
+          name: "Community Development Loans",
+          state: "default"
+        }, {
+          name: "Rental Loans",
           state: "default"
         }]
       }, {
-        type: "separator",
-        name: "APPS"
-      }, {
-        name: "Chat",
-        type: "link",
-        tooltip: "Chat",
-        icon: "chat",
-        state: "chat",
-        badges: [{
-          color: "primary",
-          value: "New"
-        }]
-      }, {
-        name: "Calendar",
-        type: "link",
-        tooltip: "Calendar",
-        icon: "date_range",
-        state: "calendar"
-      }, {
-        name: "Todo",
-        type: "link",
-        tooltip: "Todo",
-        icon: "center_focus_strong",
-        state: "todo",
-        badges: [{
-          color: "#7367f0",
-          value: "4"
-        }]
-      }, {
-        name: "E-commerce",
+        name: " How We Help  ",
         type: "dropDown",
-        tooltip: "Shop",
-        icon: "shopping_cart",
-        state: "shop",
+        icon: "widgets",
+        state: "dashboard",
         sub: [{
-          name: "Product",
-          state: ""
+          name: "High Leverage Loans",
+          state: "default"
         }, {
-          name: "Product Details",
-          state: "products/5a9ae2106f155194e5c95d67"
+          name: "  Plan. Build. Grow.",
+          state: "default"
         }, {
-          name: "Cart",
-          state: "cart"
-        }, {
-          name: "Checkout",
-          state: "checkout"
+          name: "Finance Expertise",
+          state: "default"
         }]
       }, {
-        name: "Users",
+        name: " Who We Work With  ",
         type: "dropDown",
-        tooltip: "Users",
-        icon: "face",
-        state: "users",
+        icon: "people",
+        state: "dashboard",
         sub: [{
-          name: "List",
-          state: "list"
+          name: "Builders",
+          state: "default"
+        }, {
+          name: " Flippers",
+          state: "default"
+        }, {
+          name: "Developers",
+          state: "default"
+        }, {
+          name: " Investors",
+          state: "default"
+        }, {
+          name: "Brokers",
+          state: "default"
         }]
       }, {
-        name: "Inbox",
+        name: "Lender Login",
         type: "link",
-        tooltip: "Inbox",
-        icon: "email",
-        state: "inbox",
-        badges: [{
-          color: "#03a9f4",
-          value: "3"
-        }]
-      }, {
-        type: "separator",
-        name: "PAGES"
-      }, {
-        name: "Authentication",
-        type: "dropDown",
-        tooltip: "Pages",
-        icon: "https",
-        state: "auth",
-        sub: [{
-          name: "Sign up",
-          type: "dropDown",
-          sub: [{
-            name: "Sign up",
-            state: "signup"
-          }, {
-            name: "Sign up 2",
-            state: "signup2"
-          }, {
-            name: "Sign up 3",
-            state: "signup3"
-          }, {
-            name: "Sign up 4",
-            state: "signup4"
-          }]
-        }, {
-          name: "Sign in",
-          type: "dropDown",
-          sub: [{
-            name: "Sign in",
-            state: "signin"
-          }, {
-            name: "Sign in 2",
-            state: "signin2"
-          }, {
-            name: "Sign in 3",
-            state: "signin3"
-          }, {
-            name: "Sign in 4",
-            state: "signin4"
-          }]
-        }, {
-          name: "FORGOT",
-          state: "forgot-password"
-        }, {
-          name: "Error 404",
-          state: "404"
-        }, {
-          name: "Error 500",
-          state: "error"
-        }, {
-          name: "Coming Soon",
-          state: "coming-soon"
-        }]
-      }, {
-        name: "Invoice",
-        type: "link",
-        icon: "receipt",
-        state: "invoice/list",
-        badges: [{
-          color: "#4caf50",
-          value: "2"
-        }]
-      }, {
-        name: "Profile",
-        type: "dropDown",
-        tooltip: "Profile",
-        icon: "person",
-        state: "profile",
-        sub: [{
-          name: "Overview",
-          state: "overview"
-        }, {
-          name: "Settings",
-          state: "settings"
-        }, {
-          name: "Blank",
-          state: "blank"
-        }]
-      }, {
-        name: "Pricing",
-        type: "link",
-        tooltip: "Pricing",
-        icon: "attach_money",
+        icon: "directions",
         state: "pricing"
       }, {
-        name: "Help",
-        type: "dropDown",
-        tooltip: "Help",
-        icon: "add_location",
-        state: "help",
-        sub: [{
-          name: "Home",
-          state: "help-home"
-        }, {
-          name: "FAQs",
-          state: "faq"
-        }, {
-          name: "Support ",
-          state: "support"
-        }]
-      }, {
-        type: "separator",
-        name: "UI ELEMENTS"
-      }, {
-        name: "Components",
-        type: "dropDown",
-        tooltip: "Material",
-        icon: "favorite",
-        state: "material",
-        sub: [{
-          name: "Autocomplete",
-          state: "autocomplete"
-        }, {
-          name: "Checkbox",
-          state: "checkbox"
-        }, {
-          name: "Datepicker",
-          state: "datepicker"
-        }, {
-          name: "Form Field",
-          state: "form-field"
-        }, {
-          name: "Input Field",
-          state: "input-field"
-        }, {
-          name: "Radio Button",
-          state: "radio-button"
-        }, {
-          name: "Select",
-          state: "select"
-        }, {
-          name: "Slider",
-          state: "slider"
-        }, {
-          name: "Slider Toggle",
-          state: "slider-toggle"
-        }, {
-          name: "Navigation",
-          type: "dropDown",
-          sub: [{
-            name: "Menu",
-            state: "menu"
-          }, {
-            name: "Sidenav",
-            state: "sidenav"
-          }, {
-            name: "Toolbar",
-            state: "toolbar"
-          }]
-        }, {
-          name: "Card",
-          state: "card"
-        }, {
-          name: "Divider",
-          state: "divider"
-        }, {
-          name: "Expansion Panel",
-          state: "expansion-panel"
-        }, {
-          name: "Grid",
-          state: "grid"
-        }, {
-          name: "List",
-          state: "list"
-        }, {
-          name: "Stepper",
-          state: "stepper"
-        }, {
-          name: "Tab",
-          state: "tab-group"
-        }, {
-          name: "Tree",
-          state: "tree"
-        }, {
-          name: "BUTTONS",
-          state: "buttons"
-        }, {
-          name: "Button Toggle",
-          state: "button-toggle"
-        }, {
-          name: "Badge",
-          state: "badge"
-        }, {
-          name: "Chips",
-          state: "chips"
-        }, {
-          name: "Icons",
-          state: "icons"
-        }, {
-          name: "Progress Spinner",
-          state: "progress-spinner"
-        }, {
-          name: "Progress Bar",
-          state: "progress-bar"
-        }, {
-          name: "Ripples",
-          state: "ripples"
-        }, {
-          name: "Tooltip",
-          state: "tooltip"
-        }, {
-          name: "Bottom Sheet",
-          state: "bottom-sheet"
-        }, {
-          name: "Dialog",
-          state: "dialog"
-        }, {
-          name: "Snackbar",
-          state: "snackbar"
-        }, {
-          name: "Data Table",
-          type: "dropDown",
-          sub: [{
-            name: "paginator",
-            state: "paginator"
-          }, {
-            name: "Sort Header",
-            state: "sort-header"
-          }, {
-            name: "Table",
-            state: "table"
-          }]
-        }, {
-          name: "Buttons Loading",
-          state: "loading-buttons"
-        }]
-      }, {
-        name: "Dialogs",
-        type: "dropDown",
-        tooltip: "Dialogs",
-        icon: "filter_none",
-        state: "dialogs",
-        sub: [{
-          name: "CONFIRM",
-          state: "confirm"
-        }, {
-          name: "LOADER",
-          state: "loader"
-        }]
-      }, {
-        name: "Page Layouts",
-        type: "dropDown",
-        icon: "view_carousel",
-        state: "page-layouts",
-        sub: [{
-          name: "Left sidebar card",
-          state: "left-sidebar-card"
-        }, {
-          name: "Full width card",
-          state: "full-width-card"
-        }, {
-          name: "Full width card tab",
-          state: "full-width-card-tab"
-        }]
-      }, {
-        name: "Others",
-        type: "dropDown",
-        tooltip: "Extras",
-        icon: "bubble_chart",
-        state: "others",
-        sub: [{
-          name: "GALLERY",
-          state: "gallery"
-        }, {
-          name: "Colors",
-          state: "colors"
-        }, {
-          name: "BLANK",
-          state: "blank"
-        }]
-      }, {
-        name: "Maticons",
+        name: " Sign Up ",
         type: "link",
-        tooltip: "Material Icons",
-        icon: "store",
-        state: "icons"
-      }, {
-        type: "separator",
-        name: "Forms & Table"
-      }, {
-        name: "Forms",
-        type: "dropDown",
-        tooltip: "Forms",
-        icon: "description",
-        state: "forms",
-        sub: [{
-          name: "BASIC",
-          state: "basic"
-        }, {
-          name: "EDITOR",
-          state: "editor"
-        }, {
-          name: "UPLOAD",
-          state: "upload"
-        }, {
-          name: "WIZARD",
-          state: "wizard"
-        }]
-      }, {
-        name: "Tables",
-        type: "dropDown",
-        tooltip: "Tables",
-        icon: "format_line_spacing",
-        state: "tables",
-        sub: [{
-          name: "FULLSCREEN",
-          state: "fullscreen"
-        }, {
-          name: "PAGING",
-          state: "paging"
-        }, {
-          name: "FILTER",
-          state: "filter"
-        }]
-      }, {
-        type: "separator",
-        name: "CUSTOMIZE"
-      }, {
-        name: "Configuration",
-        type: "extLink",
-        tooltip: "Configuration",
-        icon: "library_books",
-        state: "http://"
-      }];
-      this.separatorMenu = [{
-        type: "separator",
-        name: "Custom components"
-      }, {
-        name: "Dashboard",
-        type: "link",
-        tooltip: "Dashboard",
-        icon: "dashboard",
-        state: "dashboard"
-      }, {
-        name: "Inbox",
-        type: "link",
-        tooltip: "Inbox",
-        icon: "inbox",
-        state: "inbox"
-      }, {
-        name: "Chat",
-        type: "link",
-        tooltip: "Chat",
-        icon: "chat",
-        state: "chat"
-      }, {
-        name: "Users",
-        type: "link",
-        tooltip: "Users",
-        icon: "format_list_bulleted",
-        state: "users/user-list"
-      }, {
-        name: "Dialogs",
-        type: "dropDown",
-        tooltip: "Dialogs",
-        icon: "filter_none",
-        state: "dialogs",
-        sub: [{
-          name: "CONFIRM",
-          state: "confirm"
-        }, {
-          name: "LOADER",
-          state: "loader"
-        }]
-      }, {
-        name: "Profile",
-        type: "dropDown",
-        tooltip: "Profile",
-        icon: "person",
-        state: "profile",
-        sub: [{
-          name: "OVERVIEW",
-          state: "overview"
-        }, {
-          name: "SETTINGS",
-          state: "settings"
-        }, {
-          name: "BLANK",
-          state: "blank"
-        }]
-      }, {
-        name: "Tour",
-        type: "link",
-        tooltip: "Tour",
-        icon: "flight_takeoff",
-        state: "tour"
-      }, {
-        type: "separator",
-        name: "Integrated components"
-      }, {
-        name: "Calendar",
-        type: "link",
-        tooltip: "Calendar",
-        icon: "date_range",
-        state: "calendar"
-      }, {
-        name: "Material",
-        type: "dropDown",
-        tooltip: "Material",
-        icon: "favorite",
-        state: "material",
-        sub: [{
-          name: "BUTTONS",
-          state: "buttons"
-        }, {
-          name: "Button Toggle",
-          state: "button-toggle"
-        }, {
-          name: "Buttons Loading",
-          state: "loading-buttons"
-        }, {
-          name: "CARDS",
-          state: "cards"
-        }, {
-          name: "GRIDS",
-          state: "grids"
-        }, {
-          name: "LISTS",
-          state: "lists"
-        }, {
-          name: "MENU",
-          state: "menu"
-        }, {
-          name: "TABS",
-          state: "tabs"
-        }, {
-          name: "SELECT",
-          state: "select"
-        }, {
-          name: "RADIO",
-          state: "radio"
-        }, {
-          name: "AUTOCOMPLETE",
-          state: "autocomplete"
-        }, {
-          name: "SLIDER",
-          state: "slider"
-        }, {
-          name: "PROGRESS",
-          state: "progress"
-        }, {
-          name: "SNACKBAR",
-          state: "snackbar"
-        }]
-      }, {
-        name: "MAP",
-        type: "link",
-        tooltip: "Map",
-        icon: "add_location",
-        state: "map"
-      }, {
-        name: "Charts",
-        type: "link",
-        tooltip: "Charts",
-        icon: "show_chart",
-        state: "charts"
-      }, {
-        type: "separator",
-        name: "Other components"
-      }, {
-        name: "SESSIONS",
-        type: "dropDown",
-        tooltip: "Pages",
-        icon: "view_carousel",
-        state: "sessions",
-        sub: [{
-          name: "SIGNUP",
-          state: "signup"
-        }, {
-          name: "SIGNIN",
-          state: "signin"
-        }, {
-          name: "FORGOT",
-          state: "forgot-password"
-        }, {
-          name: "LOCKSCREEN",
-          state: "lockscreen"
-        }, {
-          name: "NOTFOUND",
-          state: "404"
-        }, {
-          name: "ERROR",
-          state: "error"
-        }]
-      }, {
-        name: "Others",
-        type: "dropDown",
-        tooltip: "Others",
-        icon: "blur_on",
-        state: "others",
-        sub: [{
-          name: "GALLERY",
-          state: "gallery"
-        }, {
-          name: "PRICINGS",
-          state: "pricing"
-        }, {
-          name: "USERS",
-          state: "users"
-        }, {
-          name: "BLANK",
-          state: "blank"
-        }]
-      }, {
-        name: "Maticons",
-        type: "link",
-        tooltip: "Material Icons",
-        icon: "store",
-        state: "icons"
-      }, {
-        name: "Colors",
-        type: "link",
-        tooltip: "Colors",
-        icon: "color_lens",
-        state: "colors"
-      }, {
-        name: "DOC",
-        type: "extLink",
-        tooltip: "Configuration",
-        icon: "library_books",
-        state: "http://"
-      }];
-      this.plainMenu = [{
-        name: "DASHBOARD",
-        type: "link",
-        tooltip: "Dashboard",
-        icon: "dashboard",
-        state: "dashboard"
-      }, {
-        name: "INBOX",
-        type: "link",
-        tooltip: "Inbox",
-        icon: "inbox",
-        state: "inbox"
-      }, {
-        name: "CHAT",
-        type: "link",
-        tooltip: "Chat",
-        icon: "chat",
-        state: "chat"
-      }, {
-        name: "CRUD Table",
-        type: "link",
-        tooltip: "CRUD Table",
-        icon: "format_list_bulleted",
-        state: "cruds/ngx-table"
-      }, {
-        name: "CALENDAR",
-        type: "link",
-        tooltip: "Calendar",
-        icon: "date_range",
-        state: "calendar"
-      }, {
-        name: "DIALOGS",
-        type: "dropDown",
-        tooltip: "Dialogs",
-        icon: "filter_none",
-        state: "dialogs",
-        sub: [{
-          name: "CONFIRM",
-          state: "confirm"
-        }, {
-          name: "LOADER",
-          state: "loader"
-        }]
-      }, {
-        name: "MATERIAL",
-        type: "dropDown",
-        icon: "favorite",
-        state: "component",
-        sub: [{
-          name: "BUTTONS",
-          state: "buttons"
-        }, {
-          name: "Button Toggle",
-          state: "button-toggle"
-        }, {
-          name: "Buttons Loading",
-          state: "loading-buttons"
-        }, {
-          name: "CARDS",
-          state: "cards"
-        }, {
-          name: "GRIDS",
-          state: "grids"
-        }, {
-          name: "LISTS",
-          state: "lists"
-        }, {
-          name: "MENU",
-          state: "menu"
-        }, {
-          name: "TABS",
-          state: "tabs"
-        }, {
-          name: "SELECT",
-          state: "select"
-        }, {
-          name: "RADIO",
-          state: "radio"
-        }, {
-          name: "AUTOCOMPLETE",
-          state: "autocomplete"
-        }, {
-          name: "SLIDER",
-          state: "slider"
-        }, {
-          name: "PROGRESS",
-          state: "progress"
-        }, {
-          name: "SNACKBAR",
-          state: "snackbar"
-        }]
-      }, {
-        name: "FORMS",
-        type: "dropDown",
-        tooltip: "Forms",
-        icon: "description",
-        state: "forms",
-        sub: [{
-          name: "BASIC",
-          state: "basic"
-        }, {
-          name: "EDITOR",
-          state: "editor"
-        }, {
-          name: "UPLOAD",
-          state: "upload"
-        }, {
-          name: "WIZARD",
-          state: "wizard"
-        }]
-      }, {
-        name: "TABLES",
-        type: "dropDown",
-        tooltip: "Tables",
-        icon: "format_line_spacing",
-        state: "tables",
-        sub: [{
-          name: "FULLSCREEN",
-          state: "fullscreen"
-        }, {
-          name: "PAGING",
-          state: "paging"
-        }, {
-          name: "FILTER",
-          state: "filter"
-        }]
-      }, {
-        name: "PROFILE",
-        type: "dropDown",
-        tooltip: "Profile",
-        icon: "person",
-        state: "profile",
-        sub: [{
-          name: "OVERVIEW",
-          state: "overview"
-        }, {
-          name: "SETTINGS",
-          state: "settings"
-        }, {
-          name: "BLANK",
-          state: "blank"
-        }]
-      }, {
-        name: "TOUR",
-        type: "link",
-        tooltip: "Tour",
-        icon: "flight_takeoff",
-        state: "tour"
-      }, {
-        name: "MAP",
-        type: "link",
-        tooltip: "Map",
-        icon: "add_location",
-        state: "map"
-      }, {
-        name: "CHARTS",
-        type: "link",
-        tooltip: "Charts",
-        icon: "show_chart",
-        state: "charts"
-      }, {
-        name: "DND",
-        type: "link",
-        tooltip: "Drag and Drop",
-        icon: "adjust",
-        state: "dragndrop"
-      }, {
-        name: "SESSIONS",
-        type: "dropDown",
-        tooltip: "Pages",
-        icon: "view_carousel",
-        state: "sessions",
-        sub: [{
-          name: "SIGNUP",
-          state: "signup"
-        }, {
-          name: "SIGNIN",
-          state: "signin"
-        }, {
-          name: "FORGOT",
-          state: "forgot-password"
-        }, {
-          name: "LOCKSCREEN",
-          state: "lockscreen"
-        }, {
-          name: "NOTFOUND",
-          state: "404"
-        }, {
-          name: "ERROR",
-          state: "error"
-        }]
-      }, {
-        name: "OTHERS",
-        type: "dropDown",
-        tooltip: "Others",
-        icon: "blur_on",
-        state: "others",
-        sub: [{
-          name: "GALLERY",
-          state: "gallery"
-        }, {
-          name: "PRICINGS",
-          state: "pricing"
-        }, {
-          name: "USERS",
-          state: "users"
-        }, {
-          name: "BLANK",
-          state: "blank"
-        }]
-      }, {
-        name: "MATICONS",
-        type: "link",
-        tooltip: "Material Icons",
-        icon: "store",
-        state: "icons"
-      }, {
-        name: "DOC",
-        type: "extLink",
-        tooltip: "Configuration",
-        icon: "library_books",
-        state: "http://"
+        icon: "assignment_turned_in",
+        state: "pricing"
       }]; // Icon menu TITLE at the very top of navigation.
       // This title will appear if any icon type item is present in menu.
 
