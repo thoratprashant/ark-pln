@@ -526,7 +526,7 @@ const rootRouterConfig = [
         component: _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__["AuthLayoutComponent"],
         children: [
             {
-                path: 'auth',
+                path: 'broker',
                 loadChildren: () => Promise.all(/*! import() | views-sessions-sessions-module */[__webpack_require__.e("default~views-profile-profile-module~views-sessions-sessions-module"), __webpack_require__.e("views-sessions-sessions-module")]).then(__webpack_require__.bind(null, /*! ./views/sessions/sessions.module */ "./src/app/views/sessions/sessions.module.ts")).then(m => m.SessionsModule),
                 data: { title: 'Session' }
             }
@@ -2302,7 +2302,9 @@ AdminLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthLayoutComponent", function() { return AuthLayoutComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
 
 
 
@@ -2312,14 +2314,30 @@ class AuthLayoutComponent {
     }
 }
 AuthLayoutComponent.ɵfac = function AuthLayoutComponent_Factory(t) { return new (t || AuthLayoutComponent)(); };
-AuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthLayoutComponent, selectors: [["app-auth-layout"]], decls: 1, vars: 0, template: function AuthLayoutComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
-    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]], encapsulation: 2 });
+AuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthLayoutComponent, selectors: [["app-auth-layout"]], decls: 10, vars: 0, consts: [[1, "header-topnav", "mat-elevation-z2"], [1, "topnav"], [1, "topbar-branding", 2, "flex", "auto"], ["src", "assets/images/arkenea/white-logo.webp", "alt", "", 1, "app-logo"], ["mat-raised-button", "", 1, "topbar-button-right", "img-button", "login--btn"]], template: function AuthLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Already have an account? ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Login ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "router-outlet");
+    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]], styles: [".header-topnav.mat-elevation-z2[_ngcontent-%COMP%] {\n  background: #000 !important;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%]   .app-logo[_ngcontent-%COMP%] {\n  border-radius: 0;\n  height: auto;\n  width: auto;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%] {\n  color: #000;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%]     .mat-button-wrapper {\n  font-weight: 400;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9DOlxcUHJhc2hhbnQtd29ya3NwYWNlXFxhcmstcGxuL3NyY1xcYXBwXFxzaGFyZWRcXGNvbXBvbmVudHNcXGxheW91dHNcXGF1dGgtbGF5b3V0XFxhdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9hdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVRLDJCQUEyQjtBQ0FuQzs7QURGQTtFQUlZLGFBQWE7RUFDYixtQkFBbUI7QUNFL0I7O0FEUEE7RUFPZ0IsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixXQUFXO0FDSTNCOztBRGJBO0VBYVksV0FBVztBQ0l2Qjs7QURqQkE7RUFnQm9CLGdCQUFnQjtBQ0twQyIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL2xheW91dHMvYXV0aC1sYXlvdXQvYXV0aC1sYXlvdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLXRvcG5hdntcclxuICAgICYubWF0LWVsZXZhdGlvbi16MntcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjMDAwICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgLnRvcGJhci1icmFuZGluZ3tcclxuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgICAgICAgLmFwcC1sb2dve1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMDtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogYXV0bztcclxuICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5sb2dpbi0tYnRue1xyXG4gICAgICAgICAgICBjb2xvcjogIzAwMDtcclxuICAgICAgICAgICAgOjpuZy1kZWVwe1xyXG4gICAgICAgICAgICAgICAgLm1hdC1idXR0b24td3JhcHBlcntcclxuICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcbiIsIi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIge1xuICBiYWNrZ3JvdW5kOiAjMDAwICFpbXBvcnRhbnQ7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLnRvcGJhci1icmFuZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLnRvcGJhci1icmFuZGluZyAuYXBwLWxvZ28ge1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBoZWlnaHQ6IGF1dG87XG4gIHdpZHRoOiBhdXRvO1xufVxuXG4uaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIC5sb2dpbi0tYnRuIHtcbiAgY29sb3I6ICMwMDA7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLmxvZ2luLS1idG4gOjpuZy1kZWVwIC5tYXQtYnV0dG9uLXdyYXBwZXIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthLayoutComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'app-auth-layout',
-                templateUrl: './auth-layout.component.html'
+                templateUrl: './auth-layout.component.html',
+                styleUrls: ['./auth-layout.component.scss']
             }]
     }], function () { return []; }, null); })();
 
