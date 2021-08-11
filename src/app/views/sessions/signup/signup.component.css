@@ -29,10 +29,7 @@
 .options-div{
 	display: flex;
 	justify-content: center;
-
-  div{
-    position: relative;
-  }
+ 
 }
 .option-span{
 	font-weight: bold;

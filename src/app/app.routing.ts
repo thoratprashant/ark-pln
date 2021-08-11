@@ -26,7 +26,7 @@ export const rootRouterConfig: Routes = [
     component: AuthLayoutComponent,
     children: [
       { 
-        path: 'auth', 
+        path: 'broker', 
         loadChildren: () => import('./views/sessions/sessions.module').then(m => m.SessionsModule),
         data: { title: 'Session'} 
       }

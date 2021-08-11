@@ -14,7 +14,9 @@ import { SignupComponent } from './signup/signup.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { SessionsRoutes } from "./sessions.routing";
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ErrorComponent } from './error/error.component'; 
+import { ErrorComponent } from './error/error.component';
+import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.component'; 
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   imports: [
@@ -24,10 +26,11 @@ import { ErrorComponent } from './error/error.component';
     SharedMaterialModule,
     FlexLayoutModule,
     PerfectScrollbarModule,
+    MatStepperModule,
     RouterModule.forChild(SessionsRoutes)
   ],
   declarations: [
     ForgotPasswordComponent,ComingSoonComponent, SigninComponent, SignupComponent, NotFoundComponent, 
-    ErrorComponent]
+    ErrorComponent, BrokerSignUpComponent]
 })
 export class SessionsModule { }

@@ -6,11 +6,21 @@ import { SignupComponent } from "./signup/signup.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { ErrorComponent } from "./error/error.component"; 
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { BrokerSignUpComponent } from "./broker/broker-sign-up/broker-sign-up.component";
 
 export const SessionsRoutes: Routes = [
   {
     path: "",
     children: [
+
+      {
+        path: "signup",
+        component: BrokerSignUpComponent,
+        data: { title: "Broker Signup" }
+      },
+
+
+
       {
         path: "signup",
         component: SignupComponent,
