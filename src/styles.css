@@ -73,3 +73,12 @@
     white-space: normal;
 }
  
+.header-topnav .topbar-branding{
+    flex-shrink: 0 !important;
+}
+.header-topnav .topbar-branding img{
+    max-height: 100% !important;
+    height: unset !important;
+    width: unset !important;
+    border-radius: 0 !important;
+}

@@ -33,6 +33,8 @@ import { marcoSidebarComponent, marcoSidebarTogglerDirective } from './marco-sid
 import { PreLoginLayoutComponent } from './layouts/pre-login/pre-login-layout.component'; 
 import { PreLoginHeaderTopComponent } from './pre-login-header-top/pre-login-header-top.component';
 import { PreLoginFooterComponent } from './pre-login-footer/pre-login-footer.component';
+import { BrokerLayoutComponent } from './layouts/broker-layout/broker-layout.component';
+import { BrokerHeaderTopComponent } from './broker-top-header/broker-top-header.component';
 
 
 const components = [
@@ -54,7 +56,9 @@ const components = [
 
   PreLoginLayoutComponent,
   PreLoginHeaderTopComponent,
-  PreLoginFooterComponent
+  PreLoginFooterComponent,
+  BrokerLayoutComponent,
+  BrokerHeaderTopComponent
 ]
 
 @NgModule({

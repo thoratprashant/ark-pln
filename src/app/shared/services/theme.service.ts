@@ -23,7 +23,7 @@ export class ThemeService {
     "isActive": false
   }, {
     "name": "marco-blue",
-    "baseColor": "#03a9f4",
+    "baseColor": "#6589a9",
     "isActive": true
   },
   {

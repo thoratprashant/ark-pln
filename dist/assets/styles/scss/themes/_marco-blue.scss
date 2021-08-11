@@ -27,7 +27,7 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
         background: #fff;
         color: #333;
         .notification-number {
-            background: #03A9F4 !important;
+            background: #6589a9 !important;
         }
     }
    .topnav {
@@ -35,7 +35,7 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
         background: map-get($mat-primary, 500) !important;
        }
        .notification-number {
-        background: #03A9F4 !important;
+        background: #6589a9 !important;
     }
    }
    .mat-cl-primary {
@@ -45,15 +45,15 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
         color: map-get($mat-primary, 500) !important; 
     }
    .selected-inbox {
-   color: #03A9F4 !important;
+   color: #6589a9 !important;
 }
 .breadcrumb {
     li:nth-child(1) {
-        color: #03A9F4 !important;
+        color: #6589a9 !important;
     }
 }
 .mat-checkbox-checked .mat-checkbox-background {
-    background-color: #03A9F4 !important;
+    background-color: #6589a9 !important;
 }
 .mat-checkbox-frame {
     border-color: rgba(0, 0, 0, 0.54) !important;
@@ -137,7 +137,7 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
     .cal-week-view .cal-day-headers .cal-drag-over,
     .cal-day-view .cal-hour-segment:hover, 
     .cal-day-view .cal-drag-over .cal-hour-segment {
-        background: #03A9F4 !important;
+        background: #6589a9 !important;
     }
     .mat-bg-warn {
         background-color: #f44336;
