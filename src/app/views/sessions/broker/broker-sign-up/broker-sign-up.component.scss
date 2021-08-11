@@ -3,4 +3,42 @@
     padding: 30px 1rem;
     height: calc(100vh - 67px);
     overflow: auto;
+   ::ng-deep{
+    .mat-stepper-horizontal{
+        background-color: transparent;
+        width: 100%;
+    }
+    .mat-horizontal-content-container{
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mat-card-content{
+        padding: 1rem;
+    }
+   }
+   .signup--step--one{
+       h1{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+       }
+       .or{
+        font-size: 20px;
+        font-weight: 500;
+        color: #222;
+        margin: 5px 0 25px 0;
+       }
+       .mat-mini-fab{
+        background-color: #eee;
+        box-shadow: none;
+        }
+        .fa {
+            font-size: 17px;
+            color: #333;
+        }
+        .primary-btn{
+            margin-top: 25px;
+        }
+   }
 }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from "@angular/router";
-import { SharedMaterialModule } from 'app/shared/shared-material.module';
+import { SharedMaterialModule } from 'app/shared/shared-material.module'; 
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -16,7 +16,7 @@ import { SessionsRoutes } from "./sessions.routing";
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
 import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.component'; 
-import { MatStepperModule } from '@angular/material/stepper';
+
 
 @NgModule({
   imports: [
@@ -25,8 +25,7 @@ import { MatStepperModule } from '@angular/material/stepper';
     ReactiveFormsModule,
     SharedMaterialModule,
     FlexLayoutModule,
-    PerfectScrollbarModule,
-    MatStepperModule,
+    PerfectScrollbarModule, 
     RouterModule.forChild(SessionsRoutes)
   ],
   declarations: [
