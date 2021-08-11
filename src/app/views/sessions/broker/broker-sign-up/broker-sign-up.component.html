@@ -72,7 +72,7 @@
                                     </div>
                                     <div fxLayout="column" fxLayoutAlign="start">
                                         <mat-form-field class="full-width">
-                                            <input  matInput type="text" name="first_name" value="Abhi"
+                                            <input matInput type="text" name="first_name" value="Abhi"
                                                 placeholder="User / Vendor name *" disabled />
                                         </mat-form-field>
                                         <mat-form-field class="full-width">
@@ -80,14 +80,43 @@
                                                 placeholder="Last Name *" disabled />
                                         </mat-form-field>
                                         <mat-form-field class="full-width">
-                                            <input value="123-456-7890" matInput type="number" name="phone"
+                                            <input value="123-456-7890" matInput type="text" name="phone"
                                                 placeholder="Phone Number *" disabled />
                                         </mat-form-field>
                                         <mat-form-field class="full-width">
                                             <mat-label>Email</mat-label>
                                             <input matInput value="abhi@abhigolhar.com" type="email" name="email"
                                                 placeholder="Email *" disabled />
-                                        </mat-form-field>
+                                            <mat-hint>Change Email</mat-hint>
+                                        </mat-form-field>  
+
+                                        <div class="otp--section full-width" fxLayout="column">
+                                            <p>Please enter the OTP we sent to your email address for verification.</p>
+                                            <div class="enter--otp" fxLayout="row" fxLayoutGap="16px" fxLayoutGap.xs="5px">
+                                                <mat-form-field> 
+                                                    <input matInput value="1" type="text"/> 
+                                                </mat-form-field>
+                                                <mat-form-field> 
+                                                    <input matInput value="2" type="text"/> 
+                                                </mat-form-field>
+                                                <mat-form-field> 
+                                                    <input matInput value="3" type="text"/> 
+                                                </mat-form-field>
+                                                <mat-form-field> 
+                                                    <input matInput value="4" type="text"/> 
+                                                </mat-form-field>
+                                                <mat-form-field> 
+                                                    <input matInput value="5" type="text"/> 
+                                                </mat-form-field>
+                                                <mat-form-field> 
+                                                    <input matInput value="6" type="text"/> 
+                                                </mat-form-field>
+                                            </div>
+                                            <a fxLayout="row" fxLayoutAlign="center center"class="clr-6589a9 resend--code">Resend</a>
+
+                                        </div>
+
+
                                         <button mat-raised-button class="primary-btn" matStepperNext>
                                             Verify Email
                                         </button>

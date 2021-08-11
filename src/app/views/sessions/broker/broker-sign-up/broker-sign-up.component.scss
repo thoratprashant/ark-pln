@@ -16,6 +16,22 @@
     .mat-card-content{
         padding: 1rem;
     }
+    .mat-form-field-hint-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 7px;
+        font-size: 12px; 
+        color: #6589a9;
+        .mat-hint{
+            color: #6589a9;
+            font-weight: 500;
+            cursor: pointer;
+            z-index: 999999;
+        }
+        .mat-form-field-hint-spacer{
+            display: none;
+        } 
+    }
    }
    .signup--step--one{
        h1{
@@ -39,6 +55,38 @@
         }
         .primary-btn{
             margin-top: 25px;
+        } 
+        .otp--section{
+            p{
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #222;
+                line-height: 19px;
+                text-align: center;
+                margin-top: 25px;
+            }
+            .enter--otp{
+                ::ng-deep{
+                    .mat-form-field-infix{
+                        width: auto;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                    .mat-form-field-hint-wrapper{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 7px;
+                        font-size: 12px; 
+                        color: #6589a9;
+                    }
+                }                
+            }
+            .resend--code{
+                font-size: 12px;
+                margin-top: -7px;
+                font-weight: 500;
+            }
         }
    }
 }
