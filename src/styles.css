@@ -63,6 +63,7 @@
 }
 
 /* Stepper code (start here) */
+.marco-blue .mat-progress-bar-buffer,
 .marco-blue .mat-step-header .mat-step-icon-selected, 
 .marco-blue .mat-step-header .mat-step-icon-state-done, 
 .marco-blue .mat-step-header .mat-step-icon-state-edit{
@@ -71,6 +72,10 @@
 .marco-blue .mat-step-header .mat-step-label, 
 .marco-blue .mat-step-header .mat-step-optional {
     color: #888 ;
+} 
+.marco-blue .mat-form-field-appearance-legacy.mat-form-field-disabled .mat-form-field-underline{
+    background-image: none !important; 
+    border-bottom: 1px solid #ddd !important;
 }
 /* Stepper code (end here) */
  

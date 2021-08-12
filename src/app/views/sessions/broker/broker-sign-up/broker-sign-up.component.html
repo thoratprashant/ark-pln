@@ -128,12 +128,55 @@
                     </form>
                 </mat-step>
                 <mat-step>
-                    <ng-template matStepLabel>Set Password</ng-template>
-                    You are now done.
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button (click)="stepper.reset()">Reset</button>
-                    </div>
+                    <form [formGroup]="thirdFormGroup">
+                        <ng-template matStepLabel>Partner with the PLN</ng-template>
+                        <div class="signIn-wrapper signup--step--one">
+                            <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
+                            <mat-card>
+                                <mat-card-content>
+                                    <div fxLayout="row" fxLayoutAlign="center center">
+                                        <h1>Partner with the PLN</h1>
+                                    </div>
+                                    <div fxLayout="column" fxLayoutAlign="start">
+                                        <mat-form-field class="full-width">
+                                            <input matInput type="text" name="first_name" value="Abhi"
+                                                placeholder="User / Vendor name *" disabled />
+                                        </mat-form-field>
+                                        <mat-form-field class="full-width">
+                                            <input value="Golhar" matInput type="text" name="last_name"
+                                                placeholder="Last Name *" disabled />
+                                        </mat-form-field>
+                                        <mat-form-field class="full-width">
+                                            <input value="123-456-7890" matInput type="text" name="phone"
+                                                placeholder="Phone Number *" disabled />
+                                        </mat-form-field>
+                                        <mat-form-field class="full-width">
+                                            <mat-label>Email</mat-label>
+                                            <input matInput value="abhi@abhigolhar.com" type="email" name="email"
+                                                placeholder="Email *" disabled />
+                                            <mat-hint>Change Email</mat-hint>
+                                        </mat-form-field>
+
+                                        <div class="cyp--section full-width" fxLayout="column">
+                                            <h5>Create Your Password</h5>
+                                            <mat-form-field class="full-width">
+                                                <input  matInput type="password" name="cyp"
+                                                    placeholder="Choose a Password" />
+                                            </mat-form-field>
+                                            <mat-form-field class="full-width">
+                                                <input  matInput type="password" name="cyp"
+                                                    placeholder="Confirm Password" />
+                                            </mat-form-field>
+                                        </div> 
+                                        <button mat-raised-button class="primary-btn" matStepperNext>
+                                            Setup Account
+                                        </button>
+                                    </div>
+
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                    </form>
                 </mat-step>  
             </mat-horizontal-stepper>
 

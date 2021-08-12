@@ -9,6 +9,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class BrokerSignUpComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  thirdFormGroup: FormGroup;
  
 
   constructor(private _formBuilder: FormBuilder) {}
@@ -20,9 +21,8 @@ export class BrokerSignUpComponent implements OnInit {
       phoneNumber: ["",Validators.required],
       email: ["",Validators.required],
     });
-    this.secondFormGroup = this._formBuilder.group({
-       
-    });
+    this.secondFormGroup = this._formBuilder.group({ });
+    this.thirdFormGroup = this._formBuilder.group({ });
   }
 
 }
