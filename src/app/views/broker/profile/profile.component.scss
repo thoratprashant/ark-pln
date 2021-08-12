@@ -76,20 +76,6 @@
 
 
 
-// .mat-icon{
-//     background-repeat: no-repeat;
-//     display: inline-block;
-//     /* fill: currentColor; */
-//     height: 30px;
-//     width: 30px;
-//     background-color: #6589a9;
-//     border-radius: 50%;
-//     color: white;
-//     font-size: 30px;
-//     padding: 10px;
-//     margin-right:20px;
-   
-// }
 
 
 
@@ -118,11 +104,81 @@
     
 }
 
-.user-info{
+.user-info {
     display: grid;
     grid-template-columns: 0.3fr 1fr;
-    gap: 15px;
+    gap: 14px;
 }
+
+.icon-bg-wrap .mat-icon {
+    position: absolute;
+    top: 0px;
+    left: -4px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: #6589a9;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.mat-icon{
+    color: white !important;
+}
+
+.mat-tab-label, .mat-tab-link {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.mat-tab-label {
+    height: 48px;
+    padding: 0 55px !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.main-profile-wrapper .mat-tab-labels {
+    display: flex;
+    border-top: 1px solid #dadada;
+    padding-top: 8px;
+    background-color: #000;
+}
+
+.mat-raised-button.primary-btn {
+    background-color: #000 !important;
+    color: #fff;
+    font-size: 14px;
+    white-space: normal;
+    float: left;
+    margin-left: 105px;
+}
+
+ .mat-form-field-wrapper {
+  
+    width: 100%;
+    min-width: 535px;
+    position: relative;
+    min-width: 535px !important;
+}
+
+.mat-input-wrapper{
+    min-width:535px !important;
+  }
+
+
+
 
 
 
