@@ -36,7 +36,7 @@
                         <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px"
                           fxFlex.xl="65px">
                           <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
-                            <mat-icon>person</mat-icon>
+                            <mat-icon class="">person</mat-icon>
                           </div>
                         </div>
                         <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="30"
@@ -87,7 +87,7 @@
                       <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
                         <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px" fxFlex.xl="65px">
                           <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
-                            <mat-icon>email</mat-icon>
+                            <mat-icon>add_location</mat-icon>
                           </div>
                         </div>
                         <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
@@ -119,124 +119,165 @@
 
         </div>
       </mat-tab>
+
+      <!-- Organization code -->
+
       <mat-tab label="Organization Information">
-        <div class="main" fxLayout="row wrap">
-          <div class="column" fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="50">
-            <div>
-              <!-- Contact Information -->
+        <mat-t class="main" fxLayout="row wrap">
+          <div class="column" fxFlex="100">
+            
               <mat-card class="default m-0">
                 <div class="card-title">
                   <h4 class="fw-500">Organization Information</h4>
                 </div>
-                <mat-card-content>
+                <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100">
+                  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"  fxLayoutGap="30px" fxFlex="100">
+                    <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="30">
+                      <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
 
-                  <mat-list>
-                    <div class="user-info">
-                      <mat-list-item>
-                        <div class="icon-bg-wrap mr-8">
-                          <div class="icon-circle w-2.5 h-2.5 rounded-circle mat-bg-primary"></div>
-                          <mat-icon class="mr-1 mat-color-primary">business</mat-icon>
+                        <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px"
+                          fxFlex.xl="65px">
+                          <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
+                            <mat-icon>business</mat-icon>
+                          </div>
                         </div>
-                        <p class="name" style="margin-left: 15px !important;font-size:14px;">The Private Lender</p>
-                      </mat-list-item>
-                      <mat-list-item>
-                        <div class="icon-bg-wrap mr-8">
-                          <div class="icon-circle w-2.5 h-2.5 rounded-circle mat-bg-primary"></div>
-                          <mat-icon class="mr-1 mat-color-primary">email</mat-icon>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="30"
+                          fxFlex.xl="30">
+                          <h5 class="fnt-14 clr-222 mb-3">The Private Lender Network</h5>
+                          <p class="m-0 clr-bbb fnt-12">Organization Name</p>
                         </div>
-                        <p class="mail" style="margin-left:  15px !important;;font-size:14px;">pln@gmail.com</p>
-                      </mat-list-item>
-
-                      <mat-list-item>
-                        <div class="icon-bg-wrap mr-8">
-                          <div class="icon-circle w-2.5 h-2.5 rounded-circle mat-bg-primary"></div>
-                          <mat-icon class="mr-1 mat-color-primary">phone</mat-icon>
-                        </div>
-                        <p class="number" style="margin-left:15px;font-size:14px;">123-456-7890</p>
-                      </mat-list-item>
-                      <mat-list-item>
-                        <div class="icon-bg-wrap mr-8">
-                          <div class="icon-circle w-2.5 h-2.5 rounded-circle mat-bg-primary"></div>
-                          <mat-icon class="mr-1 mat-color-primary">add_location</mat-icon>
-                        </div>
-                        <p class="city" style="margin-left: 15px !important;">Galesberg</p>
-                        <p class="State" style="margin-left: 37px !important;">Illinois</p>
-                        <p class="zip code" style="margin-left: 59px !important;">61401</p>
-                        <p class="street-address" style="margin-left: 37px !important;">9 Borris Road Bethel Park</p>
-                      </mat-list-item>
-                      <mat-list>
-
-                      </mat-list>
-
+                      </div>
                     </div>
+                    <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="70" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="70">
+                      <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px" fxFlex.xl="65px">
+                          <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
+                            <mat-icon>email</mat-icon>
+                          </div>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+                          fxFlex.xl="100">
+                          <h5 class="fnt-14 clr-222 mb-3">plan@gmail.com</h5>
+                          <p class="m-0 clr-bbb fnt-12">Email</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"  fxLayoutGap="30px" fxFlex="100">
+                    <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="30">
+                      <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
 
-
-                  </mat-list>
+                        <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px"
+                          fxFlex.xl="65px">
+                          <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
+                            <mat-icon>person</mat-icon>
+                          </div>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="30"
+                          fxFlex.xl="30">
+                          <h5 class="fnt-14 clr-222 mb-3">123-456-7890</h5>
+                          <p class="m-0 clr-bbb fnt-12">Phone Number</p>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="70" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="70">
+                      <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px" fxFlex.xl="65px">
+                          <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
+                            <mat-icon>add_location</mat-icon>
+                          </div>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+                          fxFlex.xl="100">
+                          <h5 class="fnt-14 clr-222 mb-3">Galesburg</h5>
+                          <p class="m-0 clr-bbb fnt-12">City</p>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+                          fxFlex.xl="100">
+                          <h5 class="fnt-14 clr-222 mb-3">Illinois</h5>
+                          <p class="m-0 clr-bbb fnt-12">State</p>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+                          fxFlex.xl="100">
+                          <h5 class="fnt-14 clr-222 mb-3">61401</h5>
+                          <p class="m-0 clr-bbb fnt-12">Zip Code</p>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+                          fxFlex.xl="100">
+                          <h5 class="fnt-14 clr-222 mb-3">9 Morris Road Bethel Park</h5>
+                          <p class="m-0 clr-bbb fnt-12">Street Address</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
                 </mat-card-content>
-              </mat-card>
-            </div>
+              </mat-card> 
+          </div> 
+          </mat-t>
+        </mat-tab>
+        <!-- Change Password -->
 
-          </div>
 
-        </div>
-      </mat-tab>
-      <mat-tab label="Change Password">
-        <div class="main" fxLayout="row wrap">
-          <div class="column" fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="50">
-            <div>
-              <div class="large-box mat-elevation-z4">
-                <mat-list role="list">
-                  <h2 class="header">Change Password</h2>
-                  <mat-list-item role="listitem">
-                    <div class="example-container">
-                      <mat-form-field appearance="fill">
+        <mat-tab label="Change Password">
+          <mat-t class="main" fxLayout="row wrap">
+            <div class="column" fxFlex="100">
+              
+                <mat-card class="default m-0">
+                  <div class="card-title">
+                    <h4 class="fw-500">Change Password</h4>
+                  </div>
+                
+                <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100">
+
+                  <div class="container" fxLayout="column"  fxLayout.sm="row" fxLayoutGap="20px">
+                    <div class="cardWrap" fxLayout.sm="column" fxLayout.md="column"  fxLayout="row" fxFlex.sm="50" fxLayoutAligmnet="space-between center" fxLayoutGap="20px" >
+                      <mat-form-field appearance="fill"> 
                         <mat-label>Enter Current Password</mat-label>
                         <input matInput [type]="hide ? 'password' : 'text'">
-                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                          [attr.aria-pressed]="hide">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </button>
                       </mat-form-field>
-                    </div>
-                  </mat-list-item>
+    
+                  </div>
+                  </div>
 
-                  <mat-list-item role="listitem">
-                    <div class="example-container">
-                      <mat-form-field appearance="fill">
-                        <mat-label>Enter New Password</mat-label>
+                  <div class="container" fxLayout="column"  fxLayout.sm="row" fxLayoutGap="20px">
+                    <div class="cardWrap" fxLayout.sm="column" fxLayout.md="column"  fxLayout="row" fxFlex.sm="50" fxLayoutAligmnet="space-between center" fxLayoutGap="20px" >
+                      <mat-form-field appearance="fill"> 
+                        <mat-label>Enter Current Password</mat-label>
                         <input matInput [type]="hide ? 'password' : 'text'">
-                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                          [attr.aria-pressed]="hide">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </button>
                       </mat-form-field>
-                    </div>
-                  </mat-list-item>
+    
+                  </div>
+                  </div>
 
-                  <mat-list-item role="listitem">
-                    <div class="example-container">
-                      <mat-form-field appearance="fill">
-                        <mat-label>Confirm New Password</mat-label>
+                  <div class="container" fxLayout="column"  fxLayout.sm="row" fxLayoutGap="20px">
+                    <div class="cardWrap" fxLayout.sm="column" fxLayout.md="column"  fxLayout="row" fxFlex.sm="50" fxLayoutAligmnet="space-between center" fxLayoutGap="20px" >
+                      <mat-form-field appearance="fill"> 
+                        <mat-label>Enter Current Password</mat-label>
                         <input matInput [type]="hide ? 'password' : 'text'">
-                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                          [attr.aria-pressed]="hide">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </button>
                       </mat-form-field>
-                    </div>
-                  </mat-list-item>
-                  <mat-list-item role="listitem">
-                    <button mat-raised-button class="primary-btn reset-password">
+    
+                  </div>
+                  </div>
+
+                  <div class="line" fxLayout="row wrap" fxLayoutAlign="end end">
+                    <button mat-raised-button class="primary-btn">
                       Reset Password
                     </button>
-                  </mat-list-item>
-                </mat-list>
+                  </div>
+                </mat-card-content>
+              </mat-card>
               </div>
-            </div>
-          </div>
-        </div>
+          </mat-t> 
       </mat-tab>
-
     </mat-tab-group>
   </div>
 </div>

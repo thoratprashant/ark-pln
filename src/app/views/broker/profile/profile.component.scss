@@ -110,23 +110,7 @@
     gap: 14px;
 }
 
-// .icon-bg-wrap .mat-icon {
-//     position: absolute;
-//     top: 0px;
-//     left: -4px;
-//     border-radius: 50%;
-//     width: 30px;
-//     height: 30px;
-//     padding: 10px;
-//     background-color: #6589a9;
-//     font-size: 25px;
-//     align-items: center;
-//     text-align: center;
-// }
 
-.mat-icon{
-    color: white !important;
-}
 
 .mat-tab-label, .mat-tab-link {
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -177,7 +161,9 @@
     min-width:535px !important;
   }
 
-
+.mat-icon{
+    color:white;
+}
 
 .profile-wrapper{
     .profile-header{
@@ -192,6 +178,7 @@
             ::ng-deep{
                 .mat-icon{
                     margin-right: 7px;
+                    color:#eee;
                 }
             }
         }
@@ -221,6 +208,30 @@
    
 }
 
+.mat-form-field {
+    position: relative;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #888;
+}
+
+.container{
+    .cardWrap{
+        .mat-form-field{
+
+            .mat-icon{
+                color: #000;
+            }
+        }
+    }
+}
 
 
 
@@ -230,4 +241,6 @@
 
 
 
-  
+
+
+
