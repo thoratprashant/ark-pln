@@ -7,6 +7,7 @@
     .mat-stepper-horizontal{
         background-color: transparent;
         width: 100%;
+        position: relative;
     }
     .mat-horizontal-content-container{
         max-width: 320px;
@@ -89,4 +90,48 @@
             }
         }
    }
+
+   .privacy--policy--sec{
+        border-radius: 5px;
+        box-shadow: -1.4px 1.4px 20px 7px rgba(88, 92, 101, 0.15);
+        background-color: #fff;
+        padding: 20px;
+        position: absolute;
+        right: -375px;
+        width: 484px;
+        bottom: 0;
+        h2{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            .fa {
+                margin-left: 6px;
+            }
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 17px;
+        }
+   }
 }
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .auth--data--wrapper .privacy--policy--sec{
+        right: -135px;
+        width: 195px;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .auth--data--wrapper .privacy--policy--sec{
+        right: -269px;
+        width: 327px;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+    .auth--data--wrapper .privacy--policy--sec{
+        right: -386px
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}

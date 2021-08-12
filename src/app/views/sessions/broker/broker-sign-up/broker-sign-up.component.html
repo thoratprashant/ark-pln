@@ -1,6 +1,6 @@
 <div class="auth--data--wrapper page-login page-wrap">
     <div class="signup--wrapper w-100" fxLayout="row" fxFlex="100" fxLayoutAlign="center center">
-        <div fxLayout="row" fxLayoutAlign="center center" fxFlex.xs="99" fxFlex.sm="80" fxFlex.md="40" fxFlex.lg="30"
+        <div class="relative" fxLayout="row" fxLayoutAlign="center center" fxFlex.xs="99" fxFlex.sm="62" fxFlex.md="46" fxFlex.lg="40"
             fxFlex.xl="30">
 
 
@@ -58,7 +58,7 @@
                                 </mat-card-content>
                             </mat-card>
                         </div>
-                    </form>
+                    </form> 
                 </mat-step>
                 <mat-step [stepControl]="secondFormGroup">
                     <form [formGroup]="secondFormGroup">
@@ -116,9 +116,7 @@
                                             <a fxLayout="row" fxLayoutAlign="center center"
                                                 class="clr-6589a9 resend--code">Resend</a>
 
-                                        </div>
-
-
+                                        </div> 
                                         <button mat-raised-button class="primary-btn" matStepperNext>
                                             Verify Email
                                         </button>
@@ -136,8 +134,22 @@
                         <button mat-button matStepperPrevious>Back</button>
                         <button mat-button (click)="stepper.reset()">Reset</button>
                     </div>
-                </mat-step>
+                </mat-step>  
             </mat-horizontal-stepper>
+
+            <div class="privacy--policy--sec">
+                <h2 class="clr-222" fxLayout="row" fxLayoutAlign="start center" >Privacy Policy <i class="fa fa-lock" aria-hidden="true"></i></h2>
+                <p class="clr-222">By clicking OK  you agree with the <a class="clr-6589a9"><b>Terms & Services</b> </a> & <a class="clr-6589a9"><b>Privacy policy</b></a> of 
+                    our website. You can change the cookies preferences or withdraw 
+                    consent related to cookies , please update your cookies preferences.</p>
+
+                <div  fxLayout="row" fxLayoutAlign="end end">
+                    <button mat-raised-button class="primary-btn">
+                        Ok
+                    </button>
+                </div>    
+                    
+            </div>
 
 
         </div>
