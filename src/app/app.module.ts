@@ -20,8 +20,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ErrorHandlerService } from './shared/services/error-handler.service';
-import { TokenInterceptor } from './shared/interceptors/token.interceptor';
-import { BrokerComponent } from './broker/broker.component'; 
+import { TokenInterceptor } from './shared/interceptors/token.interceptor'; 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -39,7 +38,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     InMemoryWebApiModule.forRoot(InMemoryDataService, { passThruUnknownUrl: true}),
     RouterModule.forRoot(rootRouterConfig, { useHash: false })
   ],
-  declarations: [AppComponent, BrokerComponent],
+  declarations: [AppComponent],
   providers: [
     { provide: ErrorHandler, useClass: ErrorHandlerService },
     {provide: LocationStrategy, useClass: HashLocationStrategy},
