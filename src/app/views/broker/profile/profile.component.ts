@@ -16,6 +16,8 @@ import { User } from '../../../shared/models/user.model';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+  hide = true;
+
   addFriend: boolean = false;
   activeView: string = "overview";
  

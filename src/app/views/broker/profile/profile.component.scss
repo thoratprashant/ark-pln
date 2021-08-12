@@ -7,6 +7,7 @@
     width: 100%;
     border-bottom: 1px solid #bbbbbb;
     font-size:24px;
+    background-color:white;
   }   
 
 .banner{
@@ -21,24 +22,24 @@
     margin-top: 20px;
 }
 
-.mat-list-base .mat-list-item, .mat-list-base .mat-list-option, .mat-tab-label-content {
-    display: block;
-    height: auto;
-    -webkit-tap-highlight-color: transparent;
-    width: 100%;
-    padding-bottom: 15px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.29;
-    letter-spacing: normal;
-    text-align: left;
-    color: #888;
+// .mat-list-base .mat-list-item, .mat-list-base .mat-list-option, .mat-tab-label-content {
+//     display: block;
+//     height: auto;
+//     -webkit-tap-highlight-color: transparent;
+//     width: 100%;
+//     padding-bottom: 15px;
+//     font-family: Roboto, "Helvetica Neue", sans-serif;
+//     font-weight: 500;
+//     font-size: 14px;
+//     font-weight: normal;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.29;
+//     letter-spacing: normal;
+//     text-align: left;
+//     color: #888;
     
-}
+// }
 
 .mat-form-field-flex {
     display: inline-flex;
@@ -75,20 +76,20 @@
 
 
 
-.mat-icon{
-    background-repeat: no-repeat;
-    display: inline-block;
-    /* fill: currentColor; */
-    height: 30px;
-    width: 30px;
-    background-color: #6589a9;
-    border-radius: 50%;
-    color: white;
-    font-size: 30px;
-    padding: 10px;
-    margin-right:20px;
+// .mat-icon{
+//     background-repeat: no-repeat;
+//     display: inline-block;
+//     /* fill: currentColor; */
+//     height: 30px;
+//     width: 30px;
+//     background-color: #6589a9;
+//     border-radius: 50%;
+//     color: white;
+//     font-size: 30px;
+//     padding: 10px;
+//     margin-right:20px;
    
-}
+// }
 
 
 
@@ -101,7 +102,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: -130px 0px 0px 26%;
+    margin: -140px 0px 0px 0px;
     position: absolute;
     color: #eeeeee;
     border: solid 3px #eee;
@@ -115,6 +116,12 @@
     font-family: bold;
     border-bottom: 1px solid#eeee;
     
+}
+
+.user-info{
+    display: grid;
+    grid-template-columns: 0.3fr 0fr;
+    gap: 15px;
 }
 
 
