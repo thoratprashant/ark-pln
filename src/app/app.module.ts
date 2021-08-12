@@ -18,11 +18,10 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import { ErrorHandlerService } from './shared/services/error-handler.service';
-import { TokenInterceptor } from './shared/interceptors/token.interceptor'; 
-
-
+import { TokenInterceptor } from './shared/interceptors/token.interceptor';
+import { BrokerComponent } from './broker/broker.component'; 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -33,14 +32,14 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    IconModule,
     NgApexchartsModule,
     HttpClientModule,
+    MatTabsModule,
     PerfectScrollbarModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService, { passThruUnknownUrl: true}),
     RouterModule.forRoot(rootRouterConfig, { useHash: false })
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, BrokerComponent],
   providers: [
     { provide: ErrorHandler, useClass: ErrorHandlerService },
     {provide: LocationStrategy, useClass: HashLocationStrategy},
@@ -55,4 +54,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

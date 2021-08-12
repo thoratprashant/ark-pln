@@ -9,8 +9,8 @@ import { SharedComponentsModule } from 'app/shared/components/shared-components.
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FullWidthCardComponent } from './full-width-card/full-width-card.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-
 import { FullWidthCardTabComponent } from './full-width-card-tab/full-width-card-tab.component';
+
 
 @NgModule({
   declarations: [LeftSidebarCardComponent, FullWidthCardComponent,  FullWidthCardTabComponent],

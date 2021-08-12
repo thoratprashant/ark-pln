@@ -14,18 +14,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatTabsModule } from '@angular/material/tabs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ChartsModule } from 'ng2-charts';
 import { FileUploadModule } from 'ng2-file-upload';
 import { SharedPipesModule } from 'app/shared/pipes/shared-pipes.module';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import { ProfileComponent } from "./profile.component";
 import { ProfileOverviewComponent } from './profile-overview/profile-overview.component';
 import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
 import { ProfileBlankComponent } from './profile-blank/profile-blank.component';
 import { ProfileRoutes } from "./profile.routing";
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   imports: [
@@ -47,6 +48,7 @@ import { ProfileRoutes } from "./profile.routing";
     FlexLayoutModule,
     NgxDatatableModule,
     ChartsModule,
+    MatFormFieldModule,
     FileUploadModule,
     SharedPipesModule,
     RouterModule.forChild(ProfileRoutes)
