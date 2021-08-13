@@ -95,3 +95,16 @@
     width: unset !important;
     border-radius: 0 !important;
 }
+
+/* after login background image (start here) */
+.broker-atfer-signup.page-login{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px 1rem;
+    height: calc(100vh - 67px); 
+}
+.broker-atfer-signup.page-login .rightside-content-hold{
+    background-color: transparent;
+    padding: 0;
+}
+/* after login background image (end here) */

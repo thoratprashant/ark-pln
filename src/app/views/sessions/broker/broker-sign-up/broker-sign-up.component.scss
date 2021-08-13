@@ -123,7 +123,15 @@
    }
 }
 
-@media only screen and (max-width: 599px) {}
+@media only screen and (max-width: 599px) {
+    .auth--data--wrapper .privacy--policy--sec { 
+        padding: 15px;
+        position: relative; 
+        width: 93%; 
+        margin-top: 20px;
+        right: 0;
+    }
+}
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .auth--data--wrapper .privacy--policy--sec{
         right: -135px;

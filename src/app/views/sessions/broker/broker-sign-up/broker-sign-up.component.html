@@ -1,6 +1,6 @@
 <div class="auth--data--wrapper page-login page-wrap">
     <div class="signup--wrapper w-100" fxLayout="row" fxFlex="100" fxLayoutAlign="center center">
-        <div class="relative" fxLayout="row" fxLayoutAlign="center center" fxFlex.xs="99" fxFlex.sm="62" fxFlex.md="46" fxFlex.lg="40"
+        <div class="relative" fxLayout="row"  fxLayout.xs="column" fxLayoutAlign="center center" fxFlex.xs="99" fxFlex.sm="62" fxFlex.md="46" fxFlex.lg="40"
             fxFlex.xl="30">
 
 
@@ -168,7 +168,7 @@
                                                     placeholder="Confirm Password" />
                                             </mat-form-field>
                                         </div> 
-                                        <button mat-raised-button class="primary-btn" matStepperNext>
+                                        <button mat-raised-button class="primary-btn" [routerLink]="['/broker/signup-successful']">
                                             Setup Account
                                         </button>
                                     </div>

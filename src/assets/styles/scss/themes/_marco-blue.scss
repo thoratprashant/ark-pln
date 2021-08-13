@@ -84,9 +84,8 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
     div.hopscotch-bubble {
         border-color: $primary-dark;
     }
-    .rightside-content-hold {
-    
-        background-color: #f5f6fa;
+    .rightside-content-hold {    
+        background-color: #fff;
       }
     /* up arrow  */
     div.hopscotch-bubble .hopscotch-bubble-arrow-container.up .hopscotch-bubble-arrow-border {
