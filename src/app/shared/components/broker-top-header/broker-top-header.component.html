@@ -41,7 +41,7 @@
       </mat-nav-list>
     </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="accountMenu" class="topbar-button-right img-button">
+    <button   mat-button [matMenuTriggerFor]="accountMenu" class="topbar-button-right img-button">
       <span>Prashant T</span>
       <img class="profile-img" src="assets/images/face-7.jpg" alt="" />
     </button>
@@ -57,7 +57,7 @@
 
       <mat-nav-list class="notification-list" role="list">
         <!-- Notification item -->
-        <button mat-menu-item [routerLink]="['/profile/overview']">
+        <button mat-menu-item [routerLink]="['/broker/profile']">
           <div fxLayout="row" fxLayoutAlign="start center">
             <mat-icon svgIcon="account_box" class="btn-icon"></mat-icon>
             <span>My Profile</span>

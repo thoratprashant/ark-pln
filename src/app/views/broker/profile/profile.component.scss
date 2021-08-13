@@ -139,23 +139,7 @@
     padding-top: 8px;
     background-color: #000;
 }
-
-.mat-raised-button.primary-btn {
-    background-color: #000 !important;
-    color: #fff;
-    font-size: 14px;
-    white-space: normal;
-    float: left;
-    margin-left: 105px;
-}
-
- .mat-form-field-wrapper {
-  
-    width: 100%;
-    min-width: 535px;
-    position: relative;
-    min-width: 535px !important;
-}
+ 
 
 .mat-input-wrapper{
     min-width:535px !important;
@@ -224,8 +208,7 @@
 
 .container{
     .cardWrap{
-        .mat-form-field{
-
+        .mat-form-field{ 
             .mat-icon{
                 color: #000;
             }
