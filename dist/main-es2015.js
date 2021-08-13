@@ -803,7 +803,7 @@ function BrokerHeaderTopComponent_mat_list_item_18_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](n_r3.time);
 } }
-const _c1 = function () { return ["/profile/overview"]; };
+const _c1 = function () { return ["/broker/profile"]; };
 const _c2 = function () { return ["/profile/settings"]; };
 class BrokerHeaderTopComponent {
     constructor(layout, navService, themeService, renderer, jwtAuth) {

@@ -1244,7 +1244,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
 
     var _c1 = function _c1() {
-      return ["/profile/overview"];
+      return ["/broker/profile"];
     };
 
     var _c2 = function _c2() {
