@@ -52,7 +52,7 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 // Page loader
 // import './vendor/pace/pace.min.js';
 // // Charts
-import './vendor/Chart.min.js';
+// import './vendor/Chart.min.js';
 // // User tour
 import 'hopscotch';
 // // Rich Text Editor

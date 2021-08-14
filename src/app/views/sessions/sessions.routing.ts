@@ -18,14 +18,9 @@ export const SessionsRoutes: Routes = [
         component: BrokerSignUpComponent,
         data: { title: "Broker Signup" }
       },
-
-
-
-      {
-        path: "signup",
-        component: SignupComponent,
-        data: { title: "Signup" }
-      },      
+ 
+ 
+           
       {
         path: "signin",
         component: SigninComponent,

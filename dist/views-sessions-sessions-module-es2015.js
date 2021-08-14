@@ -1497,6 +1497,7 @@ class BrokerSignUpComponent {
         this._formBuilder = _formBuilder;
     }
     ngOnInit() {
+        console.log('load signup');
         this.firstFormGroup = this._formBuilder.group({
             firstName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             lastName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -2200,12 +2201,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SessionsRoutes", function() { return SessionsRoutes; });
 /* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forgot-password/forgot-password.component */ "./src/app/views/sessions/forgot-password/forgot-password.component.ts");
 /* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/views/sessions/signin/signin.component.ts");
-/* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/views/sessions/signup/signup.component.ts");
-/* harmony import */ var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./not-found/not-found.component */ "./src/app/views/sessions/not-found/not-found.component.ts");
-/* harmony import */ var _error_error_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./error/error.component */ "./src/app/views/sessions/error/error.component.ts");
-/* harmony import */ var _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./coming-soon/coming-soon.component */ "./src/app/views/sessions/coming-soon/coming-soon.component.ts");
-/* harmony import */ var _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./broker/broker-sign-up/broker-sign-up.component */ "./src/app/views/sessions/broker/broker-sign-up/broker-sign-up.component.ts");
-
+/* harmony import */ var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./not-found/not-found.component */ "./src/app/views/sessions/not-found/not-found.component.ts");
+/* harmony import */ var _error_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./error/error.component */ "./src/app/views/sessions/error/error.component.ts");
+/* harmony import */ var _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./coming-soon/coming-soon.component */ "./src/app/views/sessions/coming-soon/coming-soon.component.ts");
+/* harmony import */ var _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./broker/broker-sign-up/broker-sign-up.component */ "./src/app/views/sessions/broker/broker-sign-up/broker-sign-up.component.ts");
 
 
 
@@ -2218,13 +2217,8 @@ const SessionsRoutes = [
         children: [
             {
                 path: "signup",
-                component: _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_6__["BrokerSignUpComponent"],
+                component: _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_5__["BrokerSignUpComponent"],
                 data: { title: "Broker Signup" }
-            },
-            {
-                path: "signup",
-                component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_2__["SignupComponent"],
-                data: { title: "Signup" }
             },
             {
                 path: "signin",
@@ -2238,17 +2232,17 @@ const SessionsRoutes = [
             },
             {
                 path: "coming-soon",
-                component: _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_5__["ComingSoonComponent"],
+                component: _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_4__["ComingSoonComponent"],
                 data: { title: "Coming Soon" }
             },
             {
                 path: "404",
-                component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_3__["NotFoundComponent"],
+                component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_2__["NotFoundComponent"],
                 data: { title: "Not Found" }
             },
             {
                 path: "error",
-                component: _error_error_component__WEBPACK_IMPORTED_MODULE_4__["ErrorComponent"],
+                component: _error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"],
                 data: { title: "Error" }
             }
         ]

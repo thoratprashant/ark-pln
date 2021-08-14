@@ -2788,6 +2788,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       _createClass(BrokerSignUpComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          console.log('load signup');
           this.firstFormGroup = this._formBuilder.group({
             firstName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             lastName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -4196,31 +4197,25 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     /* harmony import */
 
 
-    var _signup_signup_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./signup/signup.component */
-    "./src/app/views/sessions/signup/signup.component.ts");
-    /* harmony import */
-
-
-    var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./not-found/not-found.component */
     "./src/app/views/sessions/not-found/not-found.component.ts");
     /* harmony import */
 
 
-    var _error_error_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _error_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./error/error.component */
     "./src/app/views/sessions/error/error.component.ts");
     /* harmony import */
 
 
-    var _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./coming-soon/coming-soon.component */
     "./src/app/views/sessions/coming-soon/coming-soon.component.ts");
     /* harmony import */
 
 
-    var _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./broker/broker-sign-up/broker-sign-up.component */
     "./src/app/views/sessions/broker/broker-sign-up/broker-sign-up.component.ts");
 
@@ -4228,15 +4223,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       path: "",
       children: [{
         path: "signup",
-        component: _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_6__["BrokerSignUpComponent"],
+        component: _broker_broker_sign_up_broker_sign_up_component__WEBPACK_IMPORTED_MODULE_5__["BrokerSignUpComponent"],
         data: {
           title: "Broker Signup"
-        }
-      }, {
-        path: "signup",
-        component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_2__["SignupComponent"],
-        data: {
-          title: "Signup"
         }
       }, {
         path: "signin",
@@ -4252,19 +4241,19 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         }
       }, {
         path: "coming-soon",
-        component: _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_5__["ComingSoonComponent"],
+        component: _coming_soon_coming_soon_component__WEBPACK_IMPORTED_MODULE_4__["ComingSoonComponent"],
         data: {
           title: "Coming Soon"
         }
       }, {
         path: "404",
-        component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_3__["NotFoundComponent"],
+        component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_2__["NotFoundComponent"],
         data: {
           title: "Not Found"
         }
       }, {
         path: "error",
-        component: _error_error_component__WEBPACK_IMPORTED_MODULE_4__["ErrorComponent"],
+        component: _error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"],
         data: {
           title: "Error"
         }

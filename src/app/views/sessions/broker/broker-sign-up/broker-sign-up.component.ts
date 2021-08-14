@@ -15,6 +15,9 @@ export class BrokerSignUpComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder) {}
 
   ngOnInit() {
+
+    console.log('load signup')
+
     this.firstFormGroup = this._formBuilder.group({ 
       firstName: ["",Validators.required],
       lastName: ["",Validators.required],
