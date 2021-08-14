@@ -13,17 +13,17 @@
           <form [formGroup]="signinForm" (ngSubmit)="signin()">
             <div class="">
               <mat-form-field class="full-width">
-                <mat-label>Username</mat-label>
+                <mat-label>Email</mat-label>
                 <input
                   matInput
                   name="username"
                   [formControl]="signinForm.controls['']"
-                  placeholder="Username"
-                  value="">
+                  placeholder="Email"
+                  value="abhi@abhigolhar.com">
               </mat-form-field>
               <small 
                 *ngIf="signinForm.controls['username'].hasError('required') && signinForm.controls['username'].touched" 
-                class="form-error-msg"> Username is required </small>
+                class="form-error-msg"> Email is required </small>
             </div>
   
             <div class="">
@@ -35,7 +35,7 @@
                   matInput
                   [formControl]="signinForm.controls['password']"
                   placeholder="Password" 
-                  value="">
+                  value="123456789">
               </mat-form-field>
               <small 
                 *ngIf="signinForm.controls['password'].hasError('required') && signinForm.controls['password'].touched" 
@@ -43,19 +43,15 @@
             </div>
             
             <div class="pb-1" fxLayout="row" fxLayoutAlign="space-between center" >
-              <mat-checkbox
+              <!-- <mat-checkbox
                 name="rememberMe"
                 [formControl]="signinForm.controls['rememberMe']"
-                class="">Remember me</mat-checkbox>
+                class="">Remember me</mat-checkbox> -->
                 <a [routerLink]="'/sessions/forgot-password'" class="mat-primary text-right full-width">Forgot password?</a>
             </div>
             
-            <button mat-raised-button class="mat-primary full-width mb-1" [disabled]="signinForm.invalid">SIGN IN</button>
-            <div class="text-center">
-              <p class="text-muted mb-4">Do you have an account?</p>
-              
-              <a [routerLink]="'/sessions/signup'" class="mat-primary text-center full-width">Click here to create one</a>
-            </div>
+            <button mat-raised-button class="mat-primary full-width mb-1 primary-btn" [disabled]="signinForm.invalid">SIGN IN</button>
+             
           </form>
         </div>
       </mat-card>
