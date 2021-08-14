@@ -35,6 +35,7 @@ import { PreLoginHeaderTopComponent } from './pre-login-header-top/pre-login-hea
 import { PreLoginFooterComponent } from './pre-login-footer/pre-login-footer.component';
 import { BrokerLayoutComponent } from './layouts/broker-layout/broker-layout.component';
 import { BrokerHeaderTopComponent } from './broker-top-header/broker-top-header.component';
+import { BrokerAuthLayoutComponent } from './layouts/broker-auth-layout/broker-auth-layout.component';
 
 
 const components = [
@@ -58,6 +59,7 @@ const components = [
   PreLoginHeaderTopComponent,
   PreLoginFooterComponent,
   BrokerLayoutComponent,
+  BrokerAuthLayoutComponent,
   BrokerHeaderTopComponent
 ]
 

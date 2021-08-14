@@ -1,0 +1,28 @@
+.header-topnav{
+    &.mat-elevation-z2{
+        background: #000 !important;
+        .topbar-branding{
+            display: flex;
+            align-items: center;
+            .app-logo{
+                border-radius: 0;
+                height: auto;
+                width: auto;
+            }
+        }
+        .login--btn{
+            color: #000;
+            ::ng-deep{
+                .mat-button-wrapper{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .already--acc{
+        display: none;
+    }
+}
