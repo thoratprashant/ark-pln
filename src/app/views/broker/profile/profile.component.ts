@@ -77,13 +77,7 @@ export class ProfileComponent implements OnInit {
         "mutualFriends": "5 Mutual friends",
         "picked": false
         },
-        {
-            "id": 1,
-            "name": "Sofija Apostolska",
-            "img": "assets/images/images/face-2.jpg",
-            "mutualFriends": "5 Mutual friends",
-            "picked": false
-            },
+         
             {
                 "id": 1,
                 "name": "Elena Ravnjanski",

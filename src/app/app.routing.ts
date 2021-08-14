@@ -45,28 +45,7 @@ export const rootRouterConfig: Routes = [
       }
     ]
   },
-
-  {
-    path: '', 
-    component: AdminLayoutComponent,
-    children: [ 
-      {
-        path: 'profile', 
-        loadChildren: () => import('./views/profile/profile.module').then(m => m.ProfileModule), 
-        data: { title: 'Profile', breadcrumb: 'Profile'}
-      }, 
-      {
-        path: 'page-layouts',
-        loadChildren: () => import('./views/page-layouts/page-layouts.module').then(m => m.PageLayoutsModule)
-      },
-      
-      {
-        path: 'icons', 
-        loadChildren: () => import('./views/mat-icons/mat-icons.module').then(m => m.MatIconsModule), 
-        data: { title: 'Icons', breadcrumb: 'Maticons'}
-      }, 
-    ]
-  },
+ 
   { 
     path: '**', 
     redirectTo: 'sessions/404'

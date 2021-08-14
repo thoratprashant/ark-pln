@@ -17,14 +17,7 @@ export class NotificationsComponent implements OnInit {
     time: '3 min ago',
     route: '/inbox',
     color: 'primary'
-  }, {
-    title: 'Simon St Lagger',
-    message: 'Dont forget to call me after you finish your call',
-    image: 'assets/images/face-2.jpg',
-    time: '55 min ago',
-    route: '/chat',
-    color: 'accent'
-  }, {
+  },  {
     title: 'Marko Apostolski',
     message: 'Max call me and told me about your exam.',
     image: 'assets/images/face-3.jpg',
