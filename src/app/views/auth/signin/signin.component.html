@@ -1,9 +1,9 @@
-<div class="page-wrap page-login height-100 black">
+<div class="page-wrap page-login">
     <div class="signIn-wrapper">
       <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
       <mat-card>
         <div class="card-body-content">
-          <div class="text-center pt-8 pb-16"> 
+          <div class="text-center pb-16"> 
             <H3 class="fw-500">Welcome to The PLN</H3>
             <p class="clr-222 m-0">Sign in to your account</p>
           </div>
@@ -42,15 +42,11 @@
                 class="form-error-msg"> Password is required </small>
             </div>
             
-            <div class="pb-1" fxLayout="row" fxLayoutAlign="space-between center" >
-              <!-- <mat-checkbox
-                name="rememberMe"
-                [formControl]="signinForm.controls['rememberMe']"
-                class="">Remember me</mat-checkbox> -->
-                <a [routerLink]="'/sessions/forgot-password'" class="mat-primary text-right full-width">Forgot password?</a>
+            <div fxLayout="row" fxLayoutAlign="space-between center" > 
+                <a [routerLink]="'/sessions/forgot-password'" class="mat-primary text-right full-width clr-6589a9 fnt-12 fp--link">Forgot password</a>
             </div>
             
-            <button mat-raised-button class="mat-primary full-width mb-1 primary-btn" [disabled]="signinForm.invalid">SIGN IN</button>
+            <button mat-raised-button class="mat-primary full-width  primary-btn" [disabled]="signinForm.invalid">Sign In</button>
              
           </form>
         </div>

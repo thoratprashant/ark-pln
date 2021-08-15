@@ -81,9 +81,12 @@
  
 .marco-blue .mat-raised-button.primary-btn{
     background-color: #000 !important;
-    color: #fff;
+    color: #fff !important;
     font-size: 14px;
     white-space: normal;
+}
+.marco-blue .mat-raised-button.primary-btn[disabled]{
+    opacity: 0.3;
 }
  
 .header-topnav .topbar-branding{
