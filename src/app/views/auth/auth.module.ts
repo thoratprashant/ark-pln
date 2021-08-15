@@ -8,6 +8,8 @@ import { SharedMaterialModule } from 'app/shared/shared-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthRoutes } from './auth.routing';
 import { SigninComponent } from './signin/signin.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 // import { CommonDirectivesModule } from './sdirectives/common/common-directives.module';
  
@@ -23,6 +25,6 @@ import { SigninComponent } from './signin/signin.component';
     PerfectScrollbarModule, 
     RouterModule.forChild(AuthRoutes)
   ],
-  declarations: [ SigninComponent]
+  declarations: [ SigninComponent, ForgotPasswordComponent, ResetPasswordComponent]
 })
 export class AuthModule { }

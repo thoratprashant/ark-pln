@@ -6,24 +6,21 @@
           <div class="text-center pb-16"> 
             <H3 class="fw-500">Welcome to The PLN</H3>
             <p class="clr-222 m-0">Sign in to your account</p>
-          </div>
-  
-          <p *ngIf="errorMsg" class="text-center"><small class="text-red">{{errorMsg}}</small></p>
+          </div> 
           
-          <form [formGroup]="signinForm" (ngSubmit)="signin()">
+          <form >
             <div class="">
               <mat-form-field class="full-width">
                 <mat-label>Email</mat-label>
                 <input
                   matInput
-                  name="username"
-                  [formControl]="signinForm.controls['']"
+                  name="username" 
                   placeholder="Email"
                   value="abhi@abhigolhar.com">
               </mat-form-field>
-              <small 
+              <!-- <small 
                 *ngIf="signinForm.controls['username'].hasError('required') && signinForm.controls['username'].touched" 
-                class="form-error-msg"> Email is required </small>
+                class="form-error-msg"> Email is required </small> -->
             </div>
   
             <div class="">
@@ -32,21 +29,20 @@
                 <input 
                   type="password"
                   name="password"
-                  matInput
-                  [formControl]="signinForm.controls['password']"
+                  matInput 
                   placeholder="Password" 
                   value="123456789">
               </mat-form-field>
-              <small 
+              <!-- <small 
                 *ngIf="signinForm.controls['password'].hasError('required') && signinForm.controls['password'].touched" 
-                class="form-error-msg"> Password is required </small>
+                class="form-error-msg"> Password is required </small> -->
             </div>
             
             <div fxLayout="row" fxLayoutAlign="space-between center" > 
-                <a [routerLink]="'/sessions/forgot-password'" class="mat-primary text-right full-width clr-6589a9 fnt-12 fp--link">Forgot password</a>
+                <a [routerLink]="'/forgot-password'" class="mat-primary text-right full-width clr-6589a9 fnt-12 fp--link">Forgot password</a>
             </div>
             
-            <button mat-raised-button class="mat-primary full-width  primary-btn" [disabled]="signinForm.invalid">Sign In</button>
+            <button mat-raised-button class="mat-primary full-width  primary-btn"  >Sign In</button>
              
           </form>
         </div>
