@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"default~views-broker-broker-module~views-profile-profile-module~views-sessions-sessions-module":"default~views-broker-broker-module~views-profile-profile-module~views-sessions-sessions-module","default~views-broker-broker-module~views-profile-profile-module":"default~views-broker-broker-module~views-profile-profile-module","views-broker-broker-module":"views-broker-broker-module","views-profile-profile-module":"views-profile-profile-module","views-sessions-sessions-module":"views-sessions-sessions-module","views-mat-icons-mat-icons-module":"views-mat-icons-mat-icons-module","views-page-layouts-page-layouts-module":"views-page-layouts-page-layouts-module","views-pre-login-pre-login-module":"views-pre-login-pre-login-module"}[chunkId]||chunkId) +    "-es5.js"
+/******/ 		return __webpack_require__.p + "" + ({"views-auth-auth-module":"views-auth-auth-module","views-broker-broker-module":"views-broker-broker-module","views-pre-login-pre-login-module":"views-pre-login-pre-login-module","views-sessions-sessions-module":"views-sessions-sessions-module"}[chunkId]||chunkId) +    "-es5.js"
 /******/ 	}
 /******/
 /******/ 	// The require function

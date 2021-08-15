@@ -502,8 +502,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rootRouterConfig", function() { return rootRouterConfig; });
-/* harmony import */ var _shared_components_layouts_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shared/components/layouts/admin-layout/admin-layout.component */ "./src/app/shared/components/layouts/admin-layout/admin-layout.component.ts");
-/* harmony import */ var _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/components/layouts/auth-layout/auth-layout.component */ "./src/app/shared/components/layouts/auth-layout/auth-layout.component.ts");
+/* harmony import */ var _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shared/components/layouts/auth-layout/auth-layout.component */ "./src/app/shared/components/layouts/auth-layout/auth-layout.component.ts");
+/* harmony import */ var _shared_components_layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/components/layouts/broker-auth-layout/broker-auth-layout.component */ "./src/app/shared/components/layouts/broker-auth-layout/broker-auth-layout.component.ts");
 /* harmony import */ var _shared_components_layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/components/layouts/broker-layout/broker-layout.component */ "./src/app/shared/components/layouts/broker-layout/broker-layout.component.ts");
 /* harmony import */ var _shared_components_layouts_pre_login_pre_login_layout_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/components/layouts/pre-login/pre-login-layout.component */ "./src/app/shared/components/layouts/pre-login/pre-login-layout.component.ts");
 
@@ -525,12 +525,12 @@ const rootRouterConfig = [
     },
     {
         path: '',
-        component: _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__["AuthLayoutComponent"],
+        component: _shared_components_layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__["BrokerAuthLayoutComponent"],
         children: [
             {
                 path: 'broker',
-                loadChildren: () => Promise.all(/*! import() | views-sessions-sessions-module */[__webpack_require__.e("default~views-broker-broker-module~views-profile-profile-module~views-sessions-sessions-module"), __webpack_require__.e("views-sessions-sessions-module")]).then(__webpack_require__.bind(null, /*! ./views/sessions/sessions.module */ "./src/app/views/sessions/sessions.module.ts")).then(m => m.SessionsModule),
-                data: { title: 'Session' }
+                loadChildren: () => __webpack_require__.e(/*! import() | views-sessions-sessions-module */ "views-sessions-sessions-module").then(__webpack_require__.bind(null, /*! ./views/sessions/sessions.module */ "./src/app/views/sessions/sessions.module.ts")).then(m => m.SessionsModule),
+                data: { title: 'Signup' }
             }
         ]
     },
@@ -540,29 +540,20 @@ const rootRouterConfig = [
         children: [
             {
                 path: 'broker',
-                loadChildren: () => Promise.all(/*! import() | views-broker-broker-module */[__webpack_require__.e("default~views-broker-broker-module~views-profile-profile-module~views-sessions-sessions-module"), __webpack_require__.e("default~views-broker-broker-module~views-profile-profile-module"), __webpack_require__.e("views-broker-broker-module")]).then(__webpack_require__.bind(null, /*! ./views/broker/broker.module */ "./src/app/views/broker/broker.module.ts")).then(m => m.BrokerModule),
+                loadChildren: () => __webpack_require__.e(/*! import() | views-broker-broker-module */ "views-broker-broker-module").then(__webpack_require__.bind(null, /*! ./views/broker/broker.module */ "./src/app/views/broker/broker.module.ts")).then(m => m.BrokerModule),
                 data: { title: 'Broker' }
             }
         ]
     },
     {
         path: '',
-        component: _shared_components_layouts_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_0__["AdminLayoutComponent"],
+        component: _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_0__["AuthLayoutComponent"],
         children: [
             {
-                path: 'profile',
-                loadChildren: () => Promise.all(/*! import() | views-profile-profile-module */[__webpack_require__.e("default~views-broker-broker-module~views-profile-profile-module~views-sessions-sessions-module"), __webpack_require__.e("default~views-broker-broker-module~views-profile-profile-module"), __webpack_require__.e("views-profile-profile-module")]).then(__webpack_require__.bind(null, /*! ./views/profile/profile.module */ "./src/app/views/profile/profile.module.ts")).then(m => m.ProfileModule),
-                data: { title: 'Profile', breadcrumb: 'Profile' }
-            },
-            {
-                path: 'page-layouts',
-                loadChildren: () => __webpack_require__.e(/*! import() | views-page-layouts-page-layouts-module */ "views-page-layouts-page-layouts-module").then(__webpack_require__.bind(null, /*! ./views/page-layouts/page-layouts.module */ "./src/app/views/page-layouts/page-layouts.module.ts")).then(m => m.PageLayoutsModule)
-            },
-            {
-                path: 'icons',
-                loadChildren: () => __webpack_require__.e(/*! import() | views-mat-icons-mat-icons-module */ "views-mat-icons-mat-icons-module").then(__webpack_require__.bind(null, /*! ./views/mat-icons/mat-icons.module */ "./src/app/views/mat-icons/mat-icons.module.ts")).then(m => m.MatIconsModule),
-                data: { title: 'Icons', breadcrumb: 'Maticons' }
-            },
+                path: '',
+                loadChildren: () => __webpack_require__.e(/*! import() | views-auth-auth-module */ "views-auth-auth-module").then(__webpack_require__.bind(null, /*! ./views/auth/auth.module */ "./src/app/views/auth/auth.module.ts")).then(m => m.AuthModule),
+                data: { title: 'Auth' }
+            }
         ]
     },
     {
@@ -2600,13 +2591,71 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const _c0 = function () { return ["/broker/signup"]; };
 class AuthLayoutComponent {
     constructor() { }
     ngOnInit() {
     }
 }
 AuthLayoutComponent.ɵfac = function AuthLayoutComponent_Factory(t) { return new (t || AuthLayoutComponent)(); };
-AuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthLayoutComponent, selectors: [["app-auth-layout"]], decls: 10, vars: 0, consts: [[1, "header-topnav", "mat-elevation-z2"], [1, "topnav"], [1, "topbar-branding", 2, "flex", "auto"], ["src", "assets/images/arkenea/white-logo.webp", "alt", "", 1, "app-logo"], [1, "already--acc"], ["mat-raised-button", "", 1, "topbar-button-right", "img-button", "login--btn"]], template: function AuthLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+AuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthLayoutComponent, selectors: [["app-auth-layout"]], decls: 10, vars: 2, consts: [[1, "header-topnav", "mat-elevation-z2"], [1, "topnav"], [1, "topbar-branding", 2, "flex", "auto"], ["src", "assets/images/arkenea/white-logo.webp", "alt", "", 1, "app-logo"], [1, "already--acc"], ["mat-raised-button", "", 1, "topbar-button-right", "img-button", "login--btn", 3, "routerLink"]], template: function AuthLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "span", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Don\u2019t have an account? ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Sign Up ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "router-outlet");
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLink"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]], styles: [".header-topnav.mat-elevation-z2[_ngcontent-%COMP%] {\n  background: #000 !important;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%]   .app-logo[_ngcontent-%COMP%] {\n  border-radius: 0;\n  height: auto;\n  width: auto;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%] {\n  color: #000;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%]     .mat-button-wrapper {\n  font-weight: 400;\n}\n\n@media only screen and (max-width: 599px) {\n  .already--acc[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9DOlxcUHJhc2hhbnQtd29ya3NwYWNlXFxhcmstcGxuL3NyY1xcYXBwXFxzaGFyZWRcXGNvbXBvbmVudHNcXGxheW91dHNcXGF1dGgtbGF5b3V0XFxhdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9hdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVRLDJCQUEyQjtBQ0FuQzs7QURGQTtFQUlZLGFBQWE7RUFDYixtQkFBbUI7QUNFL0I7O0FEUEE7RUFPZ0IsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixXQUFXO0FDSTNCOztBRGJBO0VBYVksV0FBVztBQ0l2Qjs7QURqQkE7RUFnQm9CLGdCQUFnQjtBQ0twQzs7QURFQTtFQUNJO0lBQ0ksYUFBYTtFQ0NuQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9hdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXItdG9wbmF2e1xyXG4gICAgJi5tYXQtZWxldmF0aW9uLXoye1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICMwMDAgIWltcG9ydGFudDtcclxuICAgICAgICAudG9wYmFyLWJyYW5kaW5ne1xyXG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICAgICAgICAuYXBwLWxvZ297XHJcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiAwO1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgICAgLmxvZ2luLS1idG57XHJcbiAgICAgICAgICAgIGNvbG9yOiAjMDAwO1xyXG4gICAgICAgICAgICA6Om5nLWRlZXB7XHJcbiAgICAgICAgICAgICAgICAubWF0LWJ1dHRvbi13cmFwcGVye1xyXG4gICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTk5cHgpIHtcclxuICAgIC5hbHJlYWR5LS1hY2N7XHJcbiAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxufSIsIi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIge1xuICBiYWNrZ3JvdW5kOiAjMDAwICFpbXBvcnRhbnQ7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLnRvcGJhci1icmFuZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLnRvcGJhci1icmFuZGluZyAuYXBwLWxvZ28ge1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBoZWlnaHQ6IGF1dG87XG4gIHdpZHRoOiBhdXRvO1xufVxuXG4uaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIC5sb2dpbi0tYnRuIHtcbiAgY29sb3I6ICMwMDA7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLmxvZ2luLS1idG4gOjpuZy1kZWVwIC5tYXQtYnV0dG9uLXdyYXBwZXIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU5OXB4KSB7XG4gIC5hbHJlYWR5LS1hY2Mge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn1cbiJdfQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthLayoutComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-auth-layout',
+                templateUrl: './auth-layout.component.html',
+                styleUrls: ['./auth-layout.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/shared/components/layouts/broker-auth-layout/broker-auth-layout.component.ts":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/shared/components/layouts/broker-auth-layout/broker-auth-layout.component.ts ***!
+  \**********************************************************************************************/
+/*! exports provided: BrokerAuthLayoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrokerAuthLayoutComponent", function() { return BrokerAuthLayoutComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+
+
+
+const _c0 = function () { return ["/signin"]; };
+class BrokerAuthLayoutComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+BrokerAuthLayoutComponent.ɵfac = function BrokerAuthLayoutComponent_Factory(t) { return new (t || BrokerAuthLayoutComponent)(); };
+BrokerAuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BrokerAuthLayoutComponent, selectors: [["app-broker-auth-layout"]], decls: 10, vars: 2, consts: [[1, "header-topnav", "mat-elevation-z2"], [1, "topnav"], [1, "topbar-branding", 2, "flex", "auto"], ["src", "assets/images/arkenea/white-logo.webp", "alt", "", 1, "app-logo"], [1, "already--acc"], ["mat-raised-button", "", 1, "topbar-button-right", "img-button", "login--btn", 3, "routerLink"]], template: function BrokerAuthLayoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -2623,13 +2672,16 @@ AuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "router-outlet");
-    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]], styles: [".header-topnav.mat-elevation-z2[_ngcontent-%COMP%] {\n  background: #000 !important;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%]   .app-logo[_ngcontent-%COMP%] {\n  border-radius: 0;\n  height: auto;\n  width: auto;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%] {\n  color: #000;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%]     .mat-button-wrapper {\n  font-weight: 400;\n}\n\n@media only screen and (max-width: 599px) {\n  .already--acc[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9DOlxcUHJhc2hhbnQtd29ya3NwYWNlXFxhcmstcGxuL3NyY1xcYXBwXFxzaGFyZWRcXGNvbXBvbmVudHNcXGxheW91dHNcXGF1dGgtbGF5b3V0XFxhdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9hdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVRLDJCQUEyQjtBQ0FuQzs7QURGQTtFQUlZLGFBQWE7RUFDYixtQkFBbUI7QUNFL0I7O0FEUEE7RUFPZ0IsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixXQUFXO0FDSTNCOztBRGJBO0VBYVksV0FBVztBQ0l2Qjs7QURqQkE7RUFnQm9CLGdCQUFnQjtBQ0twQzs7QURFQTtFQUNJO0lBQ0ksYUFBYTtFQ0NuQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9hdXRoLWxheW91dC9hdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXItdG9wbmF2e1xyXG4gICAgJi5tYXQtZWxldmF0aW9uLXoye1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICMwMDAgIWltcG9ydGFudDtcclxuICAgICAgICAudG9wYmFyLWJyYW5kaW5ne1xyXG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICAgICAgICAuYXBwLWxvZ297XHJcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiAwO1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgICAgLmxvZ2luLS1idG57XHJcbiAgICAgICAgICAgIGNvbG9yOiAjMDAwO1xyXG4gICAgICAgICAgICA6Om5nLWRlZXB7XHJcbiAgICAgICAgICAgICAgICAubWF0LWJ1dHRvbi13cmFwcGVye1xyXG4gICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTk5cHgpIHtcclxuICAgIC5hbHJlYWR5LS1hY2N7XHJcbiAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxufSIsIi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIge1xuICBiYWNrZ3JvdW5kOiAjMDAwICFpbXBvcnRhbnQ7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLnRvcGJhci1icmFuZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLnRvcGJhci1icmFuZGluZyAuYXBwLWxvZ28ge1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBoZWlnaHQ6IGF1dG87XG4gIHdpZHRoOiBhdXRvO1xufVxuXG4uaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIC5sb2dpbi0tYnRuIHtcbiAgY29sb3I6ICMwMDA7XG59XG5cbi5oZWFkZXItdG9wbmF2Lm1hdC1lbGV2YXRpb24tejIgLmxvZ2luLS1idG4gOjpuZy1kZWVwIC5tYXQtYnV0dG9uLXdyYXBwZXIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU5OXB4KSB7XG4gIC5hbHJlYWR5LS1hY2Mge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn1cbiJdfQ== */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthLayoutComponent, [{
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLink"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]], styles: [".header-topnav.mat-elevation-z2[_ngcontent-%COMP%] {\n  background: #000 !important;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .topbar-branding[_ngcontent-%COMP%]   .app-logo[_ngcontent-%COMP%] {\n  border-radius: 0;\n  height: auto;\n  width: auto;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%] {\n  color: #000;\n}\n\n.header-topnav.mat-elevation-z2[_ngcontent-%COMP%]   .login--btn[_ngcontent-%COMP%]     .mat-button-wrapper {\n  font-weight: 400;\n}\n\n@media only screen and (max-width: 599px) {\n  .already--acc[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9icm9rZXItYXV0aC1sYXlvdXQvQzpcXFByYXNoYW50LXdvcmtzcGFjZVxcYXJrLXBsbi9zcmNcXGFwcFxcc2hhcmVkXFxjb21wb25lbnRzXFxsYXlvdXRzXFxicm9rZXItYXV0aC1sYXlvdXRcXGJyb2tlci1hdXRoLWxheW91dC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF5b3V0cy9icm9rZXItYXV0aC1sYXlvdXQvYnJva2VyLWF1dGgtbGF5b3V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRVEsMkJBQTJCO0FDQW5DOztBREZBO0VBSVksYUFBYTtFQUNiLG1CQUFtQjtBQ0UvQjs7QURQQTtFQU9nQixnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLFdBQVc7QUNJM0I7O0FEYkE7RUFhWSxXQUFXO0FDSXZCOztBRGpCQTtFQWdCb0IsZ0JBQWdCO0FDS3BDOztBREVBO0VBQ0k7SUFDSSxhQUFhO0VDQ25CO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvY29tcG9uZW50cy9sYXlvdXRzL2Jyb2tlci1hdXRoLWxheW91dC9icm9rZXItYXV0aC1sYXlvdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLXRvcG5hdntcclxuICAgICYubWF0LWVsZXZhdGlvbi16MntcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjMDAwICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgLnRvcGJhci1icmFuZGluZ3tcclxuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgICAgICAgLmFwcC1sb2dve1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMDtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogYXV0bztcclxuICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5sb2dpbi0tYnRue1xyXG4gICAgICAgICAgICBjb2xvcjogIzAwMDtcclxuICAgICAgICAgICAgOjpuZy1kZWVwe1xyXG4gICAgICAgICAgICAgICAgLm1hdC1idXR0b24td3JhcHBlcntcclxuICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU5OXB4KSB7XHJcbiAgICAuYWxyZWFkeS0tYWNje1xyXG4gICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICB9XHJcbn0iLCIuaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIHtcbiAgYmFja2dyb3VuZDogIzAwMCAhaW1wb3J0YW50O1xufVxuXG4uaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIC50b3BiYXItYnJhbmRpbmcge1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIC50b3BiYXItYnJhbmRpbmcgLmFwcC1sb2dvIHtcbiAgYm9yZGVyLXJhZGl1czogMDtcbiAgaGVpZ2h0OiBhdXRvO1xuICB3aWR0aDogYXV0bztcbn1cblxuLmhlYWRlci10b3BuYXYubWF0LWVsZXZhdGlvbi16MiAubG9naW4tLWJ0biB7XG4gIGNvbG9yOiAjMDAwO1xufVxuXG4uaGVhZGVyLXRvcG5hdi5tYXQtZWxldmF0aW9uLXoyIC5sb2dpbi0tYnRuIDo6bmctZGVlcCAubWF0LWJ1dHRvbi13cmFwcGVyIHtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1OTlweCkge1xuICAuYWxyZWFkeS0tYWNjIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG4iXX0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BrokerAuthLayoutComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'app-auth-layout',
-                templateUrl: './auth-layout.component.html',
-                styleUrls: ['./auth-layout.component.scss']
+                selector: 'app-broker-auth-layout',
+                templateUrl: './broker-auth-layout.component.html',
+                styleUrls: ['./broker-auth-layout.component.scss']
             }]
     }], function () { return []; }, null); })();
 
@@ -3411,13 +3463,6 @@ class NotificationsComponent {
                 route: '/inbox',
                 color: 'primary'
             }, {
-                title: 'Simon St Lagger',
-                message: 'Dont forget to call me after you finish your call',
-                image: 'assets/images/face-2.jpg',
-                time: '55 min ago',
-                route: '/chat',
-                color: 'accent'
-            }, {
                 title: 'Marko Apostolski',
                 message: 'Max call me and told me about your exam.',
                 image: 'assets/images/face-3.jpg',
@@ -3885,6 +3930,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pre_login_footer_pre_login_footer_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pre-login-footer/pre-login-footer.component */ "./src/app/shared/components/pre-login-footer/pre-login-footer.component.ts");
 /* harmony import */ var _layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./layouts/broker-layout/broker-layout.component */ "./src/app/shared/components/layouts/broker-layout/broker-layout.component.ts");
 /* harmony import */ var _broker_top_header_broker_top_header_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./broker-top-header/broker-top-header.component */ "./src/app/shared/components/broker-top-header/broker-top-header.component.ts");
+/* harmony import */ var _layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./layouts/broker-auth-layout/broker-auth-layout.component */ "./src/app/shared/components/layouts/broker-auth-layout/broker-auth-layout.component.ts");
 
 
 
@@ -3902,6 +3948,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // ALWAYS REQUIRED 
+
 
 
 
@@ -3938,6 +3985,7 @@ const components = [
     _pre_login_header_top_pre_login_header_top_component__WEBPACK_IMPORTED_MODULE_25__["PreLoginHeaderTopComponent"],
     _pre_login_footer_pre_login_footer_component__WEBPACK_IMPORTED_MODULE_26__["PreLoginFooterComponent"],
     _layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_27__["BrokerLayoutComponent"],
+    _layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_29__["BrokerAuthLayoutComponent"],
     _broker_top_header_broker_top_header_component__WEBPACK_IMPORTED_MODULE_28__["BrokerHeaderTopComponent"]
 ];
 class SharedComponentsModule {
@@ -3973,6 +4021,7 @@ SharedComponentsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _pre_login_header_top_pre_login_header_top_component__WEBPACK_IMPORTED_MODULE_25__["PreLoginHeaderTopComponent"],
         _pre_login_footer_pre_login_footer_component__WEBPACK_IMPORTED_MODULE_26__["PreLoginFooterComponent"],
         _layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_27__["BrokerLayoutComponent"],
+        _layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_29__["BrokerAuthLayoutComponent"],
         _broker_top_header_broker_top_header_component__WEBPACK_IMPORTED_MODULE_28__["BrokerHeaderTopComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"],
@@ -4000,6 +4049,7 @@ SharedComponentsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _pre_login_header_top_pre_login_header_top_component__WEBPACK_IMPORTED_MODULE_25__["PreLoginHeaderTopComponent"],
         _pre_login_footer_pre_login_footer_component__WEBPACK_IMPORTED_MODULE_26__["PreLoginFooterComponent"],
         _layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_27__["BrokerLayoutComponent"],
+        _layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_29__["BrokerAuthLayoutComponent"],
         _broker_top_header_broker_top_header_component__WEBPACK_IMPORTED_MODULE_28__["BrokerHeaderTopComponent"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SharedComponentsModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
