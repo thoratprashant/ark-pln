@@ -10,6 +10,9 @@ import { AuthRoutes } from './auth.routing';
 import { SigninComponent } from './signin/signin.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ErrorComponent } from './error/error.component';
 
 // import { CommonDirectivesModule } from './sdirectives/common/common-directives.module';
  
@@ -25,6 +28,9 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     PerfectScrollbarModule, 
     RouterModule.forChild(AuthRoutes)
   ],
-  declarations: [ SigninComponent, ForgotPasswordComponent, ResetPasswordComponent]
+  declarations: [ 
+    SigninComponent, ForgotPasswordComponent, ResetPasswordComponent,
+    ComingSoonComponent, NotFoundComponent, ErrorComponent
+  ]
 })
 export class AuthModule { }
