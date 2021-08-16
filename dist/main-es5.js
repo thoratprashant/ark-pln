@@ -706,25 +706,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           title: 'Prelogin'
         }
       }]
-    }, {
+    }, // All signup module
+    {
       path: '',
       component: _shared_components_layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__["BrokerAuthLayoutComponent"],
       children: [{
-        path: 'broker',
+        path: 'signup',
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
-          /*! import() | views-sessions-sessions-module */
-          "views-sessions-sessions-module").then(__webpack_require__.bind(null,
-          /*! ./views/sessions/sessions.module */
-          "./src/app/views/sessions/sessions.module.ts")).then(function (m) {
-            return m.SessionsModule;
+          /*! import() | views-auth-signup-signup-module */
+          "views-auth-signup-signup-module").then(__webpack_require__.bind(null,
+          /*! ./views/auth/signup/signup.module */
+          "./src/app/views/auth/signup/signup.module.ts")).then(function (m) {
+            return m.SignupModule;
           });
         },
         data: {
           title: 'Signup'
         }
       }]
-    }, {
+    }, // After login pages
+    {
       path: '',
       component: _shared_components_layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_2__["BrokerLayoutComponent"],
       children: [{
@@ -742,7 +744,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           title: 'Broker'
         }
       }]
-    }, {
+    }, // Signin, forgot password, reset password pages
+    {
       path: '',
       component: _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_0__["AuthLayoutComponent"],
       children: [{
@@ -760,7 +763,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           title: 'Auth'
         }
       }]
-    }, {
+    }, // Page not found
+    {
       path: '**',
       redirectTo: 'sessions/404'
     }];
@@ -4867,7 +4871,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
     var _c0 = function _c0() {
-      return ["/broker/signup"];
+      return ["/signup"];
     };
 
     var AuthLayoutComponent = /*#__PURE__*/function () {
@@ -5895,7 +5899,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       decls: 18,
       vars: 20,
-      consts: [[1, "app-admin-wrap", 3, "dir"], [3, "dir", "ngClass"], [3, "notificPanel", 4, "ngIf"], [3, "mouseenter", "mouseleave", 4, "ngIf"], [4, "ngIf"], ["id", "content-wrapper", 1, "content-wrapper", "full-width", 3, "perfectScrollbar", "disabled"], ["id", "rightside-content-hold", 1, "rightside-content-hold", "p-0", 3, "perfectScrollbar", "disabled"], ["class", "view-loader", "style", "position:fixed;", "fxLayout", "column", "fxLayoutAlign", "center center", 4, "ngIf"], [1, "container-dynamic"], [1, "sidebar-backdrop", 3, "ngClass", "click"], ["mode", "over", "position", "end", 1, ""], ["notificationPanel", ""], ["fxLayout", "column", 1, "nofication-panel"], [3, "notificPanel"], [3, "mouseenter", "mouseleave"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "view-loader", 2, "position", "fixed"], [1, "spinner"], [1, "double-bounce1", "mat-bg-accent"], [1, "double-bounce2", "mat-bg-primary"]],
+      consts: [[1, "app-admin-wrap", 3, "dir"], ["id", "abcd", 3, "dir", "ngClass"], [3, "notificPanel", 4, "ngIf"], [3, "mouseenter", "mouseleave", 4, "ngIf"], [4, "ngIf"], ["id", "content-wrapper", 1, "content-wrapper", "full-width", 3, "perfectScrollbar", "disabled"], ["id", "rightside-content-hold", 1, "rightside-content-hold", "p-0", 3, "perfectScrollbar", "disabled"], ["class", "view-loader", "style", "position:fixed;", "fxLayout", "column", "fxLayoutAlign", "center center", 4, "ngIf"], [1, "container-dynamic"], [1, "sidebar-backdrop", 3, "ngClass", "click"], ["mode", "over", "position", "end", 1, ""], ["notificationPanel", ""], ["fxLayout", "column", 1, "nofication-panel"], [3, "notificPanel"], [3, "mouseenter", "mouseleave"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "view-loader", 2, "position", "fixed"], [1, "spinner"], [1, "double-bounce1", "mat-bg-accent"], [1, "double-bounce2", "mat-bg-primary"]],
       template: function PreLoginLayoutComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -6987,7 +6991,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/icon.js");
 
     var _c0 = function _c0() {
-      return ["/broker/signup"];
+      return ["/signin"];
+    };
+
+    var _c1 = function _c1() {
+      return ["/signup"];
     };
 
     function PreLoginHeaderTopComponent_ul_5_Template(rf, ctx) {
@@ -7132,9 +7140,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](38);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c1));
       }
     }
 
@@ -7287,7 +7299,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       decls: 7,
       vars: 2,
-      consts: [[1, "header-topnav", "mat-elevation-z2", "landing--header--wrapper"], [1, "topnav"], [1, "topbar-branding"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo"], ["fxFlex", ""], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", "class", "menu", 4, "ngIf"], ["mat-icon-button", "", "class", "mr-1", 3, "click", 4, "ngIf"], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", 1, "menu"], ["mat-button", "", 1, "mat-button"], [1, "options"], ["mat-button", "", 1, "mat-button", "lender-login-btn"], ["mat-button", "", 1, "mat-button", "sign-up-btn", 3, "routerLink"], ["mat-icon-button", "", 1, "mr-1", 3, "click"]],
+      consts: [[1, "header-topnav", "mat-elevation-z2", "landing--header--wrapper"], [1, "topnav"], [1, "topbar-branding"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo"], ["fxFlex", ""], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", "class", "menu", 4, "ngIf"], ["mat-icon-button", "", "class", "mr-1", 3, "click", 4, "ngIf"], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", 1, "menu"], ["mat-button", "", 1, "mat-button"], [1, "options"], ["mat-button", "", 1, "mat-button", "lender-login-btn", 3, "routerLink"], ["mat-button", "", 1, "mat-button", "sign-up-btn", 3, "routerLink"], ["mat-icon-button", "", 1, "mr-1", 3, "click"]],
       template: function PreLoginHeaderTopComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -7302,7 +7314,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "span", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, PreLoginHeaderTopComponent_ul_5_Template, 43, 2, "ul", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, PreLoginHeaderTopComponent_ul_5_Template, 43, 4, "ul", 5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, PreLoginHeaderTopComponent_button_6_Template, 3, 0, "button", 6);
 

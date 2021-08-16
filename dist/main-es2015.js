@@ -523,17 +523,19 @@ const rootRouterConfig = [
             }
         ]
     },
+    // All signup module
     {
         path: '',
         component: _shared_components_layouts_broker_auth_layout_broker_auth_layout_component__WEBPACK_IMPORTED_MODULE_1__["BrokerAuthLayoutComponent"],
         children: [
             {
-                path: 'broker',
-                loadChildren: () => __webpack_require__.e(/*! import() | views-sessions-sessions-module */ "views-sessions-sessions-module").then(__webpack_require__.bind(null, /*! ./views/sessions/sessions.module */ "./src/app/views/sessions/sessions.module.ts")).then(m => m.SessionsModule),
+                path: 'signup',
+                loadChildren: () => __webpack_require__.e(/*! import() | views-auth-signup-signup-module */ "views-auth-signup-signup-module").then(__webpack_require__.bind(null, /*! ./views/auth/signup/signup.module */ "./src/app/views/auth/signup/signup.module.ts")).then(m => m.SignupModule),
                 data: { title: 'Signup' }
             }
         ]
     },
+    // After login pages
     {
         path: '',
         component: _shared_components_layouts_broker_layout_broker_layout_component__WEBPACK_IMPORTED_MODULE_2__["BrokerLayoutComponent"],
@@ -545,6 +547,7 @@ const rootRouterConfig = [
             }
         ]
     },
+    // Signin, forgot password, reset password pages
     {
         path: '',
         component: _shared_components_layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_0__["AuthLayoutComponent"],
@@ -556,6 +559,7 @@ const rootRouterConfig = [
             }
         ]
     },
+    // Page not found
     {
         path: '**',
         redirectTo: 'sessions/404'
@@ -2591,7 +2595,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = function () { return ["/broker/signup"]; };
+const _c0 = function () { return ["/signup"]; };
 class AuthLayoutComponent {
     constructor() { }
     ngOnInit() {
@@ -3113,7 +3117,7 @@ class PreLoginLayoutComponent {
 PreLoginLayoutComponent.ɵfac = function PreLoginLayoutComponent_Factory(t) { return new (t || PreLoginLayoutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_theme_service__WEBPACK_IMPORTED_MODULE_2__["ThemeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_layout_service__WEBPACK_IMPORTED_MODULE_3__["LayoutService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_jwt_auth_service__WEBPACK_IMPORTED_MODULE_5__["JwtAuthService"])); };
 PreLoginLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PreLoginLayoutComponent, selectors: [["app-pre-login-layout"]], hostBindings: function PreLoginLayoutComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("resize", function PreLoginLayoutComponent_resize_HostBindingHandler($event) { return ctx.onResize($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"]);
-    } }, decls: 18, vars: 20, consts: [[1, "app-admin-wrap", 3, "dir"], [3, "dir", "ngClass"], [3, "notificPanel", 4, "ngIf"], [3, "mouseenter", "mouseleave", 4, "ngIf"], [4, "ngIf"], ["id", "content-wrapper", 1, "content-wrapper", "full-width", 3, "perfectScrollbar", "disabled"], ["id", "rightside-content-hold", 1, "rightside-content-hold", "p-0", 3, "perfectScrollbar", "disabled"], ["class", "view-loader", "style", "position:fixed;", "fxLayout", "column", "fxLayoutAlign", "center center", 4, "ngIf"], [1, "container-dynamic"], [1, "sidebar-backdrop", 3, "ngClass", "click"], ["mode", "over", "position", "end", 1, ""], ["notificationPanel", ""], ["fxLayout", "column", 1, "nofication-panel"], [3, "notificPanel"], [3, "mouseenter", "mouseleave"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "view-loader", 2, "position", "fixed"], [1, "spinner"], [1, "double-bounce1", "mat-bg-accent"], [1, "double-bounce2", "mat-bg-primary"]], template: function PreLoginLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 18, vars: 20, consts: [[1, "app-admin-wrap", 3, "dir"], ["id", "abcd", 3, "dir", "ngClass"], [3, "notificPanel", 4, "ngIf"], [3, "mouseenter", "mouseleave", 4, "ngIf"], [4, "ngIf"], ["id", "content-wrapper", 1, "content-wrapper", "full-width", 3, "perfectScrollbar", "disabled"], ["id", "rightside-content-hold", 1, "rightside-content-hold", "p-0", 3, "perfectScrollbar", "disabled"], ["class", "view-loader", "style", "position:fixed;", "fxLayout", "column", "fxLayoutAlign", "center center", 4, "ngIf"], [1, "container-dynamic"], [1, "sidebar-backdrop", 3, "ngClass", "click"], ["mode", "over", "position", "end", 1, ""], ["notificationPanel", ""], ["fxLayout", "column", 1, "nofication-panel"], [3, "notificPanel"], [3, "mouseenter", "mouseleave"], ["fxLayout", "column", "fxLayoutAlign", "center center", 1, "view-loader", 2, "position", "fixed"], [1, "spinner"], [1, "double-bounce1", "mat-bg-accent"], [1, "double-bounce2", "mat-bg-primary"]], template: function PreLoginLayoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-sidenav-container", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-sidenav-content");
@@ -3687,7 +3691,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = function () { return ["/broker/signup"]; };
+const _c0 = function () { return ["/signin"]; };
+const _c1 = function () { return ["/signup"]; };
 function PreLoginHeaderTopComponent_ul_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "li");
@@ -3759,8 +3764,10 @@ function PreLoginHeaderTopComponent_ul_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](41);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c1));
 } }
 function PreLoginHeaderTopComponent_button_6_Template(rf, ctx) { if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -3860,14 +3867,14 @@ class PreLoginHeaderTopComponent {
     }
 }
 PreLoginHeaderTopComponent.ɵfac = function PreLoginHeaderTopComponent_Factory(t) { return new (t || PreLoginHeaderTopComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_layout_service__WEBPACK_IMPORTED_MODULE_3__["LayoutService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_shared_services_navigation_service__WEBPACK_IMPORTED_MODULE_1__["NavigationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_shared_services_theme_service__WEBPACK_IMPORTED_MODULE_2__["ThemeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](app_shared_services_auth_jwt_auth_service__WEBPACK_IMPORTED_MODULE_4__["JwtAuthService"])); };
-PreLoginHeaderTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PreLoginHeaderTopComponent, selectors: [["app-pre-login-header-top"]], inputs: { notificPanel: "notificPanel" }, decls: 7, vars: 2, consts: [[1, "header-topnav", "mat-elevation-z2", "landing--header--wrapper"], [1, "topnav"], [1, "topbar-branding"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo"], ["fxFlex", ""], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", "class", "menu", 4, "ngIf"], ["mat-icon-button", "", "class", "mr-1", 3, "click", 4, "ngIf"], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", 1, "menu"], ["mat-button", "", 1, "mat-button"], [1, "options"], ["mat-button", "", 1, "mat-button", "lender-login-btn"], ["mat-button", "", 1, "mat-button", "sign-up-btn", 3, "routerLink"], ["mat-icon-button", "", 1, "mr-1", 3, "click"]], template: function PreLoginHeaderTopComponent_Template(rf, ctx) { if (rf & 1) {
+PreLoginHeaderTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PreLoginHeaderTopComponent, selectors: [["app-pre-login-header-top"]], inputs: { notificPanel: "notificPanel" }, decls: 7, vars: 2, consts: [[1, "header-topnav", "mat-elevation-z2", "landing--header--wrapper"], [1, "topnav"], [1, "topbar-branding"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo"], ["fxFlex", ""], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", "class", "menu", 4, "ngIf"], ["mat-icon-button", "", "class", "mr-1", 3, "click", 4, "ngIf"], ["fxLayout", "row", "fxLayout.xs", "row", "fxLayoutAlign", "space-between center", 1, "menu"], ["mat-button", "", 1, "mat-button"], [1, "options"], ["mat-button", "", 1, "mat-button", "lender-login-btn", 3, "routerLink"], ["mat-button", "", 1, "mat-button", "sign-up-btn", 3, "routerLink"], ["mat-icon-button", "", 1, "mr-1", 3, "click"]], template: function PreLoginHeaderTopComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "span", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, PreLoginHeaderTopComponent_ul_5_Template, 43, 2, "ul", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, PreLoginHeaderTopComponent_ul_5_Template, 43, 4, "ul", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, PreLoginHeaderTopComponent_button_6_Template, 3, 0, "button", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

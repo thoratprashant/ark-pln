@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"views-auth-auth-module":"views-auth-auth-module","views-broker-broker-module":"views-broker-broker-module","views-pre-login-pre-login-module":"views-pre-login-pre-login-module","views-sessions-sessions-module":"views-sessions-sessions-module"}[chunkId]||chunkId) + "-es2015.js"
+/******/ 		return __webpack_require__.p + "" + ({"views-auth-auth-module":"views-auth-auth-module","views-auth-signup-signup-module":"views-auth-signup-signup-module","views-broker-broker-module":"views-broker-broker-module","views-pre-login-pre-login-module":"views-pre-login-pre-login-module"}[chunkId]||chunkId) + "-es2015.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
