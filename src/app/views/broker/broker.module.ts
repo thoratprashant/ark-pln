@@ -26,6 +26,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { SharedPipesModule } from 'app/shared/pipes/shared-pipes.module';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupSuccessfulComponent } from './signup-successful/signup-successful.component';
+import { DashboardDayOneComponent } from './dashboard-day-one/dashboard-day-one.component';
 
 // import { CommonDirectivesModule } from './sdirectives/common/common-directives.module';
  
@@ -59,6 +60,6 @@ import { SignupSuccessfulComponent } from './signup-successful/signup-successful
     SharedPipesModule,  
     RouterModule.forChild(BrokerRoutes)
   ],
-  declarations: [ProfileComponent, SignupSuccessfulComponent ]
+  declarations: [ProfileComponent, SignupSuccessfulComponent, DashboardDayOneComponent ]
 })
 export class BrokerModule { }
