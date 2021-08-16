@@ -8,9 +8,9 @@ import { SharedMaterialModule } from 'app/shared/shared-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 // import { CommonDirectivesModule } from './sdirectives/common/common-directives.module';
- 
-import { SessionsRoutes } from "./sessions.routing"; 
-import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.component'; 
+   
+import { SignupRoutes } from './signup.routing';
+import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.component';
 
 
 @NgModule({
@@ -21,10 +21,10 @@ import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.co
     SharedMaterialModule,
     FlexLayoutModule,
     PerfectScrollbarModule, 
-    RouterModule.forChild(SessionsRoutes)
+    RouterModule.forChild(SignupRoutes)
   ],
   declarations: [ 
     BrokerSignUpComponent
   ]
 })
-export class SessionsModule { }
+export class SignupModule { }

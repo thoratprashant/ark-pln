@@ -6,9 +6,7 @@ import { BrokerLayoutComponent } from './shared/components/layouts/broker-layout
 import { PreLoginLayoutComponent } from './shared/components/layouts/pre-login/pre-login-layout.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
-export const rootRouterConfig: Routes = [
-   
-
+export const rootRouterConfig: Routes = [ 
 
   // Landing layout 
   {
@@ -23,18 +21,20 @@ export const rootRouterConfig: Routes = [
     ]
   },
 
+  // All signup module
   {
     path: '', 
     component: BrokerAuthLayoutComponent,
     children: [
       { 
-        path: 'broker', 
-        loadChildren: () => import('./views/sessions/sessions.module').then(m => m.SessionsModule),
+        path: 'signup', 
+        loadChildren: () => import('./views/auth/signup/signup.module').then(m => m.SignupModule),
         data: { title: 'Signup'} 
       }
     ]
   },
 
+  // After login pages
   {
     path: '', 
     component: BrokerLayoutComponent,
@@ -47,6 +47,7 @@ export const rootRouterConfig: Routes = [
     ]
   },
 
+  // Signin, forgot password, reset password pages
   {
     path: '', 
     component: AuthLayoutComponent,
@@ -59,6 +60,7 @@ export const rootRouterConfig: Routes = [
     ]
   },
  
+  // Page not found
   { 
     path: '**', 
     redirectTo: 'sessions/404'
