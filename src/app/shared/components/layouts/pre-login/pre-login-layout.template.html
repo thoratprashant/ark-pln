@@ -4,7 +4,7 @@
 
   <!-- Main Container -->
   <mat-sidenav-container [dir]='layoutConf.dir'
-    class="app-admin-container app-side-nav-container mat-drawer-transition sidebar-{{layoutConf?.sidebarColor}} topbar-{{layoutConf?.topbarColor}} footer-{{layoutConf?.footerColor}}"
+    id="abcd" class="app-admin-container app-side-nav-container mat-drawer-transition sidebar-{{layoutConf?.sidebarColor}} topbar-{{layoutConf?.topbarColor}} footer-{{layoutConf?.footerColor}}"
     [ngClass]="adminContainerClasses">
     <mat-sidenav-content>
       <app-pre-login-header-top *ngIf="layoutConf.navigationPos === 'side'" [notificPanel]="notificationPanel">

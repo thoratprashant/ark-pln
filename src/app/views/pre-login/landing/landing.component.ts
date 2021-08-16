@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 
 @Component({
@@ -11,6 +13,12 @@ export class LandingComponent implements OnInit {
   tdatas: any;
   cfDatas: any;
   constructor() { }
+
+  
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    console.log('yeeeeeeeeeeee')
+  }
 
   ngOnInit(): void {
     this.tdatas = [
@@ -50,6 +58,28 @@ export class LandingComponent implements OnInit {
         clientAdd: "Atlanta, GA"
       }
     ]
+  }
+
+  ngAfterViewInit(): void {
+
+    const content = document.querySelector('.app-admin-container');
+    const scroll$ = fromEvent(content, 'scroll').pipe(map(() => content));
+
+    scroll$.subscribe(element => {
+      console.log('32131')
+    });
+  }
+
+  
+  backToTop() {
+   
+    // const abs = document.body.scrollTop = 0; // For Safari
+    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    // console.log(abs)
+
+    const mainDiv = document.getElementById('abcd');
+    mainDiv.scrollTop = 0;
+    console.log(mainDiv)
   }
 
 }

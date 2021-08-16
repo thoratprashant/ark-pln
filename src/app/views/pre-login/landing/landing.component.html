@@ -1,71 +1,91 @@
-<section class="section-one bg-img mb-130" fxLayout="row wrap" style="background-image: url('assets/images/arkenea/banner1.webp')">
-    <div fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100" >
+<section id="mainDIV" class="section-one bg-img mb-130" fxLayout="row wrap"
+    style="background-image: url('assets/images/arkenea/banner1.webp')">
+    <div fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+        fxFlex.xl="100">
         <h1 class="main-heading">Build to Scale</h1>
-        <p class="main-desc">Funding projects for builders and real estate investors in select markets throughout the country <br>
+        <p class="main-desc">Funding projects for builders and real estate investors in select markets throughout the
+            country <br>
             with an emphasis on their growth.</p>
-        <button mat-raised-button class="primary-black-btn">Get Started</button> 
+        <button mat-raised-button class="primary-black-btn">Get Started</button>
     </div>
 </section>
 
 <section class="section-two mb-130" fxLayout="row">
     <div class="container">
         <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start start" fxFlex="100" fxLayoutGap="30px">
-            <div *ngFor="let tdata of tdatas" fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="thumbnail-round" fxLayout="row" fxLayoutAlign="center center">                      
+            <div *ngFor="let tdata of tdatas" fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100"
+                fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="33.33" fxFlex.xl="33.33">
+                <div class="thumbnail-round" fxLayout="row" fxLayoutAlign="center center">
                     <i class="fa {{tdata.iconName}}" aria-hidden="true"></i>
-                </div>    
-                <h1>{{tdata.heading}}</h1>    
+                </div>
+                <h1>{{tdata.heading}}</h1>
                 <p class="m-0">{{tdata.info}}</p>
             </div>
-             
+
         </div>
     </div>
 </section>
 
-<section class="section-three mb-30 left-right-box-img" fxLayout="row" style="background-image: url('assets/images/arkenea/right1.webp')">
+<section class="section-three mb-30 left-right-box-img" fxLayout="row"
+    style="background-image: url('assets/images/arkenea/right1.webp')">
     <div class="container">
-        <div fxLayout="row"  fxLayoutAlign="start center" fxFlex="100" class=""  >
-            <div class="details-box" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start" fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="58" fxFlex.lg="57" fxFlex.xl="80">
-                <h1 class="main-heading">Less Risk. More Profit</h1>    
-                <p class="main-desc">By investing more of your time, energy and money into a project as compared to its down payment, you get the peace of mind that your deal is well capitalized and realize much more return on your investment.</p>
-                <button mat-raised-button class="primary-black-btn">Learn More</button> 
-            </div>  
+        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100" class="">
+            <div class="details-box" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start"
+                fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="58" fxFlex.lg="57" fxFlex.xl="80">
+                <h1 class="main-heading">Less Risk. More Profit</h1>
+                <p class="main-desc">By investing more of your time, energy and money into a project as compared to its
+                    down payment, you get the peace of mind that your deal is well capitalized and realize much more
+                    return on your investment.</p>
+                <button mat-raised-button class="primary-black-btn">Learn More</button>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section-three mb-30 left-right-box-img left" fxLayout="row" style="background-image: url('assets/images/arkenea/left1.webp')">
+<section class="section-three mb-30 left-right-box-img left" fxLayout="row"
+    style="background-image: url('assets/images/arkenea/left1.webp')">
     <div class="container">
-        <div fxLayout="row" fxLayoutAlign="end center" fxFlex="100" class=""  >
-            <div class="details-box" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start" fxFlex.xs="100" fxFlex.sm="71" fxFlex.md="58" fxFlex.lg="57" fxFlex.xl="80">
-                <h1 class="main-heading">Capitalize on the Housing Shortage</h1>    
-                <p class="main-desc">One of the unexpected consequences of one of the most aggressive real estate markets in our history is the emergence of a housing crisis triggered by a housing shortage. If buyers have less homes to buy, our clients are able to capitalize by bringing fresh new inventory to the respective markets and capitalizing on the shortage while also solving for the problem.</p>
-                <button mat-raised-button class="primary-black-btn">Read More</button> 
-            </div>  
+        <div fxLayout="row" fxLayoutAlign="end center" fxFlex="100" class="">
+            <div class="details-box" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start"
+                fxFlex.xs="100" fxFlex.sm="71" fxFlex.md="58" fxFlex.lg="57" fxFlex.xl="80">
+                <h1 class="main-heading">Capitalize on the Housing Shortage</h1>
+                <p class="main-desc">One of the unexpected consequences of one of the most aggressive real estate
+                    markets in our history is the emergence of a housing crisis triggered by a housing shortage. If
+                    buyers have less homes to buy, our clients are able to capitalize by bringing fresh new inventory to
+                    the respective markets and capitalizing on the shortage while also solving for the problem.</p>
+                <button mat-raised-button class="primary-black-btn">Read More</button>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section-three mb-30 left-right-box-img" fxLayout="row" style="background-image: url('assets/images/arkenea/right2.webp')">
+<section class="section-three mb-30 left-right-box-img" fxLayout="row"
+    style="background-image: url('assets/images/arkenea/right2.webp')">
     <div class="container">
-        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100" class=""  >
-            <div class="details-box" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start" fxFlex.xs="100" fxFlex.sm="66" fxFlex.md="58" fxFlex.lg="57" fxFlex.xl="80">
-                <h1 class="main-heading">Relationships > Deals</h1>    
-                <p class="main-desc">Deals are important and they make up the lifeblood of each of our businesses, but relationships matter most. As the expert in your market, we want to partner with you by providing the financing your deal requires to help grow your business.</p>
-                <button mat-raised-button class="primary-black-btn">Our Ideal Clients</button> 
-            </div>  
+        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100" class="">
+            <div class="details-box" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start"
+                fxFlex.xs="100" fxFlex.sm="66" fxFlex.md="58" fxFlex.lg="57" fxFlex.xl="80">
+                <h1 class="main-heading">Relationships > Deals</h1>
+                <p class="main-desc">Deals are important and they make up the lifeblood of each of our businesses, but
+                    relationships matter most. As the expert in your market, we want to partner with you by providing
+                    the financing your deal requires to help grow your business.</p>
+                <button mat-raised-button class="primary-black-btn">Our Ideal Clients</button>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section-four mb-130 bg-img" fxLayout="row" style="background-image: url('assets/images/arkenea/banner2.webp')">
+<section class="section-four mb-130 bg-img" fxLayout="row"
+    style="background-image: url('assets/images/arkenea/banner2.webp')">
     <div class="container">
-        <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100" class=""  >
-            <div fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="50" fxFlex.lg="47" fxFlex.xl="47">
-                <h1 class="main-heading mb-0">Surround Yourself</h1>    
-                <p class="main-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                <button mat-raised-button class="primary-black-btn">Connect with members</button> 
-            </div>  
+        <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100" class="">
+            <div fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="50"
+                fxFlex.lg="47" fxFlex.xl="47">
+                <h1 class="main-heading mb-0">Surround Yourself</h1>
+                <p class="main-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <button mat-raised-button class="primary-black-btn">Connect with members</button>
+            </div>
         </div>
     </div>
 </section>
@@ -73,16 +93,18 @@
 <section class="section-five mb-130" fxLayout="row">
     <div class="container" fxLayout="column">
         <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100">
-            <h1 class="main-heading m-0">What Our Clients Are Saying...</h1> 
+            <h1 class="main-heading m-0">What Our Clients Are Saying...</h1>
         </div>
-        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start" fxFlex="100" fxLayoutGap="30px">
-            <div *ngFor="let cfData of cfDatas" fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="33.33" fxFlex.xl="33.33">
-                <div class="client--feedback--wrapper" fxLayout="column" >
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start"
+            fxFlex="100" fxLayoutGap="30px">
+            <div *ngFor="let cfData of cfDatas" fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100"
+                fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="33.33" fxFlex.xl="33.33">
+                <div class="client--feedback--wrapper" fxLayout="column">
                     <div class="feedback--box relative">
                         <p class="m-0">
                             {{cfData.comment}}
                         </p>
-                        <div class="exclamatory--sec" fxLayout="row" fxLayoutAlign="center center" >
+                        <div class="exclamatory--sec" fxLayout="row" fxLayoutAlign="center center">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -93,17 +115,26 @@
                         <h5 class="m-0"> {{cfData.clientName}}</h5>
                         <p class="m-0"> {{cfData.clientAdd}}</p>
                     </div>
-                </div> 
-            </div> 
-             
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section class="section-six bg-img" fxLayout="row wrap" style="background-image: url('assets/images/arkenea/banner3.webp')">
-    <div fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100" >
+<section class="section-six bg-img" fxLayout="row wrap"
+    style="background-image: url('assets/images/arkenea/banner3.webp')">
+    <div fxLayout="column" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+        fxFlex.xl="100">
         <h1 class="main-heading m-0">Let’s Talk</h1>
-        <p class="main-desc">The Private Lender Network is in search of the nation’s most ambitious and experienced real estate private lenders who are ready to take their operations to the next level and become the leaders in their market. Are you ready to join the industry’s elite?</p>
-        <button mat-raised-button class="primary-black-btn">Let’s  Talk</button> 
+        <p class="main-desc">The Private Lender Network is in search of the nation’s most ambitious and experienced real
+            estate private lenders who are ready to take their operations to the next level and become the leaders in
+            their market. Are you ready to join the industry’s elite?</p>
+        <button mat-raised-button class="primary-black-btn">Let’s Talk</button>
     </div>
-</section> 
+</section>
+
+<!-- Back to top -->
+<div class="back--to--top" (click)="backToTop()">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
