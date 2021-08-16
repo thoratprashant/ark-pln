@@ -35,7 +35,7 @@
                                             </mat-form-field>
                                         </div>
                                         <mat-form-field class="full-width">
-                                            <mat-label>Email</mat-label>
+                                            <mat-label>Email *</mat-label>
                                             <input matInput formControlName="email" type="email" name="email"
                                                 placeholder="Email *" />
                                         </mat-form-field>
@@ -129,13 +129,14 @@
                 </mat-step>
                 <mat-step>
                     <form [formGroup]="thirdFormGroup">
-                        <ng-template matStepLabel>Partner with the PLN</ng-template>
+                        <ng-template matStepLabel>Set Password</ng-template>
                         <div class="signIn-wrapper signup--step--one">
                             <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
                             <mat-card>
                                 <mat-card-content>
-                                    <div fxLayout="row" fxLayoutAlign="center center">
-                                        <h1>Partner with the PLN</h1>
+                                    <div fxLayout="column" fxLayoutAlign="center center">
+                                        <h1 class="mb-15">Partner with the PLN</h1>
+                                        <p class="clr-222 fnt-14 mb-30">Fill the form to streamline your process</p>
                                     </div>
                                     <div fxLayout="column" fxLayoutAlign="start">
                                         <mat-form-field class="full-width">

@@ -13,6 +13,9 @@
 
 .mb-3{margin-bottom: 3px !important;}
 .mb-5{margin-bottom: 5px !important;}
+.mb-15{margin-bottom: 15px !important;}
+.mb-20{margin-bottom: 20px !important;}
+.mb-30{margin-bottom: 30px !important;}
 
 
 .mt-5{margin-top: 5px !important;}
@@ -111,3 +114,36 @@
     padding: 0;
 }
 /* after login background image (end here) */
+
+.back--to--top{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #1f1f21;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99999;
+}
+.broker--top.header-topnav{
+    background: #000 !important;
+}
+.signout--btn{
+    width: 36px !important;
+    height: 36px !important;
+    background-color: #ddd !important;
+}
+.signout--btn .mat-button-wrapper{
+    padding: 0 !important; 
+    line-height: 36px !important;
+}
+.signout--btn .fa{
+    font-size: 18px;
+    color: #fff;
+}

@@ -161,8 +161,8 @@
         .primary-btn{
             ::ng-deep{
                 .mat-icon{
-                    margin-right: 7px;
-                    color:#eee;
+                    margin-right: 7px !important;
+                    color: #eee !important;
                 }
             }
         }
@@ -215,9 +215,26 @@
         }
     }
 }
+::ng-deep{
+    .card-title{
+        border-bottom: 1px solid #ddd !important;     
+    }
+}
 
 
-
+@media only screen and (max-width: 599px) {
+   ::ng-deep{
+        .main-profile-wrapper .mat-tab-header{
+            margin-top: 0;
+        }
+        .line-wrapper {
+            .line{
+                height: auto; 
+                padding: 10px 5px 10px 0;
+            }
+        }
+   }
+}
 
 
 

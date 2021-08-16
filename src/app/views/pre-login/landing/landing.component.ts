@@ -12,13 +12,17 @@ export class LandingComponent implements OnInit {
 
   tdatas: any;
   cfDatas: any;
-  constructor() { }
+  constructor() { 
+    
+  }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    console.log(window.scrollY); 
+  }
 
   
-  @HostListener('window:scroll', ['$event'])
-  onScroll() {
-    console.log('yeeeeeeeeeeee')
-  }
+
+ 
 
   ngOnInit(): void {
     this.tdatas = [
@@ -71,15 +75,6 @@ export class LandingComponent implements OnInit {
   }
 
   
-  backToTop() {
-   
-    // const abs = document.body.scrollTop = 0; // For Safari
-    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    // console.log(abs)
 
-    const mainDiv = document.getElementById('abcd');
-    mainDiv.scrollTop = 0;
-    console.log(mainDiv)
-  }
 
 }

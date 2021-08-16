@@ -138,4 +138,15 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
     }
   }
   
+  backToTop() {
+    
+    // const abs = document.querySelector('body').scrollTo(0,0); // For Safari
+    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    // console.log(abs)
+
+    const mainDiv = document.getElementById('abcd1');
+    mainDiv.scrollTop = 0;
+    console.log(mainDiv)
+  }
+
 }
