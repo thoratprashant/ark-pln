@@ -147,3 +147,7 @@
     font-size: 18px;
     color: #fff;
 }
+
+.app-admin-wrap.sticky .landing--header--wrapper.header-topnav{
+    background-color: red !important; 
+}

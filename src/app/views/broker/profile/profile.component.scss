@@ -159,6 +159,7 @@
     }
     .line-wrapper{
         .primary-btn{
+            z-index: 99999;
             ::ng-deep{
                 .mat-icon{
                     margin-right: 7px !important;

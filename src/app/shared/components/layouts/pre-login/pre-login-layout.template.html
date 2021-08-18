@@ -1,4 +1,4 @@
-<div  class="app-admin-wrap" id="abcd1"  [dir]='layoutConf?.dir'>
+<div [ngClass]="{'app-admin-wrap' : true, 'sticky' : isSticky}" class="" id="abcd1"  [dir]='layoutConf?.dir'>
   <!-- Header for top navigation layout -->
   <!-- ONLY REQUIRED FOR **TOP** NAVIGATION LAYOUT -->
 
@@ -49,9 +49,9 @@
       </div>
 
       <!-- Back to top -->
-      <div class="back--to--top" (click)="backToTop()">
+      <!-- <div class="back--to--top" (click)="backToTop()">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
-      </div>
+      </div> -->
       
       <!-- View overlay for mobile navigation -->
       <div class="sidebar-backdrop" [ngClass]="{'visible': layoutConf.sidebarStyle !== 'closed' && layoutConf.isMobile}"

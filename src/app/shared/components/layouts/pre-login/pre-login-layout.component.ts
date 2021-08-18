@@ -28,7 +28,13 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
   public layoutConf: any = {};
   public adminContainerClasses: any = {};
 
-  // isSticky: boolean = false;
+  isSticky: boolean = false;
+
+//   @HostListener('window:scroll', ['$event']) onScroll(event){
+//     this.pageYoffset = window.pageYOffset;
+//     console.log('121212212')
+//  }
+ 
 
     
   // @HostListener('mousewheel', ['$event']) onWindowsScroll(ev:any) {
@@ -37,8 +43,7 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
   // }
 
   // @HostListener('wheel', ['$event'])
-  // onWheelScroll(evento: WheelEvent) { 
-  //   this.isSticky = window.pageYOffset >= 250;
+  // onWheelScroll(evento: WheelEvent) {  
   //   console.log('010101')
   // }
   
@@ -64,6 +69,9 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+
+    window.addEventListener('scroll', this.scroll, true); 
+
     // this.layoutConf = this.layout.layoutConf;
     this.layoutConfSub = this.layout.layoutConf$.subscribe((layoutConf) => {
         this.layoutConf = layoutConf;
@@ -82,6 +90,26 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
         this.isModuleLoading = false;
       }
     });
+  }
+
+  scroll = (event: any): void => { 
+    const number = event.srcElement.scrollTop;
+
+    this.isSticky = number > 500; 
+
+    // if(number < 1000){
+    //   console.log('100')
+    // } else{
+    //   console.log('100 +++')
+    // }
+
+
+    // console.log(event);
+    // console.log('I am scrolling ' + number);
+  };
+
+  backToTop() {  
+    window.scrollTo(0,0); 
   }
 
   @HostListener('window:resize', ['$event'])
@@ -157,15 +185,6 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
     }
   }
   
-  backToTop() {
-    
-    // const abs = document.querySelector('body').scrollTo(0,0); // For Safari
-    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    // console.log(abs)
 
-    const mainDiv = document.getElementById('abcd1');
-    mainDiv.scrollTop = 0;
-    console.log(mainDiv)
-  }
 
 }
