@@ -5782,7 +5782,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.scroll = function (event) {
           var number = event.srcElement.scrollTop;
-          _this11.isSticky = number > 500; // if(number < 1000){
+          _this11.isSticky = number > 100; // if(number < 1000){
           //   console.log('100')
           // } else{
           //   console.log('100 +++')

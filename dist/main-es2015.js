@@ -3044,7 +3044,7 @@ class PreLoginLayoutComponent {
         this.isSticky = false;
         this.scroll = (event) => {
             const number = event.srcElement.scrollTop;
-            this.isSticky = number > 500;
+            this.isSticky = number > 100;
             // if(number < 1000){
             //   console.log('100')
             // } else{
