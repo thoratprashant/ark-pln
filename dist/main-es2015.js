@@ -3018,6 +3018,16 @@ function PreLoginLayoutComponent_div_9_Template(rf, ctx) { if (rf & 1) {
 } }
 const _c0 = function (a0) { return { "visible": a0 }; };
 class PreLoginLayoutComponent {
+    // isSticky: boolean = false;
+    // @HostListener('mousewheel', ['$event']) onWindowsScroll(ev:any) {
+    //   this.isSticky = window.pageYOffset >= 250; 
+    //   console.log(this.isSticky); 
+    // }
+    // @HostListener('wheel', ['$event'])
+    // onWheelScroll(evento: WheelEvent) { 
+    //   this.isSticky = window.pageYOffset >= 250;
+    //   console.log('010101')
+    // }
     constructor(router, themeService, layout, cdr, jwtAuth) {
         this.router = router;
         this.themeService = themeService;

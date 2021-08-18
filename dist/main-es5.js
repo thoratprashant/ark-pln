@@ -5745,6 +5745,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     var PreLoginLayoutComponent = /*#__PURE__*/function () {
+      // isSticky: boolean = false;
+      // @HostListener('mousewheel', ['$event']) onWindowsScroll(ev:any) {
+      //   this.isSticky = window.pageYOffset >= 250; 
+      //   console.log(this.isSticky); 
+      // }
+      // @HostListener('wheel', ['$event'])
+      // onWheelScroll(evento: WheelEvent) { 
+      //   this.isSticky = window.pageYOffset >= 250;
+      //   console.log('010101')
+      // }
       function PreLoginLayoutComponent(router, themeService, layout, cdr, jwtAuth) {
         var _this11 = this;
 
