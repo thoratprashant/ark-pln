@@ -27,6 +27,20 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
   public  scrollConfig = {}
   public layoutConf: any = {};
   public adminContainerClasses: any = {};
+
+  // isSticky: boolean = false;
+
+    
+  // @HostListener('mousewheel', ['$event']) onWindowsScroll(ev:any) {
+  //   this.isSticky = window.pageYOffset >= 250; 
+  //   console.log(this.isSticky); 
+  // }
+
+  // @HostListener('wheel', ['$event'])
+  // onWheelScroll(evento: WheelEvent) { 
+  //   this.isSticky = window.pageYOffset >= 250;
+  //   console.log('010101')
+  // }
   
   constructor(
     private router: Router,
@@ -69,10 +83,15 @@ export class PreLoginLayoutComponent implements OnInit, AfterViewInit {
       }
     });
   }
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.layout.adjustLayout(event);
   }
+
+ 
+  
+
   
   ngAfterViewInit() {
 

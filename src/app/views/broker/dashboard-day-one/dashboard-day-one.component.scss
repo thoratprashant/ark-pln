@@ -7,4 +7,31 @@
         font-size: 20px;
         font-weight: 500;
     }
+    p{
+        margin-bottom: 120px;
+    }
+    .steps{ 
+        text-align: center;
+       .img--sec{
+           height: 400px;
+       }      
+       .step--count{
+           width: 32px;
+           height: 32px;
+           border-radius: 50%;
+           background-color: #6589a9;
+           font-size: 18px;
+           color: #fff;
+           margin-bottom: 15px;
+           margin-top: 25px;
+           
+       } 
+       p{
+        font-size: 16px;
+       }
+       &.step--align{ 
+             
+        }
+    }
+    
 }
