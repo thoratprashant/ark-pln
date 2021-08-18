@@ -20,6 +20,16 @@ export class ProfileComponent implements OnInit {
 
   addFriend: boolean = false;
   activeView: string = "overview";
+
+  basicInfoStep1 = true;
+  basicInfoStep2 = false;
+  binfo = "Basic Information"
+
+  editPerInfo(){
+    this.basicInfoStep1 = false;
+    this.basicInfoStep2 = true;
+    this.binfo = "Edit Personal Information"
+  }
  
 
   countryTrafficStats: any[];

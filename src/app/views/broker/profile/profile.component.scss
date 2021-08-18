@@ -157,17 +157,7 @@
         width: 100%;
         position: relative; 
     }
-    .line-wrapper{
-        .primary-btn{
-            z-index: 99999;
-            ::ng-deep{
-                .mat-icon{
-                    margin-right: 7px !important;
-                    color: #eee !important;
-                }
-            }
-        }
-    }
+    
 }
 .main-profile-wrapper{
     .info--wrapper{
@@ -219,6 +209,12 @@
 ::ng-deep{
     .card-title{
         border-bottom: 1px solid #ddd !important;     
+    }
+    .primary-btn{
+        .mat-icon{
+            margin-right: 7px !important;
+            color: #eee !important;
+        }
     }
 }
 

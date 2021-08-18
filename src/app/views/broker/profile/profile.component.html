@@ -9,9 +9,7 @@
   <div class="container line-wrapper">
     <div class class="container">
       <div class="line" fxLayout="row wrap" fxLayoutAlign="end end">
-        <button mat-raised-button class="primary-btn">
-          <mat-icon class=" mat-color-primary">create</mat-icon>Edit Profile
-        </button>
+        
       </div>
     </div>
   </div>
@@ -25,10 +23,13 @@
           <div class="column" fxFlex="100">
 
             <mat-card class="default m-0">
-              <div class="card-title">
-                <h4 class="fw-500">Basic Information</h4>
+              <div class="card-title" fxLayout="row wrap" fxLayoutAlign="space-between center" >
+                <h4 class="fw-500">{{binfo}}</h4>
+                <button mat-raised-button class="primary-btn" (click)="editPerInfo()" >
+                  <mat-icon class=" mat-color-primary">create</mat-icon>Edit Profile
+                </button>
               </div>
-              <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100">
+              <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100" *ngIf="basicInfoStep1">
                 <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"
                   fxLayoutGap="30px" fxFlex="100">
                   <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30"
@@ -120,6 +121,12 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </mat-card-content>
+
+              <mat-card-content fxLayout="column"  class="w-100" *ngIf="basicInfoStep2">
+                <div fxLayout="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"
+                  fxLayoutGap="30px" fxFlex="100">
                 </div>
               </mat-card-content>
             </mat-card>
