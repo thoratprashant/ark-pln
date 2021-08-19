@@ -166,6 +166,16 @@
 }
 /* Checkbox - end here */
 
+.broker--top.header-topnav .img-button .mat-button-wrapper {
+    display: flex;
+}
+.broker--top.header-topnav .img-button .mat-button-wrapper .user--name{
+    max-width: 118px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 @media only screen and (max-width: 599px) {
     .broker--top.header-topnav .user--name{
         display: none;

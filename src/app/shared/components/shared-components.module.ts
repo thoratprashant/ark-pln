@@ -35,7 +35,9 @@ import { PreLoginHeaderTopComponent } from './pre-login-header-top/pre-login-hea
 import { PreLoginFooterComponent } from './pre-login-footer/pre-login-footer.component';
 import { BrokerLayoutComponent } from './layouts/broker-layout/broker-layout.component';
 import { BrokerHeaderTopComponent } from './broker-top-header/broker-top-header.component';
-import { BrokerAuthLayoutComponent } from './layouts/broker-auth-layout/broker-auth-layout.component';
+import { BrokerAuthLayoutComponent } from './layouts/broker-auth-layout/broker-auth-layout.component'; 
+import { LoanProcessorTopComponent } from './loan-processor-top-header/loan-processor-top-header.component';
+import { LoanProcessorLayoutComponent } from './layouts/loan-processor-layout/loan-processor-layout.component';
 
 
 const components = [
@@ -60,7 +62,10 @@ const components = [
   PreLoginFooterComponent,
   BrokerLayoutComponent,
   BrokerAuthLayoutComponent,
-  BrokerHeaderTopComponent
+  BrokerHeaderTopComponent,
+
+  LoanProcessorLayoutComponent,
+  LoanProcessorTopComponent
 ]
 
 @NgModule({

@@ -2,7 +2,8 @@ import { Routes } from '@angular/router';
 import { AdminLayoutComponent } from './shared/components/layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './shared/components/layouts/auth-layout/auth-layout.component';
 import { BrokerAuthLayoutComponent } from './shared/components/layouts/broker-auth-layout/broker-auth-layout.component';
-import { BrokerLayoutComponent } from './shared/components/layouts/broker-layout/broker-layout.component';
+import { BrokerLayoutComponent } from './shared/components/layouts/broker-layout/broker-layout.component'; 
+import { LoanProcessorLayoutComponent } from './shared/components/layouts/loan-processor-layout/loan-processor-layout.component';
 import { PreLoginLayoutComponent } from './shared/components/layouts/pre-login/pre-login-layout.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
@@ -34,7 +35,7 @@ export const rootRouterConfig: Routes = [
     ]
   },
 
-  // After login pages
+  // After login pages > Broker
   {
     path: '', 
     component: BrokerLayoutComponent,
@@ -43,6 +44,20 @@ export const rootRouterConfig: Routes = [
         path: 'broker', 
         loadChildren: () => import('./views/broker/broker.module').then(m => m.BrokerModule),
         data: { title: 'Broker'} 
+      }
+    ]
+  },
+
+
+  // After login pages > Loan Processor
+  {
+    path: '', 
+    component: LoanProcessorLayoutComponent,
+    children: [
+      { 
+        path: 'loan-processor', 
+        loadChildren: () => import('./views/loan-processor/loan-processor.module').then(m => m.LoanProcessorModule),
+        data: { title: 'Loan Processor'} 
       }
     ]
   },

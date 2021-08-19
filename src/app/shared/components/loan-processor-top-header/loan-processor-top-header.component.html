@@ -1,0 +1,92 @@
+<div class="header-topnav broker--top mat-elevation-z2">
+  <div class="topnav">
+    <!-- App Logo -->
+    <div class="topbar-branding">
+      <img src="assets/images/arkenea/logo.webp" alt="" class="app-logo">
+    </div>
+
+    <span fxFlex></span>
+
+    <!-- Language Switcher -->
+    <button mat-icon-button matTooltip="Notifications" [matMenuTriggerFor]="notificationsMenu"
+      [style.overflow]="'visible'" class="topbar-button-right">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M12 6.5c-2.49 0-4 2.02-4 4.5v6h8v-6c0-2.48-1.51-4.5-4-4.5z" opacity=".3" />
+        <path
+          d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-2 6H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zM7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42z" />
+      </svg>
+      <span class="notification-number mat-bg-warn">1</span>
+    </button>
+    <mat-menu #notificationsMenu="matMenu" xPosition="before" class="pt-0 notification-wrap">
+      <div class="text-left mat-bg-primary p-16 ">
+        <h4 class="m-0">Notifications</h4>
+      </div>
+      <mat-nav-list class="notification-list" role="list">
+        <!-- Notification item -->
+        <mat-list-item *ngFor="let n of notifications" class="notific-item pb-12 pt-12 border-bottom" role="listitem"
+          routerLinkActive="open">
+          <mat-icon [color]="n.color" [svgIcon]="n.icon" class="btn-icon notific-icon mr-1"></mat-icon>
+          <a [routerLink]="[n.route || '/dashboard']">
+            <div class="mat-list-text">
+              <h4 class="fw-500">{{n.message}}</h4>
+              <small class="time text-muted">{{n.time}}</small>
+            </div>
+          </a>
+
+        </mat-list-item>
+        <div class="dropdown-footer text-center pb-12 pt-12">
+          <button mat-button color="primary">MARK ALL AS READ</button>
+        </div>
+      </mat-nav-list>
+    </mat-menu>
+
+    <button   mat-button [matMenuTriggerFor]="accountMenu" class="topbar-button-right img-button">
+      <span class="user--name">Prashant Loan Pro</span>
+      <img class="profile-img" src="assets/images/face-7.jpg" alt="" />
+    </button>
+
+    <button mat-fab class="signout--btn mr-10" [routerLink]="['/']">
+      <i class="fa fa-sign-out" aria-hidden="true"></i>
+    </button>  
+
+    <mat-menu #accountMenu="matMenu" xPosition="before" class="pt-0 notification-wrap">
+      <mat-toolbar color="primary">
+        <div class="text-left" fxLayout="row" fxLayoutAlign="start center">
+          <img class="profile-img rounded-circle w-12 h-12 mr-05" src="assets/images/face-7.jpg" alt="" />
+          <h5 class="m-0">Prashant</h5>
+
+        </div>
+      </mat-toolbar>
+
+      <mat-nav-list class="notification-list" role="list">
+        <!-- Notification item -->
+        <button mat-menu-item [routerLink]="['/broker/profile']">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon svgIcon="account_box" class="btn-icon"></mat-icon>
+            <span>My Profile</span>
+          </div>
+        </button>
+        <button mat-menu-item [routerLink]="['/profile/settings']">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon svgIcon="inbox" class="btn-icon"></mat-icon>
+            <span>My Inbox</span>
+          </div>
+        </button>
+        <button mat-menu-item [routerLink]="['/profile/settings']">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon svgIcon="receipt" class="btn-icon"></mat-icon>
+            <span>My Tasks</span>
+          </div>
+        </button>
+        <button mat-menu-item [routerLink]="['/profile/settings']">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon svgIcon="library_books" class="btn-icon"></mat-icon>
+            <span>Billing Information</span>
+          </div>
+        </button> 
+      </mat-nav-list>
+    </mat-menu>
+
+  </div>
+</div>
