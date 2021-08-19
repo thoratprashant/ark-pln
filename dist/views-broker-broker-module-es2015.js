@@ -42310,6 +42310,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/views/broker/profile/profile.component.ts");
 /* harmony import */ var _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./signup-successful/signup-successful.component */ "./src/app/views/broker/signup-successful/signup-successful.component.ts");
 /* harmony import */ var _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./dashboard-day-one/dashboard-day-one.component */ "./src/app/views/broker/dashboard-day-one/dashboard-day-one.component.ts");
+/* harmony import */ var _profile_completed_profile_completed_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./profile-completed/profile-completed.component */ "./src/app/views/broker/profile-completed/profile-completed.component.ts");
+
 
 
 
@@ -42372,7 +42374,7 @@ BrokerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjec
             app_shared_pipes_shared_pipes_module__WEBPACK_IMPORTED_MODULE_25__["SharedPipesModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(_broker_routing__WEBPACK_IMPORTED_MODULE_7__["BrokerRoutes"])
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](BrokerModule, { declarations: [_profile_profile_component__WEBPACK_IMPORTED_MODULE_26__["ProfileComponent"], _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_27__["SignupSuccessfulComponent"], _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_28__["DashboardDayOneComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](BrokerModule, { declarations: [_profile_profile_component__WEBPACK_IMPORTED_MODULE_26__["ProfileComponent"], _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_27__["SignupSuccessfulComponent"], _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_28__["DashboardDayOneComponent"], _profile_completed_profile_completed_component__WEBPACK_IMPORTED_MODULE_29__["ProfileCompletedComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
         app_shared_shared_material_module__WEBPACK_IMPORTED_MODULE_5__["SharedMaterialModule"],
@@ -42426,7 +42428,7 @@ BrokerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjec
                     app_shared_pipes_shared_pipes_module__WEBPACK_IMPORTED_MODULE_25__["SharedPipesModule"],
                     _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(_broker_routing__WEBPACK_IMPORTED_MODULE_7__["BrokerRoutes"])
                 ],
-                declarations: [_profile_profile_component__WEBPACK_IMPORTED_MODULE_26__["ProfileComponent"], _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_27__["SignupSuccessfulComponent"], _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_28__["DashboardDayOneComponent"]]
+                declarations: [_profile_profile_component__WEBPACK_IMPORTED_MODULE_26__["ProfileComponent"], _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_27__["SignupSuccessfulComponent"], _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_28__["DashboardDayOneComponent"], _profile_completed_profile_completed_component__WEBPACK_IMPORTED_MODULE_29__["ProfileCompletedComponent"]]
             }]
     }], null, null); })();
 
@@ -42444,8 +42446,10 @@ BrokerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjec
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrokerRoutes", function() { return BrokerRoutes; });
 /* harmony import */ var _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dashboard-day-one/dashboard-day-one.component */ "./src/app/views/broker/dashboard-day-one/dashboard-day-one.component.ts");
-/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/views/broker/profile/profile.component.ts");
-/* harmony import */ var _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./signup-successful/signup-successful.component */ "./src/app/views/broker/signup-successful/signup-successful.component.ts");
+/* harmony import */ var _profile_completed_profile_completed_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./profile-completed/profile-completed.component */ "./src/app/views/broker/profile-completed/profile-completed.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/views/broker/profile/profile.component.ts");
+/* harmony import */ var _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./signup-successful/signup-successful.component */ "./src/app/views/broker/signup-successful/signup-successful.component.ts");
+
 
 
 
@@ -42455,18 +42459,23 @@ const BrokerRoutes = [
         children: [
             {
                 path: "profile",
-                component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_1__["ProfileComponent"],
+                component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_2__["ProfileComponent"],
                 data: { title: "Broker profile" }
             },
             {
                 path: "signup-successful",
-                component: _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_2__["SignupSuccessfulComponent"],
+                component: _signup_successful_signup_successful_component__WEBPACK_IMPORTED_MODULE_3__["SignupSuccessfulComponent"],
                 data: { title: "Signup Successful" }
             },
             {
                 path: "day-one",
                 component: _dashboard_day_one_dashboard_day_one_component__WEBPACK_IMPORTED_MODULE_0__["DashboardDayOneComponent"],
                 data: { title: "Dashboard Day One" }
+            },
+            {
+                path: "profile-completed",
+                component: _profile_completed_profile_completed_component__WEBPACK_IMPORTED_MODULE_1__["ProfileCompletedComponent"],
+                data: { title: "Profile Completed" }
             },
         ]
     }
@@ -42554,6 +42563,57 @@ DashboardDayOneComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
                 selector: 'app-dashboard-day-one',
                 templateUrl: './dashboard-day-one.component.html',
                 styleUrls: ['./dashboard-day-one.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/views/broker/profile-completed/profile-completed.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/views/broker/profile-completed/profile-completed.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: ProfileCompletedComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileCompletedComponent", function() { return ProfileCompletedComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/flex-layout/flex */ "./node_modules/@angular/flex-layout/__ivy_ngcc__/esm2015/flex.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+
+
+
+
+class ProfileCompletedComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+ProfileCompletedComponent.ɵfac = function ProfileCompletedComponent_Factory(t) { return new (t || ProfileCompletedComponent)(); };
+ProfileCompletedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProfileCompletedComponent, selectors: [["app-profile-completed"]], decls: 10, vars: 0, consts: [["fxLayout", "column", "fxLayoutAlign", "start center", 1, "profile--completed", "w-100"], [1, "clr-222", "m-0"], [1, "clr-888"], ["src", "assets/images/arkenea/createloan-req.webp", "alt", ""], ["mat-raised-button", "", 1, "primary-btn", "mt-30", "mb-20"]], template: function ProfileCompletedComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Congratulations! Your profile is complete.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Now that we've completed setting up your profile, ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " click the button below to get started creating a new loan request.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " Create New Loan Request ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"]], styles: [".profile--completed[_ngcontent-%COMP%] {\n  border-radius: 5px;\n  box-shadow: -1.4px 1.4px 13px 0 rgba(88, 92, 101, 0.3);\n  background-color: #fff;\n  height: calc(100vh - 135px);\n  padding-top: 50px;\n  text-align: center;\n}\n\n.profile--completed[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 20px;\n  font-weight: 500;\n}\n\n.profile--completed[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  font-size: 14px;\n  margin: 15px 0 80px 0;\n}\n\n@media only screen and (max-width: 599px) {\n  .profile--completed[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 55%;\n  }\n  .profile--completed[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 16px;\n  }\n  .profile--completed[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 12px;\n    margin: 10px 0 30px 0;\n  }\n}\n\n@media screen and (orientation: landscape) and (max-width: 850px) {\n  .profile--completed[_ngcontent-%COMP%] {\n    height: auto;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlld3MvYnJva2VyL3Byb2ZpbGUtY29tcGxldGVkL0M6XFxQcmFzaGFudC13b3Jrc3BhY2VcXGFyay1wbG4vc3JjXFxhcHBcXHZpZXdzXFxicm9rZXJcXHByb2ZpbGUtY29tcGxldGVkXFxwcm9maWxlLWNvbXBsZXRlZC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvdmlld3MvYnJva2VyL3Byb2ZpbGUtY29tcGxldGVkL3Byb2ZpbGUtY29tcGxldGVkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQWtCO0VBQ2xCLHNEQUFzRDtFQUN0RCxzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLGlCQUFpQjtFQUNqQixrQkFBa0I7QUNDdEI7O0FEUEE7RUFRUSxlQUFlO0VBQ2YsZ0JBQWdCO0FDR3hCOztBRFpBO0VBWVEsZUFBZTtFQUNmLHFCQUFxQjtBQ0k3Qjs7QUREQTtFQUNJO0lBRVEsVUFDSjtFQ0VOO0VETEU7SUFLUSxlQUFlO0VDR3pCO0VEUkU7SUFRUSxlQUFlO0lBQ2YscUJBQXFCO0VDRy9CO0FBQ0Y7O0FEQ0E7RUFDSTtJQUNJLFlBQVk7RUNFbEI7QUFDRiIsImZpbGUiOiJzcmMvYXBwL3ZpZXdzL2Jyb2tlci9wcm9maWxlLWNvbXBsZXRlZC9wcm9maWxlLWNvbXBsZXRlZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9maWxlLS1jb21wbGV0ZWR7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7IFxyXG4gICAgYm94LXNoYWRvdzogLTEuNHB4IDEuNHB4IDEzcHggMCByZ2JhKDg4LCA5MiwgMTAxLCAwLjMpO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICAgIGhlaWdodDogY2FsYygxMDB2aCAtIDEzNXB4KTtcclxuICAgIHBhZGRpbmctdG9wOiA1MHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgaDF7XHJcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbiAgICB9XHJcbiAgICBwe1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDsgXHJcbiAgICAgICAgbWFyZ2luOiAxNXB4IDAgODBweCAwO1xyXG4gICAgfVxyXG59XHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTk5cHgpIHtcclxuICAgIC5wcm9maWxlLS1jb21wbGV0ZWR7XHJcbiAgICAgICAgaW1ne1xyXG4gICAgICAgICAgICB3aWR0aDogNTUlXHJcbiAgICAgICAgfVxyXG4gICAgICAgIGgxe1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDE2cHg7IFxyXG4gICAgICAgIH1cclxuICAgICAgICBwe1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDEycHg7IFxyXG4gICAgICAgICAgICBtYXJnaW46IDEwcHggMCAzMHB4IDA7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAob3JpZW50YXRpb246bGFuZHNjYXBlKSBhbmQgKG1heC13aWR0aDogODUwcHgpe1xyXG4gICAgLnByb2ZpbGUtLWNvbXBsZXRlZHtcclxuICAgICAgICBoZWlnaHQ6IGF1dG87XHJcbiAgICB9XHJcbn0iLCIucHJvZmlsZS0tY29tcGxldGVkIHtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBib3gtc2hhZG93OiAtMS40cHggMS40cHggMTNweCAwIHJnYmEoODgsIDkyLCAxMDEsIDAuMyk7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIGhlaWdodDogY2FsYygxMDB2aCAtIDEzNXB4KTtcbiAgcGFkZGluZy10b3A6IDUwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnByb2ZpbGUtLWNvbXBsZXRlZCBoMSB7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cblxuLnByb2ZpbGUtLWNvbXBsZXRlZCBwIHtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBtYXJnaW46IDE1cHggMCA4MHB4IDA7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTk5cHgpIHtcbiAgLnByb2ZpbGUtLWNvbXBsZXRlZCBpbWcge1xuICAgIHdpZHRoOiA1NSU7XG4gIH1cbiAgLnByb2ZpbGUtLWNvbXBsZXRlZCBoMSB7XG4gICAgZm9udC1zaXplOiAxNnB4O1xuICB9XG4gIC5wcm9maWxlLS1jb21wbGV0ZWQgcCB7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIG1hcmdpbjogMTBweCAwIDMwcHggMDtcbiAgfVxufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtYXgtd2lkdGg6IDg1MHB4KSB7XG4gIC5wcm9maWxlLS1jb21wbGV0ZWQge1xuICAgIGhlaWdodDogYXV0bztcbiAgfVxufVxuIl19 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProfileCompletedComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-profile-completed',
+                templateUrl: './profile-completed.component.html',
+                styleUrls: ['./profile-completed.component.scss']
             }]
     }], function () { return []; }, null); })();
 

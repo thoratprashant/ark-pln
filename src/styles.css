@@ -158,3 +158,9 @@
 .app-admin-wrap.sticky .landing--header--wrapper.header-topnav{
     background-color: #000 !important; 
 }
+
+@media only screen and (max-width: 599px) {
+    .broker--top.header-topnav .user--name{
+        display: none;
+    }
+}
