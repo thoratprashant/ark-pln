@@ -159,6 +159,13 @@
     background-color: #000 !important; 
 }
 
+/* Checkbox - start here */
+.mat-checkbox .mat-checkbox-layout{
+    white-space: normal;
+    align-items: flex-start;
+}
+/* Checkbox - end here */
+
 @media only screen and (max-width: 599px) {
     .broker--top.header-topnav .user--name{
         display: none;

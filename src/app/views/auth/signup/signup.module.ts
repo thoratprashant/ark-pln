@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
    
 import { SignupRoutes } from './signup.routing';
 import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.component';
+import { LpSignUpComponent } from './loan-processor/lp-sign-up/lp-sign-up.component';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.co
     RouterModule.forChild(SignupRoutes)
   ],
   declarations: [ 
-    BrokerSignUpComponent
+    BrokerSignUpComponent, LpSignUpComponent
   ]
 })
 export class SignupModule { }

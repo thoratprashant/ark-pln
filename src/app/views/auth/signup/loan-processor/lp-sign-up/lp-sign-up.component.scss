@@ -1,0 +1,138 @@
+.auth--data--wrapper{
+    align-items: flex-start;
+    padding: 30px 1rem;
+    height: calc(100vh - 67px);
+    overflow: auto;
+   ::ng-deep{
+    .mat-stepper-horizontal{
+        background-color: transparent;
+        width: 100%;
+        position: relative;
+    }
+    .mat-horizontal-content-container{
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mat-card-content{
+        padding: 1rem;
+    }
+   
+    .mat-form-field-hint-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 7px;
+        font-size: 12px; 
+        color: #6589a9;
+        .mat-hint{
+            color: #6589a9;
+            font-weight: 500;
+            cursor: pointer;
+            z-index: 999999;
+        }
+        .mat-form-field-hint-spacer{
+            display: none;
+        } 
+    }
+    .mat-checkbox {
+        .mat-checkbox-layout{
+            white-space: normal;
+            .mat-checkbox-inner-container{
+                margin: 2px 8px 0 0;
+            }
+            .mat-checkbox-label{
+                color: #222;
+                font-size: 12px;
+                line-height: 17px;
+                a{
+                    color: #6589a9;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+        
+
+   }
+   .signup--step--one{
+       h1{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+       }
+       .or{
+        font-size: 20px;
+        font-weight: 500;
+        color: #222;
+        margin: 5px 0 25px 0;
+       }
+       .mat-mini-fab{
+        background-color: #eee;
+        box-shadow: none;
+        }
+        .fa {
+            font-size: 17px;
+            color: #333;
+        }
+        .primary-btn{
+            margin-top: 18px;
+        } 
+        .otp--section{
+            p{
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #222;
+                line-height: 19px;
+                text-align: center;
+                margin-top: 25px;
+            }
+            .enter--otp{
+                ::ng-deep{
+                    .mat-form-field-infix{
+                        width: auto;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                    .mat-form-field-hint-wrapper{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 7px;
+                        font-size: 12px; 
+                        color: #6589a9;
+                    }
+                }                
+            }
+            .resend--code{
+                font-size: 12px;
+                margin-top: -7px;
+                font-weight: 500;
+            }
+        }
+        .cyp--section{
+            text-align: center;
+            h5{
+                font-size: 20px;
+                font-weight: 500;
+                margin: 30px 0 15px 0;
+            }
+        }
+   }
+ 
+}
+
+
+@media only screen and (max-width: 599px) {
+ 
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+  
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+  
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+   
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}
