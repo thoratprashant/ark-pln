@@ -1150,15 +1150,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
-    /*! @angular/material/toolbar */
-    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/toolbar.js");
+    var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! @angular/material/toolbar */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/toolbar.js");
     /* harmony import */
 
 
@@ -1221,10 +1221,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
 
     var _c1 = function _c1() {
-      return ["/broker/profile"];
+      return ["/"];
     };
 
     var _c2 = function _c2() {
+      return ["/broker/profile"];
+    };
+
+    var _c3 = function _c3() {
       return ["/profile/settings"];
     };
 
@@ -1353,8 +1357,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         notificPanel: "notificPanel"
       },
       decls: 56,
-      vars: 13,
-      consts: [[1, "header-topnav", "broker--top", "mat-elevation-z2"], [1, "topnav"], [1, "topbar-branding"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo"], ["fxFlex", ""], ["mat-icon-button", "", "matTooltip", "Notifications", 1, "topbar-button-right", 3, "matMenuTriggerFor"], ["xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 24 24", "fill", "black", "width", "18px", "height", "18px"], ["d", "M0 0h24v24H0V0z", "fill", "none"], ["d", "M12 6.5c-2.49 0-4 2.02-4 4.5v6h8v-6c0-2.48-1.51-4.5-4-4.5z", "opacity", ".3"], ["d", "M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-2 6H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zM7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42z"], [1, "notification-number", "mat-bg-warn"], ["xPosition", "before", 1, "pt-0", "notification-wrap"], ["notificationsMenu", "matMenu"], [1, "text-left", "mat-bg-primary", "p-16"], [1, "m-0"], ["role", "list", 1, "notification-list"], ["class", "notific-item pb-12 pt-12 border-bottom", "role", "listitem", "routerLinkActive", "open", 4, "ngFor", "ngForOf"], [1, "dropdown-footer", "text-center", "pb-12", "pt-12"], ["mat-button", "", "color", "primary"], ["mat-button", "", 1, "topbar-button-right", "img-button", 3, "matMenuTriggerFor"], ["src", "assets/images/face-7.jpg", "alt", "", 1, "profile-img"], ["mat-fab", "", 1, "signout--btn", "mr-10"], ["aria-hidden", "true", 1, "fa", "fa-sign-out"], ["accountMenu", "matMenu"], ["color", "primary"], ["fxLayout", "row", "fxLayoutAlign", "start center", 1, "text-left"], ["src", "assets/images/face-7.jpg", "alt", "", 1, "profile-img", "rounded-circle", "w-12", "h-12", "mr-05"], ["mat-menu-item", "", 3, "routerLink"], ["fxLayout", "row", "fxLayoutAlign", "start center"], ["svgIcon", "account_box", 1, "btn-icon"], ["svgIcon", "inbox", 1, "btn-icon"], ["svgIcon", "receipt", 1, "btn-icon"], ["svgIcon", "library_books", 1, "btn-icon"], ["role", "listitem", "routerLinkActive", "open", 1, "notific-item", "pb-12", "pt-12", "border-bottom"], [1, "btn-icon", "notific-icon", "mr-1", 3, "color", "svgIcon"], [3, "routerLink"], [1, "mat-list-text"], [1, "fw-500"], [1, "time", "text-muted"]],
+      vars: 15,
+      consts: [[1, "header-topnav", "broker--top", "mat-elevation-z2"], [1, "topnav"], [1, "topbar-branding"], ["src", "assets/images/arkenea/logo.webp", "alt", "", 1, "app-logo"], ["fxFlex", ""], ["mat-icon-button", "", "matTooltip", "Notifications", 1, "topbar-button-right", 3, "matMenuTriggerFor"], ["xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 24 24", "fill", "black", "width", "18px", "height", "18px"], ["d", "M0 0h24v24H0V0z", "fill", "none"], ["d", "M12 6.5c-2.49 0-4 2.02-4 4.5v6h8v-6c0-2.48-1.51-4.5-4-4.5z", "opacity", ".3"], ["d", "M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-2 6H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zM7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42z"], [1, "notification-number", "mat-bg-warn"], ["xPosition", "before", 1, "pt-0", "notification-wrap"], ["notificationsMenu", "matMenu"], [1, "text-left", "mat-bg-primary", "p-16"], [1, "m-0"], ["role", "list", 1, "notification-list"], ["class", "notific-item pb-12 pt-12 border-bottom", "role", "listitem", "routerLinkActive", "open", 4, "ngFor", "ngForOf"], [1, "dropdown-footer", "text-center", "pb-12", "pt-12"], ["mat-button", "", "color", "primary"], ["mat-button", "", 1, "topbar-button-right", "img-button", 3, "matMenuTriggerFor"], ["src", "assets/images/face-7.jpg", "alt", "", 1, "profile-img"], ["mat-fab", "", 1, "signout--btn", "mr-10", 3, "routerLink"], ["aria-hidden", "true", 1, "fa", "fa-sign-out"], ["accountMenu", "matMenu"], ["color", "primary"], ["fxLayout", "row", "fxLayoutAlign", "start center", 1, "text-left"], ["src", "assets/images/face-7.jpg", "alt", "", 1, "profile-img", "rounded-circle", "w-12", "h-12", "mr-05"], ["mat-menu-item", "", 3, "routerLink"], ["fxLayout", "row", "fxLayoutAlign", "start center"], ["svgIcon", "account_box", 1, "btn-icon"], ["svgIcon", "inbox", 1, "btn-icon"], ["svgIcon", "receipt", 1, "btn-icon"], ["svgIcon", "library_books", 1, "btn-icon"], ["role", "listitem", "routerLinkActive", "open", 1, "notific-item", "pb-12", "pt-12", "border-bottom"], [1, "btn-icon", "notific-icon", "mr-1", 3, "color", "svgIcon"], [3, "routerLink"], [1, "mat-list-text"], [1, "fw-500"], [1, "time", "text-muted"]],
       template: function BrokerHeaderTopComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -1553,24 +1557,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matMenuTriggerFor", _r2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c1));
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c2));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c2));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](12, _c2));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](12, _c3));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](13, _c3));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](14, _c3));
         }
       },
-      directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButton"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_7__["MatTooltip"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["MatMenuTrigger"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["_MatMenu"], _angular_material_list__WEBPACK_IMPORTED_MODULE_9__["MatNavList"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgForOf"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__["MatToolbar"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutAlignDirective"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["MatMenuItem"], _angular_router__WEBPACK_IMPORTED_MODULE_12__["RouterLink"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_13__["MatIcon"], _angular_material_list__WEBPACK_IMPORTED_MODULE_9__["MatListItem"], _angular_router__WEBPACK_IMPORTED_MODULE_12__["RouterLinkActive"], _angular_router__WEBPACK_IMPORTED_MODULE_12__["RouterLinkWithHref"]],
+      directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButton"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_7__["MatTooltip"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["MatMenuTrigger"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["_MatMenu"], _angular_material_list__WEBPACK_IMPORTED_MODULE_9__["MatNavList"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterLink"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_12__["MatToolbar"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutAlignDirective"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["MatMenuItem"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_13__["MatIcon"], _angular_material_list__WEBPACK_IMPORTED_MODULE_9__["MatListItem"], _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterLinkActive"], _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterLinkWithHref"]],
       encapsulation: 2
     });
     /*@__PURE__*/
