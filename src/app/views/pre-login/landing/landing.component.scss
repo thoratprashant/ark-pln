@@ -309,4 +309,8 @@
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px){}
 @media only screen and (min-width: 1441px) and (max-width: 1550px){}
-@media screen and (orientation:landscape) and (max-width: 850px){}
+@media screen and (orientation:landscape) and (max-width: 850px){
+    .section-one {
+        height: 400px;
+    }
+}

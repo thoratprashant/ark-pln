@@ -124,9 +124,71 @@
                 </div>
               </mat-card-content>
 
+              <!-- edit info -->
               <mat-card-content fxLayout="column"  class="w-100" *ngIf="basicInfoStep2">
-                <div fxLayout="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"
-                  fxLayoutGap="30px" fxFlex="100">
+                <div fxLayout="row" fxFlex="100">
+                  <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="55" fxFlex.xl="55">
+                    <div fxLayout="row" fxLayout.xs="column" fxFlex="100" fxLayoutGap="30px" fxLayoutGap.xs="0">
+                      <div fxLayout="row" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <mat-form-field appearance="fill" class="full-width">
+                          <mat-label>First Name</mat-label>
+                          <input matInput type="text" placeholder="" value="Abhi"> 
+                        </mat-form-field> 
+                      </div>
+                      <div fxLayout="row" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <mat-form-field appearance="fill" class="full-width">
+                          <mat-label>Last Name</mat-label>
+                          <input matInput type="text" placeholder="" value="Golhar"> 
+                        </mat-form-field> 
+                      </div>
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Phone Number</mat-label>
+                        <input matInput type="text" placeholder="" value="123-456-7890"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Email*</mat-label>
+                        <input matInput type="text" placeholder="" value="abhi@abhigolhar.com"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Street Address</mat-label>
+                        <input matInput type="text" placeholder="" value="9 Morris Road Bethel Park"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>City</mat-label>
+                        <input matInput type="text" placeholder="" value="Chicago"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>State</mat-label>
+                        <input matInput type="text" placeholder="" value="Illinois"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Zip Code</mat-label>
+                        <input matInput type="text" placeholder="" value="60607"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100" fxLayout="row" fxLayoutAlign="end end">
+                      <button mat-raised-button class="primary-btn mt-20 mb-20" (click)="savePerInfo()">
+                        Save
+                      </button>
+                    </div>
+
+                  </div>
+
+
+
+                    
                 </div>
               </mat-card-content>
             </mat-card>
@@ -142,10 +204,13 @@
           <div class="column" fxFlex="100">
 
             <mat-card class="default m-0">
-              <div class="card-title">
-                <h4 class="fw-500">Organization Information</h4>
+              <div class="card-title" fxLayout="row wrap" fxLayoutAlign="space-between center" >
+                <h4 class="fw-500">{{oinfo}} </h4>
+                <button mat-raised-button class="primary-btn" (click)="editOrgInfo()" >
+                  <mat-icon class=" mat-color-primary">create</mat-icon>Edit Profile
+                </button>
               </div>
-              <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100">
+              <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100" *ngIf="orgInfoStep1">
                 <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"
                   fxLayoutGap="30px" fxFlex="100">
                   <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30"
@@ -234,13 +299,67 @@
                   </div>
                 </div>
               </mat-card-content>
+
+              <!-- edit info -->
+              <mat-card-content fxLayout="column"  class="w-100" *ngIf="orgInfoStep2">
+                <div fxLayout="row" fxFlex="100">
+                  <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="55" fxFlex.xl="55">                     
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Organization Name</mat-label>
+                        <input matInput type="text" placeholder="" value="The Private Lender Network"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Phone Number</mat-label>
+                        <input matInput type="text" placeholder="" value="123-456-7890"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Email*</mat-label>
+                        <input matInput type="text" placeholder="" value="pln@gmail.com"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Street Address</mat-label>
+                        <input matInput type="text" placeholder="" value="9 Morris Road Bethel Park"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>City</mat-label>
+                        <input matInput type="text" placeholder="" value="Chicago"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>State</mat-label>
+                        <input matInput type="text" placeholder="" value="Illinois"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Zip Code</mat-label>
+                        <input matInput type="text" placeholder="" value="60607"> 
+                      </mat-form-field> 
+                    </div>
+                    <div fxFlex="100" fxLayout="row" fxLayoutAlign="end end">
+                      <button mat-raised-button class="primary-btn mt-20 mb-20" (click)="saveOrgInfo()">
+                        Save
+                      </button>
+                    </div>
+                  </div> 
+                </div>
+              </mat-card-content>
             </mat-card>
           </div>
         </mat-t>
       </mat-tab>
-      <!-- Change Password -->
 
-
+      <!-- Change Password --> 
       <mat-tab label="Change Password">
         <mat-t class="main" fxLayout="row wrap">
           <div class="column" fxFlex="100">

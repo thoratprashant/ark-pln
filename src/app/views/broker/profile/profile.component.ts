@@ -23,12 +23,31 @@ export class ProfileComponent implements OnInit {
 
   basicInfoStep1 = true;
   basicInfoStep2 = false;
-  binfo = "Basic Information"
+  orgInfoStep1 = true;
+  orgInfoStep2 = false;
+
+  binfo = "Basic Information";
+  oinfo = "Organization Information"
 
   editPerInfo(){
     this.basicInfoStep1 = false;
     this.basicInfoStep2 = true;
     this.binfo = "Edit Personal Information"
+  }
+  savePerInfo(){
+    this.basicInfoStep1 = true;
+    this.basicInfoStep2 = false;
+    this.binfo = "Basic Information"
+  }
+  editOrgInfo(){
+    this.orgInfoStep2 = true;
+    this.orgInfoStep1 = false;
+    this.oinfo = "Edit Organization Information"
+  }
+  saveOrgInfo() {
+    this.orgInfoStep2 = false;
+    this.orgInfoStep1 = true;
+    this.oinfo = "Organization Information"
   }
  
 

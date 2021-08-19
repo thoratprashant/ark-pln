@@ -65,6 +65,13 @@
     text-align: left;
 }
 
+.mat-input-element, .mat-input-element::-webkit-search-cancel-button, 
+.mat-input-element::-webkit-search-decoration, 
+.mat-input-element::-webkit-search-results-button, 
+.mat-input-element::-webkit-search-results-decoration{
+    color: #000 !important;
+} 
+
 /* Stepper code (start here) */
 .marco-blue .mat-progress-bar-buffer,
 .marco-blue .mat-step-header .mat-step-icon-selected, 
@@ -137,7 +144,7 @@
 .signout--btn{
     width: 36px !important;
     height: 36px !important;
-    background-color: #ddd !important;
+    background-color: #404040 !important;
 }
 .signout--btn .mat-button-wrapper{
     padding: 0 !important; 
