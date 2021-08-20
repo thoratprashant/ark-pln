@@ -9,13 +9,54 @@
         box-shadow: -1.4px 1.4px 13px 0 rgba(88, 92, 101, 0.3) !important;
         background-color: #fff;
         &.inner--box{
-            padding: 24px;
+            padding: 24px 70px 24px 24px;
             .round--box{
                 width: 96px;
                 height: 96px;
                 margin-right: 22px;
                 border-radius: 50%;
+                overflow: hidden;
+                background-color: #6589a9;
+                flex-shrink: 0;
+                &.ongoing--box{
+                    background-color: #404040;
+                }
+                &.completed--box{
+                    background-color: #969697;
+                }
+            }
+            p{
+                font-size: 16px;
+                text-align: left;
             }
         }
     }
 }
+
+@media only screen and (max-width: 599px) {
+    .lp--day--one h1{
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
+    .lp--day--one .mat-card.inner--box {
+        padding: 15px;
+        margin: 0 0 15px 0;
+    }
+    .lp--day--one .mat-card.inner--box .round--box {
+        width: 75px;
+        height: 75px;
+    }
+    .lp--day--one .mat-card.inner--box p {
+        font-size: 14px; 
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .lp--day--one .mat-card.inner--box {
+        padding: 24px 15px;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}
