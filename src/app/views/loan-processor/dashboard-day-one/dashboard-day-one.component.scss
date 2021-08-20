@@ -1,0 +1,21 @@
+.lp--day--one{
+    h1{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .mat-card{
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: -1.4px 1.4px 13px 0 rgba(88, 92, 101, 0.3) !important;
+        background-color: #fff;
+        &.inner--box{
+            padding: 24px;
+            .round--box{
+                width: 96px;
+                height: 96px;
+                margin-right: 22px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
