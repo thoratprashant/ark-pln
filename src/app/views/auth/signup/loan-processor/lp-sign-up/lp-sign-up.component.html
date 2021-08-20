@@ -20,6 +20,7 @@
                                             <input formControlName="firstName" matInput type="text"
                                                 name="first_name" placeholder="First Name *" />
                                         </mat-form-field>
+                                        <mat-error>error here</mat-error>
                                         <mat-form-field class="full-width">
                                             <input formControlName="lastName" matInput type="text" name="last_name"
                                                 placeholder="Last Name *" />
@@ -66,7 +67,7 @@
                                                 fxLayoutGap.xs="5px">
                                                 <mat-form-field>
                                                     <input matInput value="1" type="text" />
-                                                </mat-form-field>
+                                                </mat-form-field>                                               
                                                 <mat-form-field>
                                                     <input matInput value="2" type="text" />
                                                 </mat-form-field>
@@ -82,9 +83,11 @@
                                                 <mat-form-field>
                                                     <input matInput value="6" type="text" />
                                                 </mat-form-field>
-                                            </div>
+                                            </div>                                            
                                             <a fxLayout="row" fxLayoutAlign="center center"
                                                 class="clr-6589a9 resend--code">Resend</a>
+
+                                                <mat-error>error here</mat-error>
 
                                         </div> 
                                         <button mat-raised-button class="primary-btn mt-25" matStepperNext>
@@ -107,15 +110,17 @@
                                     <div fxLayout="column" fxLayoutAlign="start"> 
 
                                         <div class="cyp--section full-width" fxLayout="column">
-                                            <h5 class="mt-0">Create Your Password</h5>
+                                            <h5 class="mt-0 text-center">Create Your Password</h5>
                                             <mat-form-field class="full-width">
                                                 <input  matInput type="password" name="cyp"
                                                     placeholder="Choose a Password" />
                                             </mat-form-field>
+                                            <mat-error>error here</mat-error>
                                             <mat-form-field class="full-width">
                                                 <input  matInput type="password" name="cyp"
                                                     placeholder="Confirm Password" />
                                             </mat-form-field>
+                                            
                                         </div> 
                                         <button mat-raised-button class="primary-btn" [routerLink]="['/broker/signup-successful']">
                                             Setup Account

@@ -230,6 +230,25 @@
                 padding: 10px 5px 10px 0;
             }
         }
+        .profile-header{
+            height: 11rem !important;
+        }
+        .profile-header .propic .big  {
+            font-size: 25px;  
+            width: 60px;
+            height: 60px;  
+            margin: -39px auto 0px auto;   
+            position: relative; 
+        }
+        .profile-header .propic {
+            text-align: center; 
+            bottom: 35px;
+            left: 39%;
+        }
+        .profile-header .propic h2{
+            color: #fff;
+            font-size: 16px;
+        }
    }
 }
 

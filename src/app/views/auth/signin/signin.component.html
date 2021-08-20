@@ -18,9 +18,7 @@
                   placeholder="Email"
                   value="abhi@abhigolhar.com">
               </mat-form-field>
-              <!-- <small 
-                *ngIf="signinForm.controls['username'].hasError('required') && signinForm.controls['username'].touched" 
-                class="form-error-msg"> Email is required </small> -->
+              <mat-error>error here</mat-error> 
             </div>
   
             <div class="">
@@ -32,10 +30,7 @@
                   matInput 
                   placeholder="Password" 
                   value="123456789">
-              </mat-form-field>
-              <!-- <small 
-                *ngIf="signinForm.controls['password'].hasError('required') && signinForm.controls['password'].touched" 
-                class="form-error-msg"> Password is required </small> -->
+              </mat-form-field> 
             </div>
             
             <div fxLayout="row" fxLayoutAlign="space-between center" > 

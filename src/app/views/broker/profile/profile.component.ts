@@ -26,27 +26,34 @@ export class ProfileComponent implements OnInit {
   orgInfoStep1 = true;
   orgInfoStep2 = false;
 
+  editPerInfoButton = true;
+  editOrgInfoButton = true;
+
   binfo = "Basic Information";
   oinfo = "Organization Information"
 
   editPerInfo(){
     this.basicInfoStep1 = false;
     this.basicInfoStep2 = true;
+    this.editPerInfoButton = false;
     this.binfo = "Edit Personal Information"
   }
   savePerInfo(){
     this.basicInfoStep1 = true;
     this.basicInfoStep2 = false;
+    this.editPerInfoButton = true;
     this.binfo = "Basic Information"
   }
   editOrgInfo(){
     this.orgInfoStep2 = true;
     this.orgInfoStep1 = false;
+    this.editOrgInfoButton = false;
     this.oinfo = "Edit Organization Information"
   }
   saveOrgInfo() {
     this.orgInfoStep2 = false;
     this.orgInfoStep1 = true;
+    this.editOrgInfoButton = true;
     this.oinfo = "Organization Information"
   }
  

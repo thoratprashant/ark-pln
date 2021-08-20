@@ -1,6 +1,6 @@
 <div class="profile-wrapper">
   <div class=" container profile-header h-18" style="background-image: url('assets/images/arkenea/banner-prof.png')">
-    <div class="propic text-center" fxHide fxShow.gt-sm>
+    <div class="propic text-center">
       <h2 class="big">AG</h2>
       <h2 class="fw-700 mt-8">Abhi Golhar</h2>
     </div>
@@ -23,9 +23,9 @@
           <div class="column" fxFlex="100">
 
             <mat-card class="default m-0">
-              <div class="card-title" fxLayout="row wrap" fxLayoutAlign="space-between center" >
+              <div class="card-title" fxLayout="row" fxLayoutAlign="space-between center" >
                 <h4 class="fw-500">{{binfo}}</h4>
-                <button mat-raised-button class="primary-btn" (click)="editPerInfo()" >
+                <button mat-raised-button class="primary-btn fs-0" (click)="editPerInfo()" *ngIf="editPerInfoButton">
                   <mat-icon class=" mat-color-primary">create</mat-icon>Edit Profile
                 </button>
               </div>
@@ -129,17 +129,19 @@
                 <div fxLayout="row" fxFlex="100">
                   <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="55" fxFlex.xl="55">
                     <div fxLayout="row" fxLayout.xs="column" fxFlex="100" fxLayoutGap="30px" fxLayoutGap.xs="0">
-                      <div fxLayout="row" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                      <div fxLayout="column w-100" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
                         <mat-form-field appearance="fill" class="full-width">
                           <mat-label>First Name</mat-label>
                           <input matInput type="text" placeholder="" value="Abhi"> 
                         </mat-form-field> 
+                        <mat-error>error here</mat-error> 
                       </div>
-                      <div fxLayout="row" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                      <div fxLayout="column w-100" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
                         <mat-form-field appearance="fill" class="full-width">
                           <mat-label>Last Name</mat-label>
                           <input matInput type="text" placeholder="" value="Golhar"> 
                         </mat-form-field> 
+                        <mat-error>error here</mat-error> 
                       </div>
                     </div>
                     <div fxFlex="100">
@@ -147,6 +149,7 @@
                         <mat-label>Phone Number</mat-label>
                         <input matInput type="text" placeholder="" value="123-456-7890"> 
                       </mat-form-field> 
+                      <mat-error>error here</mat-error> 
                     </div>
                     <div fxFlex="100">
                       <mat-form-field appearance="fill" class="full-width">
@@ -182,13 +185,8 @@
                       <button mat-raised-button class="primary-btn mt-20 mb-20" (click)="savePerInfo()">
                         Save
                       </button>
-                    </div>
-
-                  </div>
-
-
-
-                    
+                    </div> 
+                  </div> 
                 </div>
               </mat-card-content>
             </mat-card>
@@ -204,9 +202,9 @@
           <div class="column" fxFlex="100">
 
             <mat-card class="default m-0">
-              <div class="card-title" fxLayout="row wrap" fxLayoutAlign="space-between center" >
+              <div class="card-title" fxLayout="row" fxLayoutAlign="space-between center" >
                 <h4 class="fw-500">{{oinfo}} </h4>
-                <button mat-raised-button class="primary-btn" (click)="editOrgInfo()" >
+                <button mat-raised-button class="primary-btn fs-0" (click)="editOrgInfo()" *ngIf="editOrgInfoButton">
                   <mat-icon class=" mat-color-primary">create</mat-icon>Edit Profile
                 </button>
               </div>
@@ -309,6 +307,7 @@
                         <mat-label>Organization Name</mat-label>
                         <input matInput type="text" placeholder="" value="The Private Lender Network"> 
                       </mat-form-field> 
+                      <mat-error>error here</mat-error> 
                     </div>
                     <div fxFlex="100">
                       <mat-form-field appearance="fill" class="full-width">
@@ -381,6 +380,7 @@
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                       </button>
                     </mat-form-field> 
+                    <mat-error>error here</mat-error> 
                     <mat-form-field appearance="fill" class="full-width">
                       <mat-label>Enter New Password</mat-label>
                       <input matInput [type]="hide ? 'password' : 'text'">
@@ -389,6 +389,7 @@
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                       </button>
                     </mat-form-field>
+                    <mat-error>error here</mat-error> 
                     <mat-form-field appearance="fill" class="full-width">
                       <mat-label>Confirm New Password</mat-label>
                       <input matInput [type]="hide ? 'password' : 'text'">
@@ -397,6 +398,7 @@
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                       </button>
                     </mat-form-field> 
+                    <mat-error>error here</mat-error> 
                     <div class="line" fxLayout="row wrap" fxLayoutAlign="end end">
                       <button mat-raised-button class="primary-btn">
                         Reset Password

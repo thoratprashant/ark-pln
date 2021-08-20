@@ -175,6 +175,11 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.mat-error{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
 
 @media only screen and (max-width: 599px) {
     .broker--top.header-topnav .user--name{
