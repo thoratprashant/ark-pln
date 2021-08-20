@@ -11,6 +11,10 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardDayOneComponent", function() { return DashboardDayOneComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/flex-layout/flex */ "./node_modules/@angular/flex-layout/__ivy_ngcc__/esm2015/flex.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js");
+
+
 
 
 class DashboardDayOneComponent {
@@ -19,11 +23,30 @@ class DashboardDayOneComponent {
     }
 }
 DashboardDayOneComponent.ɵfac = function DashboardDayOneComponent_Factory(t) { return new (t || DashboardDayOneComponent)(); };
-DashboardDayOneComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DashboardDayOneComponent, selectors: [["app-dashboard-day-one"]], decls: 2, vars: 0, template: function DashboardDayOneComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "dashboard-day-one works!");
+DashboardDayOneComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DashboardDayOneComponent, selectors: [["app-dashboard-day-one"]], decls: 13, vars: 0, consts: [["fxLayout", "column", "fxLayoutAlign", "start start", 1, "lp--day--one", "w-100"], ["fxLayout", "column", "fxFlex", "100", "fxLayoutAlign", "start center", "fxLayoutAlign.xs", "center center", 1, "w-100", "text-center"], [1, "clr-222", "mb-5"], [1, "clr-222", "mb-0"], ["fxLayout", "column", "fxFlex", "100", 1, "mt-25", "w-100"], ["fxLayout", "row", "fxFlex", "100"], [1, "mb-20"], ["fxLayout", "row", "fxFlex", "100", "fxLayoutAlign", "start center", "fxLayoutGap", "30px", 1, "inner--box", "m-0", "w-100", "text-center"], ["fxLayout", "row", "fxLayoutAlign", "start start", "fxFlex.xs", "100", "fxFlex.sm", "100", "fxFlex.md", "100", "fxFlex.lg", "33.33", "fxFlex.xl", "33.33"], ["fxLayout", "row", "fxLayoutAlign", "center center", 1, "round--box"]], template: function DashboardDayOneComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Welcome John!, ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXdzL2xvYW4tcHJvY2Vzc29yL2Rhc2hib2FyZC1kYXktb25lL2Rhc2hib2FyZC1kYXktb25lLmNvbXBvbmVudC5zY3NzIn0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h1", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "You can view the count data of the requests raised to you on this dashboard");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-card", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "h1", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Pre-Approved Loan Applications");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-card", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutGapDirective"]], styles: [".lp--day--one[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 20px;\n  font-weight: 500;\n}\n\n.lp--day--one[_ngcontent-%COMP%]   .mat-card[_ngcontent-%COMP%] {\n  padding: 30px;\n  border-radius: 5px;\n  box-shadow: -1.4px 1.4px 13px 0 rgba(88, 92, 101, 0.3) !important;\n  background-color: #fff;\n}\n\n.lp--day--one[_ngcontent-%COMP%]   .mat-card.inner--box[_ngcontent-%COMP%] {\n  padding: 24px;\n}\n\n.lp--day--one[_ngcontent-%COMP%]   .mat-card.inner--box[_ngcontent-%COMP%]   .round--box[_ngcontent-%COMP%] {\n  width: 96px;\n  height: 96px;\n  margin-right: 22px;\n  border-radius: 50%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlld3MvbG9hbi1wcm9jZXNzb3IvZGFzaGJvYXJkLWRheS1vbmUvQzpcXFByYXNoYW50LXdvcmtzcGFjZVxcYXJrLXBsbi9zcmNcXGFwcFxcdmlld3NcXGxvYW4tcHJvY2Vzc29yXFxkYXNoYm9hcmQtZGF5LW9uZVxcZGFzaGJvYXJkLWRheS1vbmUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3ZpZXdzL2xvYW4tcHJvY2Vzc29yL2Rhc2hib2FyZC1kYXktb25lL2Rhc2hib2FyZC1kYXktb25lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRVEsZUFBZTtFQUNmLGdCQUFnQjtBQ0F4Qjs7QURIQTtFQU1RLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsaUVBQWlFO0VBQ2pFLHNCQUFzQjtBQ0M5Qjs7QURWQTtFQVdZLGFBQWE7QUNHekI7O0FEZEE7RUFhZ0IsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsa0JBQWtCO0FDS2xDIiwiZmlsZSI6InNyYy9hcHAvdmlld3MvbG9hbi1wcm9jZXNzb3IvZGFzaGJvYXJkLWRheS1vbmUvZGFzaGJvYXJkLWRheS1vbmUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubHAtLWRheS0tb25le1xyXG4gICAgaDF7XHJcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbiAgICB9XHJcbiAgICAubWF0LWNhcmR7XHJcbiAgICAgICAgcGFkZGluZzogMzBweDtcclxuICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICAgICAgYm94LXNoYWRvdzogLTEuNHB4IDEuNHB4IDEzcHggMCByZ2JhKDg4LCA5MiwgMTAxLCAwLjMpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICAgICAgICAmLmlubmVyLS1ib3h7XHJcbiAgICAgICAgICAgIHBhZGRpbmc6IDI0cHg7XHJcbiAgICAgICAgICAgIC5yb3VuZC0tYm94e1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IDk2cHg7XHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IDk2cHg7XHJcbiAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDIycHg7XHJcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICB9XHJcbn0iLCIubHAtLWRheS0tb25lIGgxIHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBmb250LXdlaWdodDogNTAwO1xufVxuXG4ubHAtLWRheS0tb25lIC5tYXQtY2FyZCB7XG4gIHBhZGRpbmc6IDMwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYm94LXNoYWRvdzogLTEuNHB4IDEuNHB4IDEzcHggMCByZ2JhKDg4LCA5MiwgMTAxLCAwLjMpICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG59XG5cbi5scC0tZGF5LS1vbmUgLm1hdC1jYXJkLmlubmVyLS1ib3gge1xuICBwYWRkaW5nOiAyNHB4O1xufVxuXG4ubHAtLWRheS0tb25lIC5tYXQtY2FyZC5pbm5lci0tYm94IC5yb3VuZC0tYm94IHtcbiAgd2lkdGg6IDk2cHg7XG4gIGhlaWdodDogOTZweDtcbiAgbWFyZ2luLXJpZ2h0OiAyMnB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG4iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DashboardDayOneComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
