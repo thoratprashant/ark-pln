@@ -65,6 +65,11 @@
     text-align: left;
 }
 
+.marco-blue .mat-input-element:disabled, 
+.marco-blue .mat-form-field-type-mat-native-select.mat-form-field-disabled .mat-form-field-infix::after{
+    color: rgba(0, 0, 0, 0.38) !important;
+}
+
 .mat-input-element, .mat-input-element::-webkit-search-cancel-button, 
 .mat-input-element::-webkit-search-decoration, 
 .mat-input-element::-webkit-search-results-button, 

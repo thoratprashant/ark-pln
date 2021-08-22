@@ -1,0 +1,240 @@
+.large-box{
+    
+    margin: 16px 0px 16px 0px;
+    padding: 16px;
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #bbbbbb;
+    font-size:24px;
+    background-color:white;
+  }   
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+
+.mat-tab{
+    display: flex;
+    border-top: 1px solid #bbbb;
+    margin-top: 20px;
+} 
+
+.mat-form-field-flex {
+    display: inline-flex;
+    align-items: baseline;
+    box-sizing: border-box;
+    width: 132%;
+}
+
+
+
+.header{
+    border-bottom: 1px solid #bbbbbb;
+    width: 100%;
+    display:flex;
+    margin-bottom: 30px;
+    padding:12px 0px 21px 0px;
+}
+
+.personal-header{
+    border-bottom: 1px solid #bbbbbb;
+    width: 100%;
+    display:flex;
+    margin-bottom: 30px;
+    padding:12px 0px 21px 0px;
+}
+
+.company-header{
+    border-bottom: 1px solid #bbbbbb;
+    width: 100%;
+    display:flex;
+    margin-bottom: 30px;
+    padding:12px 0px 21px 0px;
+} 
+
+.big{
+    font-size: 61px;
+    border-radius: 50%;
+    background-color: #6589a9;
+    width: 135px;
+    height: 135px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: -140px 0px 0px 0px;
+    position: absolute;
+    color: #eeeeee;
+    border: solid 3px #eee;
+    align-items: center;
+    
+}
+
+.big-header{
+    margin-top: 15px;
+    padding-bottom: 20px;
+    font-family: bold;
+    border-bottom: 1px solid#eeee;
+    
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 14px;
+}
+
+
+
+.mat-tab-label, .mat-tab-link {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.mat-tab-label {
+    height: 48px;
+    padding: 0 55px !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.main-profile-wrapper .mat-tab-labels {
+    display: flex;
+    border-top: 1px solid #dadada;
+    padding-top: 8px;
+    background-color: #000;
+}
+ 
+
+.mat-input-wrapper{
+    min-width:535px !important;
+  }
+
+.mat-icon{
+    color:white;
+}
+
+.profile-wrapper{
+    .profile-header{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        position: relative; 
+    }
+    
+}
+.main-profile-wrapper{
+    .info--wrapper{
+        h5{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 5px;
+        }
+    }
+    .rounded-circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        background-color: #6589a9;
+        flex-shrink: 0;
+        .mat-icon{
+            font-size: 35px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+   
+}
+
+.mat-form-field {
+    position: relative;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #888;
+}
+
+.container{
+    .cardWrap{
+        .mat-form-field{ 
+            .mat-icon{
+                color: #000;
+            }
+        }
+    }
+}
+::ng-deep{
+    .card-title{
+        border-bottom: 1px solid #ddd !important;     
+    }
+    .primary-btn{
+        .mat-icon{
+            margin-right: 7px !important;
+            color: #eee !important;
+        }
+    }
+}
+.note{
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 599px) {
+   ::ng-deep{
+        .main-profile-wrapper .mat-tab-header{
+            margin-top: 0;
+        }
+        .line-wrapper {
+            .line{
+                height: auto; 
+                padding: 10px 5px 10px 0;
+            }
+        }
+        .profile-header{
+            height: 11rem !important;
+        }
+        .profile-header .propic .big  {
+            font-size: 25px;  
+            width: 60px;
+            height: 60px;  
+            margin: -39px auto 0px auto;   
+            position: relative; 
+        }
+        .profile-header .propic {
+            text-align: center; 
+            bottom: 35px;
+            left: 39%;
+        }
+        .profile-header .propic h2{
+            color: #fff;
+            font-size: 16px;
+        }
+   }
+}
+
+
+
+
+
+
+
+
+

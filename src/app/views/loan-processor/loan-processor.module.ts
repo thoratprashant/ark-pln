@@ -25,6 +25,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { SharedPipesModule } from 'app/shared/pipes/shared-pipes.module'; 
 import { LoanProcessorRoutes } from './loan-processor.routing';
 import { DashboardDayOneComponent } from './dashboard-day-one/dashboard-day-one.component';
+import { LpProfileComponent } from './lp-profile/lp-profile.component';
 
 // import { CommonDirectivesModule } from './sdirectives/common/common-directives.module';
  
@@ -58,6 +59,6 @@ import { DashboardDayOneComponent } from './dashboard-day-one/dashboard-day-one.
     SharedPipesModule,  
     RouterModule.forChild(LoanProcessorRoutes)
   ],
-  declarations: [  DashboardDayOneComponent]
+  declarations: [  DashboardDayOneComponent, LpProfileComponent]
 })
 export class LoanProcessorModule { }
