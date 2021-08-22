@@ -12,6 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SignupRoutes } from './signup.routing';
 import { BrokerSignUpComponent } from './broker/broker-sign-up/broker-sign-up.component';
 import { LpSignUpComponent } from './loan-processor/lp-sign-up/lp-sign-up.component';
+import { CmpSignupComponent } from './cmp/cmp-signup/cmp-signup.component';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { LpSignUpComponent } from './loan-processor/lp-sign-up/lp-sign-up.compon
     RouterModule.forChild(SignupRoutes)
   ],
   declarations: [ 
-    BrokerSignUpComponent, LpSignUpComponent
+    BrokerSignUpComponent, LpSignUpComponent, CmpSignupComponent
   ]
 })
 export class SignupModule { }

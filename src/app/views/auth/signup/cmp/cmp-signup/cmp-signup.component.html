@@ -1,0 +1,147 @@
+<div class="auth--data--wrapper page-login page-wrap">
+    <div class="signup--wrapper w-100" fxLayout="row" fxFlex="100" fxLayoutAlign="center center">
+        <div class="relative" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxFlex.xs="99"
+            fxFlex.sm="62" fxFlex.md="46" fxFlex.lg="40" fxFlex.xl="30">
+
+
+            <mat-horizontal-stepper labelPosition="bottom" linear #stepper>
+                <mat-step [stepControl]="firstFormGroup">
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Basic Information</ng-template>
+                        <div class="signIn-wrapper signup--step--one">
+                            <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
+                            <mat-card>
+                                <mat-card-content>
+                                    <div fxLayout="column" fxLayoutAlign="center center">
+                                        <h1 class="mb-20">Welcome to The PLN</h1>
+                                        <p class="clr-222 fnt-14 mb-20">Fill the form to create your account</p>
+                                    </div>
+                                    <div fxLayout="column" fxLayoutAlign="start">
+
+                                        <mat-form-field class="full-width">
+                                            <input formControlName="firstName" matInput type="text" name="first_name"
+                                                placeholder="First Name *" />
+                                        </mat-form-field>
+                                        <mat-error>error here</mat-error>
+                                        <mat-form-field class="full-width">
+                                            <input formControlName="lastName" matInput type="text" name="last_name"
+                                                placeholder="Last Name *" />
+                                        </mat-form-field>
+                                        <mat-form-field class="full-width">
+                                            <mat-label>Email *</mat-label>
+                                            <input matInput formControlName="email" type="email" name="email"
+                                                placeholder="Email *" />
+                                        </mat-form-field>
+
+
+                                        <button mat-raised-button class="primary-btn" matStepperNext>Verify
+                                            Email</button>
+                                    </div>
+
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="secondFormGroup">
+                    <form [formGroup]="secondFormGroup">
+                        <ng-template matStepLabel>Verification</ng-template>
+                        <div class="signIn-wrapper signup--step--one">
+                            <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
+                            <mat-card>
+                                <mat-card-content>
+                                    <div fxLayout="column" fxLayoutAlign="center center">
+                                        <h1 class="mb-20">Welcome to The PLN</h1>
+                                        <p class="clr-222 fnt-14 mb-20 text-center">Please enter the OTP we sent to your
+                                            email address for verification.</p>
+                                    </div>
+                                    <div fxLayout="column" fxLayoutAlign="start">
+
+                                        <div class="otp--section full-width" fxLayout="column">
+                                            <div class="enter--otp" fxLayout="row" fxLayoutGap="16px"
+                                                fxLayoutGap.xs="5px">
+                                                <mat-form-field>
+                                                    <input matInput value="1" type="text" />
+                                                </mat-form-field>
+                                                <mat-form-field>
+                                                    <input matInput value="2" type="text" />
+                                                </mat-form-field>
+                                                <mat-form-field>
+                                                    <input matInput value="3" type="text" />
+                                                </mat-form-field>
+                                                <mat-form-field>
+                                                    <input matInput value="4" type="text" />
+                                                </mat-form-field>
+                                                <mat-form-field>
+                                                    <input matInput value="5" type="text" />
+                                                </mat-form-field>
+                                                <mat-form-field>
+                                                    <input matInput value="6" type="text" />
+                                                </mat-form-field>
+                                            </div>
+                                            <a fxLayout="row" fxLayoutAlign="center center"
+                                                class="clr-6589a9 resend--code">Resend</a>
+
+                                        </div>
+                                        <button mat-raised-button class="primary-btn" matStepperNext>
+                                            Verify Email
+                                        </button>
+                                    </div>
+
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step>
+                    <form [formGroup]="thirdFormGroup">
+                        <ng-template matStepLabel>Set Password</ng-template>
+                        <div class="signIn-wrapper signup--step--one">
+                            <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
+                            <mat-card>
+                                <mat-card-content>
+                                    <div fxLayout="column" fxLayoutAlign="start">
+                                        <div class="cyp--section full-width" fxLayout="column">
+                                            <h5 class="mt-0">Create Your Password</h5>
+                                            <mat-form-field class="full-width">
+                                                <input matInput type="password" name="cyp"
+                                                    placeholder="Choose a Password" />
+                                            </mat-form-field>
+                                            <mat-form-field class="full-width">
+                                                <input matInput type="password" name="cyp"
+                                                    placeholder="Confirm Password" />
+                                            </mat-form-field>
+                                        </div>
+                                        <button mat-raised-button class="primary-btn"
+                                            [routerLink]="['/broker/signup-successful']">
+                                            Setup Account
+                                        </button>
+                                    </div>
+
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                    </form>
+                </mat-step>
+            </mat-horizontal-stepper>
+
+            <div class="privacy--policy--sec">
+                <h2 class="clr-222" fxLayout="row" fxLayoutAlign="start center">Privacy Policy <i class="fa fa-lock"
+                        aria-hidden="true"></i></h2>
+                <p class="clr-222">By clicking OK you agree with the <a class="clr-6589a9"><b>Terms & Services</b> </a>
+                    & <a class="clr-6589a9"><b>Privacy policy</b></a> of
+                    our website. You can change the cookies preferences or withdraw
+                    consent related to cookies , please update your cookies preferences.</p>
+
+                <div fxLayout="row" fxLayoutAlign="end end">
+                    <button mat-raised-button class="primary-btn">
+                        Ok
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
