@@ -26,8 +26,7 @@
               "src/assets/styles/app.scss" ,
               "node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": [
-              "node_modules/apexcharts/dist/apexcharts.min.js"
+            "scripts": [ 
             ]
           },
           "configurations": {

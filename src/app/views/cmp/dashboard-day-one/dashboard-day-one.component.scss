@@ -13,3 +13,24 @@
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 599px) {
+    .cmp--day--one{
+        height: auto;
+        padding: 15px;
+        p{ 
+            margin: 15px 0;
+            text-align: center;
+        }
+    }
+} 
+@media screen and (orientation:landscape) and (max-width: 850px){
+    .cmp--day--one{
+        height: auto;
+        padding: 15px;
+        p{ 
+            margin: 15px 0;
+            text-align: center;
+        }
+    }
+}

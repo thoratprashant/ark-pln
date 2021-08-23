@@ -10,8 +10,7 @@ import {
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './shared/inmemory-db/inmemory-db.service';
-import { NgApexchartsModule } from "ng-apexcharts";
+import { InMemoryDataService } from './shared/inmemory-db/inmemory-db.service'; 
 import { rootRouterConfig } from './app.routing';
 import { IconModule } from './shared/icon.module';
 import { SharedModule } from './shared/shared.module';
@@ -30,8 +29,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharedModule,
-    NgApexchartsModule,
+    SharedModule, 
     HttpClientModule,
     MatTabsModule,
     PerfectScrollbarModule,
