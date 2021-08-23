@@ -1,0 +1,179 @@
+<div class="profile-wrapper">
+    <div class=" container profile-header h-18" style="background-image: url('assets/images/arkenea/banner-prof.png')">
+      <div class="propic text-center">
+        <h2 class="big">AG</h2>
+        <h2 class="fw-700 mt-8">Abhi Golhar</h2>
+      </div>
+    </div>
+  
+    <div class="container line-wrapper">
+      <div class class="container">
+        <div class="line" fxLayout="row wrap" fxLayoutAlign="end end">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container main-profile-wrapper">
+    <div class="tabs">
+      <mat-tab-group>
+        <mat-tab label="Personal Information">
+          <div class="main" fxLayout="row wrap">
+            <div class="column" fxFlex="100">
+  
+              <mat-card class="default m-0">
+                <div class="card-title" fxLayout="row" fxLayoutAlign="space-between center" >
+                  <h4 class="fw-500">{{binfo}}</h4>
+                  <button mat-raised-button class="primary-btn fs-0" (click)="editPerInfo()" *ngIf="editPerInfoButton">
+                    <mat-icon class=" mat-color-primary">create</mat-icon>Edit Profile
+                  </button>
+                </div>
+                <mat-card-content fxLayout="column" fxLayoutGap="30px" class="w-100" *ngIf="basicInfoStep1">
+                  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="start start" fxLayoutAlign="start center"
+                    fxLayoutGap="30px" fxFlex="100">
+                    <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30"
+                      fxFlex.xl="30">
+                      <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
+  
+                        <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px"
+                          fxFlex.xl="65px">
+                          <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
+                            <mat-icon class="">person</mat-icon>
+                          </div>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="30"
+                          fxFlex.xl="30">
+                          <h5 class="fnt-14 clr-222 mb-3">Abhi</h5>
+                          <p class="m-0 clr-bbb fnt-12">First Name</p>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="30"
+                          fxFlex.xl="70">
+                          <h5 class="fnt-14 m-0 clr-222">Golhar</h5>
+                          <p class="m-0 clr-bbb fnt-12">Last Name</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100" fxLayout="row" fxFlex.xs="100" fxFlex.sm="70" fxFlex.md="70" fxFlex.lg="70"
+                      fxFlex.xl="70">
+                      <div class="info--wrapper w-100" fxLayout="row" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxFlex.xs="65px" fxFlex.sm="65px" fxFlex.md="65px" fxFlex.lg="65px"
+                          fxFlex.xl="65px">
+                          <div class="rounded-circle" fxLayout="row" fxLayoutAlign="center center">
+                            <mat-icon>email</mat-icon>
+                          </div>
+                        </div>
+                        <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100"
+                          fxFlex.xl="100">
+                          <h5 class="fnt-14 clr-222 mb-3">abhi@abhigolhar.com</h5>
+                          <p class="m-0 clr-bbb fnt-12">Email</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </mat-card-content>
+  
+                <!-- edit info -->
+                <mat-card-content fxLayout="column"  class="w-100" *ngIf="basicInfoStep2">
+                  <div fxLayout="row" fxFlex="100">
+                    <div fxLayout="column" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="70" fxFlex.lg="55" fxFlex.xl="55">
+                      <div fxLayout="row" fxLayout.xs="column" fxFlex="100" fxLayoutGap="30px" fxLayoutGap.xs="0">
+                        <div fxLayout="column w-100" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                          <mat-form-field appearance="fill" class="full-width">
+                            <mat-label>First Name</mat-label>
+                            <input matInput type="text" placeholder="" value="Abhi"> 
+                          </mat-form-field> 
+                          <mat-error>error here</mat-error> 
+                        </div>
+                        <div fxLayout="column w-100" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                          <mat-form-field appearance="fill" class="full-width">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput type="text" placeholder="" value="Golhar"> 
+                          </mat-form-field> 
+                          <mat-error>error here</mat-error> 
+                        </div>
+                      </div>
+                       
+                      <div fxFlex="100">
+                        <mat-form-field appearance="fill" class="full-width">
+                          <mat-label>Email*</mat-label>
+                          <input matInput type="text" placeholder="" value="abhi@abhigolhar.com" disabled> 
+                        </mat-form-field> 
+                        <p class="fnt-12 clr-222 note">Please contact with Admin if you want to change your email address</p>
+                      </div>
+                   
+                      <div fxFlex="100" fxLayout="row" fxLayoutAlign="end end">
+                        <button mat-raised-button class="primary-btn mt-20 mb-20" (click)="savePerInfo()">
+                          Save
+                        </button>
+                      </div> 
+                    </div> 
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </div>
+  
+          </div>
+        </mat-tab>
+  
+       
+  
+        <!-- Change Password --> 
+        <mat-tab label="Change Password">
+          <mat-t class="main" fxLayout="row wrap">
+            <div class="column" fxFlex="100">
+  
+              <mat-card class="default m-0">
+                <div class="card-title">
+                  <h4 class="fw-500">Change Password</h4>
+                </div>
+  
+                <mat-card-content fxLayout="column" class="w-100">
+  
+                  <div fxLayout="row wrap" fxFlex="100">
+                    <div class="cardWrap" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="46" fxFlex.lg="40" fxFlex.xl="30">
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Enter Current Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                          [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                      </mat-form-field> 
+                      <mat-error>error here</mat-error> 
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Enter New Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                          [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                      </mat-form-field>
+                      <mat-error>error here</mat-error> 
+                      <mat-form-field appearance="fill" class="full-width">
+                        <mat-label>Confirm New Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                          [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                      </mat-form-field> 
+                      <mat-error>error here</mat-error> 
+                      <div class="line" fxLayout="row wrap" fxLayoutAlign="end end">
+                        <button mat-raised-button class="primary-btn">
+                          Reset Password
+                        </button>
+                      </div>
+                    </div>   
+                  </div>
+                  
+                  
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </mat-t>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>

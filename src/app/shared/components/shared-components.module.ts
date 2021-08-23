@@ -38,6 +38,8 @@ import { BrokerHeaderTopComponent } from './broker-top-header/broker-top-header.
 import { BrokerAuthLayoutComponent } from './layouts/broker-auth-layout/broker-auth-layout.component'; 
 import { LoanProcessorTopComponent } from './loan-processor-top-header/loan-processor-top-header.component';
 import { LoanProcessorLayoutComponent } from './layouts/loan-processor-layout/loan-processor-layout.component';
+import { CmpTopComponent } from './cmp-top-header/cmp-top-header.component';
+import { CmpLayoutComponent } from './layouts/cmp-layout/cmp-layout.component';
 
 
 const components = [
@@ -65,7 +67,10 @@ const components = [
   BrokerHeaderTopComponent,
 
   LoanProcessorLayoutComponent,
-  LoanProcessorTopComponent
+  LoanProcessorTopComponent,
+
+  CmpTopComponent,
+  CmpLayoutComponent
 ]
 
 @NgModule({

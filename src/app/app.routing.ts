@@ -3,6 +3,7 @@ import { AdminLayoutComponent } from './shared/components/layouts/admin-layout/a
 import { AuthLayoutComponent } from './shared/components/layouts/auth-layout/auth-layout.component';
 import { BrokerAuthLayoutComponent } from './shared/components/layouts/broker-auth-layout/broker-auth-layout.component';
 import { BrokerLayoutComponent } from './shared/components/layouts/broker-layout/broker-layout.component'; 
+import { CmpLayoutComponent } from './shared/components/layouts/cmp-layout/cmp-layout.component';
 import { LoanProcessorLayoutComponent } from './shared/components/layouts/loan-processor-layout/loan-processor-layout.component';
 import { PreLoginLayoutComponent } from './shared/components/layouts/pre-login/pre-login-layout.component';
 import { AuthGuard } from './shared/guards/auth.guard';
@@ -61,6 +62,25 @@ export const rootRouterConfig: Routes = [
       }
     ]
   },
+
+
+
+   // After login pages > CMP
+   {
+    path: '', 
+    component: CmpLayoutComponent,
+    children: [
+      { 
+        path: 'cmp', 
+        loadChildren: () => import('./views/cmp/cmp.module').then(m => m.CmpModule),
+        data: { title: 'CMP'} 
+      }
+    ]
+  },
+
+
+
+
 
   // Signin, forgot password, reset password pages
   {
