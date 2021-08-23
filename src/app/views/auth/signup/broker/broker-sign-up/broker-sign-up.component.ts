@@ -10,6 +10,8 @@ export class BrokerSignUpComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
+
+  privacyPolicySec = true;
  
 
   constructor(private _formBuilder: FormBuilder) {}
@@ -26,6 +28,10 @@ export class BrokerSignUpComponent implements OnInit {
     });
     this.secondFormGroup = this._formBuilder.group({ });
     this.thirdFormGroup = this._formBuilder.group({ });
+  }
+
+  privacyOkBtn() {
+    this.privacyPolicySec = false;
   }
 
 }

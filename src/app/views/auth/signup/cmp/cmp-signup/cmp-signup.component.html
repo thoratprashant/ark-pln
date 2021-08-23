@@ -125,7 +125,7 @@
                 </mat-step>
             </mat-horizontal-stepper>
 
-            <div class="privacy--policy--sec">
+            <div class="privacy--policy--sec" *ngIf="privacyPolicySec">
                 <h2 class="clr-222" fxLayout="row" fxLayoutAlign="start center">Privacy Policy <i class="fa fa-lock"
                         aria-hidden="true"></i></h2>
                 <p class="clr-222">By clicking OK you agree with the <a class="clr-6589a9"><b>Terms & Services</b> </a>
@@ -134,7 +134,7 @@
                     consent related to cookies , please update your cookies preferences.</p>
 
                 <div fxLayout="row" fxLayoutAlign="end end">
-                    <button mat-raised-button class="primary-btn">
+                    <button mat-raised-button class="primary-btn" (click)="privacyOkBtn()">
                         Ok
                     </button>
                 </div>

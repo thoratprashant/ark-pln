@@ -134,6 +134,9 @@
         margin-top: 20px;
         right: 0;
     }
+    ::ng-deep .mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label{
+        display: none;
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .auth--data--wrapper .privacy--policy--sec{

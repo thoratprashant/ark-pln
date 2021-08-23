@@ -8,3 +8,22 @@
         margin: 15px 0 25px 0;
     }
 }
+
+@media only screen and (max-width: 599px) {
+    .signup--successful{
+        height: auto;
+        padding: 15px;
+        p{
+            text-align: center;
+        }
+    }
+}
+@media screen and (orientation:landscape) and (max-width: 850px){
+    .signup--successful{
+        height: auto;
+        padding: 15px;
+        p{
+            text-align: center;
+        }
+    }
+}

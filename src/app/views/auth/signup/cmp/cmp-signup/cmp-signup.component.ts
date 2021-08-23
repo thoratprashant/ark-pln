@@ -13,7 +13,7 @@ export class CmpSignupComponent implements OnInit {
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
  
-
+  privacyPolicySec = true;
   constructor(private _formBuilder: FormBuilder) {}
 
   ngOnInit() {
@@ -29,4 +29,8 @@ export class CmpSignupComponent implements OnInit {
     this.thirdFormGroup = this._formBuilder.group({ });
   }
 
+  
+  privacyOkBtn() {
+    this.privacyPolicySec = false;
+  }
 }
